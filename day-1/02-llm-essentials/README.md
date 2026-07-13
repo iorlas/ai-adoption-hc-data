@@ -39,3 +39,15 @@ crowded by bulk. Then do the opposite: point it at *just* the one file and colum
 the difference in answer quality. That contrast **is** the skill.
 
 > Carry this into every later section: when an answer is bad, first ask *"what was in the box?"*
+
+## Reference diagrams
+
+Anthropic's own illustrations for these ideas (good to show on screen, or to read afterwards):
+
+- **Context window + statelessness** — how the window fills turn by turn, up to the token limit
+  (with the scissors = first-in, first-out eviction), and the tool-use variant that matches how
+  Claude Code accumulates context:
+  https://platform.claude.com/docs/en/build-with-claude/context-windows
+- **Context management (curation)** — the "prompt engineering vs. context engineering" diagram: a pool
+  of possible context (docs, tools, memory, domain knowledge) curated down into the window each turn:
+  https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
