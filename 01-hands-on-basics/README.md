@@ -20,9 +20,16 @@ uv run verify.py      # green = Python, pandas, and the data are all in place
 If `verify.py` is green, you are ready. If not, flag it now.
 
 ### 2. Open a notebook
+Either in JupyterLab:
 ```bash
 uv run jupyter lab 01-hands-on-basics/explore.ipynb
 ```
+Or in **VS Code**: open this folder, open `01-hands-on-basics/explore.ipynb`, click
+**Select Kernel** (top-right) -> **Python Environments** -> pick **`.venv`**. If it
+is not listed, run `Cmd/Ctrl-Shift-P` -> **Python: Select Interpreter** ->
+`./.venv/bin/python`, then select the kernel again. (Needs the Python + Jupyter
+extensions; `.venv` comes from `uv sync`.)
+
 Run the first two cells (load + `head`). This is your working notebook for the
 day; you will come back to it in Section 3.
 
