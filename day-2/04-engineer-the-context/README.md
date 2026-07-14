@@ -15,6 +15,10 @@ docs/
   reference/<name>.sql    # the winning set-based proc from Stage 03
 ```
 
+> **Want to see a finished one first?** [`../templates/example-orders/`](../templates/) is a complete,
+> worked knowledge layer (thin CLAUDE.md + linked `docs/` + two ADRs + a reference query) on a *different*
+> domain — study the shape, then build yours here. Build first, compare second.
+
 ## The jigsaw (each pair owns ONE, commit into `docs/`)
 
 Copy the skeleton, fill it for real, keep it terse, commit:

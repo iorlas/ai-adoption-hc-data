@@ -24,6 +24,9 @@ Work through the stages in order — each folder is self-contained. **Data and t
 | 6 | `06-bridge-databricks-adf/` | The bridge to Days 3–4: Databricks + ADF as more access paths. |
 | 7 | `07-take-home/` | Take-home 2 + feedback, and the CLAUDE.md best-practices to compare against. |
 
+A complete, worked example of the knowledge layer you build in Stage 04 lives in
+`templates/example-orders/` (a different domain, so it shows the shape without spoiling the exercise).
+
 Facilitator conductor's score, answer key, and the payoff prompt live in `facilitator/` (never ships).
 
 ## Governance — the three rules that let you point this at real data (cross-cutting)
