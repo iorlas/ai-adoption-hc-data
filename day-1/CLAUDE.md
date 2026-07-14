@@ -19,3 +19,7 @@ and fictional. There is no real personal data here.
 Even though this data is synthetic, treat the donor columns (name, DOB, email, phone, postcode,
 `nhs_number`) as if they were real PII: **never paste them into an external service.** Anonymise or
 mask before anything leaves the machine.
+
+## Where things live
+
+- Our stored procedures are kept in `01-hands-on-basics/stored_procedure.sql`.
