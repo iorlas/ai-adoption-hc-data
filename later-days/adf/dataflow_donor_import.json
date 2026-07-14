@@ -1,0 +1,100 @@
+{
+  "name": "dataflow_donor_import",
+  "properties": {
+    "description": "Legacy Mapping Data Flow: loads a weekly donor CSV export into the donor table. Standardises names and postcode, filters to active records, maps an ethnicity code via a cached lookup, assigns a surrogate key, and upserts on registry_id. TEACHING ARTIFACT for the ADF-to-SQL conversion exercise. The simple source->derive->filter->sink core converts to a SQL view cleanly; the AlterRow upsert, the surrogate-key generation, and the cached lookup do NOT have a clean single-view SQL equivalent — that is the point.",
+    "type": "MappingDataFlow",
+    "typeProperties": {
+      "sources": [
+        {
+          "name": "DonorImportCsv",
+          "dataset": { "referenceName": "ds_donor_import_csv", "type": "DatasetReference" }
+        },
+        {
+          "name": "EthnicityLookup",
+          "dataset": { "referenceName": "ds_ethnicity_ref", "type": "DatasetReference" }
+        }
+      ],
+      "sinks": [
+        {
+          "name": "DonorTable",
+          "dataset": { "referenceName": "ds_donor_table", "type": "DatasetReference" }
+        }
+      ],
+      "transformations": [
+        { "name": "CleanNames" },
+        { "name": "BuildPostcode" },
+        { "name": "KeepActive" },
+        { "name": "LookupEthnicity" },
+        { "name": "AssignSurrogateKey" },
+        { "name": "UpsertOnRegistryId" }
+      ],
+      "scriptLines": [
+        "source(output(",
+        "    registry_id as string,",
+        "    first_name as string,",
+        "    last_name as string,",
+        "    date_of_birth as date,",
+        "    sex as string,",
+        "    email as string,",
+        "    phone as string,",
+        "    postcode as string,",
+        "    nhs_number as string,",
+        "    ethnicity_code as string,",
+        "    registered_date as date,",
+        "    status as string",
+        "  ),",
+        "  allowSchemaDrift: true,",
+        "  validateSchema: false,",
+        "  ignoreNoFilesFound: false) ~> DonorImportCsv",
+        "source(output(",
+        "    ethnicity_code as string,",
+        "    ethnicity_label as string",
+        "  ),",
+        "  allowSchemaDrift: false,",
+        "  validateSchema: false,",
+        "  broadcast: 'auto') ~> EthnicityLookup",
+        "DonorImportCsv derive(",
+        "    first_name = trim(initCap(first_name)),",
+        "    last_name = trim(initCap(last_name)),",
+        "    sex = upper(trim(sex))",
+        "  ) ~> CleanNames",
+        "CleanNames derive(",
+        "    postcode = upper(regexReplace(trim(postcode), '\\\\s+', ' '))",
+        "  ) ~> BuildPostcode",
+        "BuildPostcode filter(status == 'Active') ~> KeepActive",
+        "KeepActive, EthnicityLookup lookup(KeepActive@ethnicity_code == EthnicityLookup@ethnicity_code,",
+        "  multiple: false,",
+        "  pickup: 'any',",
+        "  broadcast: 'auto') ~> LookupEthnicity",
+        "LookupEthnicity keyGenerate(output(donor_id as long),",
+        "  startAt: 1L) ~> AssignSurrogateKey",
+        "AssignSurrogateKey alterRow(upsertIf(true())) ~> UpsertOnRegistryId",
+        "UpsertOnRegistryId sink(allowSchemaDrift: true,",
+        "  validateSchema: false,",
+        "  deletable: false,",
+        "  insertable: true,",
+        "  updateable: true,",
+        "  upsertable: true,",
+        "  keys: ['registry_id'],",
+        "  format: 'table',",
+        "  skipDuplicateMapInputs: true,",
+        "  skipDuplicateMapOutputs: true,",
+        "  mapColumn(",
+        "    registry_id,",
+        "    first_name,",
+        "    last_name,",
+        "    date_of_birth,",
+        "    sex,",
+        "    email,",
+        "    phone,",
+        "    postcode,",
+        "    nhs_number,",
+        "    ethnicity = ethnicity_label,",
+        "    registered_date,",
+        "    status,",
+        "    donor_id",
+        "  )) ~> DonorTable"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "pipeline_donor_import",
+  "properties": {
+    "description": "Legacy weekly donor import pipeline. Runs the donor-import Mapping Data Flow. TEACHING ARTIFACT — the interesting logic is in dataflow_donor_import.json.",
+    "activities": [
+      {
+        "name": "RunDonorImportDataFlow",
+        "type": "ExecuteDataFlow",
+        "dependsOn": [],
+        "policy": { "timeout": "0.01:00:00", "retry": 1, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "dataFlow": { "referenceName": "dataflow_donor_import", "type": "DataFlowReference" },
+          "compute": { "coreCount": 8, "computeType": "General" },
+          "traceLevel": "Fine"
+        }
+      }
+    ],
+    "annotations": ["weekly", "donor-import", "legacy"]
+  }
+}
