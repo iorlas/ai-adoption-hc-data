@@ -98,10 +98,12 @@ context now lives in Git and compounds.
 
 ---
 
-## Feedback pulse
+## Keep it going
 
-Two lines back to me:
-- Too basic / about right / want Databricks sooner?
-- One thing you'll try on real work this week.
+This is where a workshop turns into a habit. Two lightweight rituals:
 
-Steers the remaining sessions.
+- **Weekly 30-minute peer call, led by your team's AI champion.** Starting this week, meet as a team to
+  review how it's going: what you've used it for, what worked, and where you're stuck. Bring one win and one
+  problem each. Unblocking each other fast is what makes the practice spread.
+- **Two-week check-in.** In two weeks, send your facilitator a short note on how it's going: what you've
+  used AI for, what changed, and what's still blocking you (or expect a short follow-up form).
