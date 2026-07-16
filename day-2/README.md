@@ -22,7 +22,7 @@ Work through the stages in order — each folder is self-contained. **Data and t
 | 4 | `04-engineer-the-context/` | Build the KB — CLAUDE.md + data dictionary + glossary + reference impl. |
 | 5 | `05-data-quality-rules/` | Generate DQ rules from the schema; keep the meaningful, cut the noise. |
 | 6 | `06-bridge-databricks-adf/` | The bridge to Days 3–4: Databricks + ADF as more access paths. |
-| 7 | `07-take-home/` | What a day of AI-assisted DE looks like, the practical take-home on your *own* data, feedback, and CLAUDE.md best-practices. |
+| 7 | `07-take-home/` | One self-contained take-home: a day of AI-assisted DE, the practical task on your *own* data, and CLAUDE.md best-practices to compare against. |
 
 A complete, worked example of the knowledge layer you build in Stage 04 lives in
 `templates/example-orders/` (a different domain, so it shows the shape without spoiling the exercise).
