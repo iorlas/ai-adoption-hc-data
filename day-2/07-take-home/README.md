@@ -100,10 +100,14 @@ context now lives in Git and compounds.
 
 ## Keep it going
 
-This is where a workshop turns into a habit. Two lightweight rituals:
+This is where a workshop turns into a habit.
 
-- **Weekly 30-minute peer call, led by your team's AI champion.** Starting this week, meet as a team to
-  review how it's going: what you've used it for, what worked, and where you're stuck. Bring one win and one
-  problem each. Unblocking each other fast is what makes the practice spread.
+- **A weekly 30-minute team call to share wins and problems.** Not a progress review, a place to swap what's
+  working and unblock each other fast. The AI champion goes first each week, sharing their own wins and where
+  they got stuck; that sets the tone and makes it safe to be honest. Then everyone brings one thing that
+  worked and one thing they're stuck on, and asks questions. As more people bring their own wins, they start
+  becoming champions too.
+- **Keep a light pulse on progress.** Tracking who's using it, and on what, is a job for the squad lead or
+  the champion, kept separate from the call so the call stays about sharing.
 - **Two-week check-in.** In two weeks, send your facilitator a short note on how it's going: what you've
   used AI for, what changed, and what's still blocking you (or expect a short follow-up form).
