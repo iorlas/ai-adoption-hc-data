@@ -5,7 +5,7 @@ description = "Claude Code workshop, Day 1 — exploring synthetic donor-registr
 requires-python = ">=3.11"
 dependencies = [
     "pandas>=2",
-    "jupyterlab>=4",
+    "jupyterlab>=4.6.2",
     "ipykernel>=6",
 ]
 
