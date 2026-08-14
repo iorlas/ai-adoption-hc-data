@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# your own work — keep it, but it does not belong in the shared repo
+*.pbix
+!reports/**/*.pbix
+scratch/

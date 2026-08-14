@@ -1,0 +1,80 @@
+{
+  "name": "DF_Supporter_Enrich",
+  "properties": {
+    "type": "MappingDataFlow",
+    "typeProperties": {
+      "sources": [
+        { "dataset": { "referenceName": "DS_AzureSql_Stg_Supporter", "type": "DatasetReference" }, "name": "srcSupporter" },
+        { "dataset": { "referenceName": "DS_AzureSql_Stg_Campaign", "type": "DatasetReference" }, "name": "srcCampaign" },
+        { "dataset": { "referenceName": "DS_AzureSql_Dw_Donation", "type": "DatasetReference" }, "name": "srcDonation" }
+      ],
+      "sinks": [
+        { "dataset": { "referenceName": "DS_AzureSql_Dw_SupporterEnriched", "type": "DatasetReference" }, "name": "sinkEnriched" }
+      ],
+      "transformations": [
+        { "name": "cleanSupporter" },
+        { "name": "joinDonations" },
+        { "name": "aggGiving" },
+        { "name": "deriveFlags" },
+        { "name": "filterOut" },
+        { "name": "selectFinal" }
+      ],
+      "scriptLines": [
+        "source(allowSchemaDrift: true,",
+        "     validateSchema: false,",
+        "     isolationLevel: 'READ_UNCOMMITTED',",
+        "     format: 'table') ~> srcSupporter",
+        "source(allowSchemaDrift: true,",
+        "     validateSchema: false,",
+        "     format: 'table') ~> srcCampaign",
+        "source(allowSchemaDrift: true,",
+        "     validateSchema: false,",
+        "     format: 'table') ~> srcDonation",
+        "srcSupporter derive(",
+        "     status = iifNull(trim(status), 'Active'),",
+        "     region = iifNull(region, 'Unknown'),",
+        "     email = lower(iifNull(email, '')),",
+        "     marketing_consent = iif(marketing_consent == 'Y', 1, iif(marketing_consent == 'N', 0, toInteger(marketing_consent))),",
+        "     postcode = upper(replace(postcode, ' ', ''))",
+        "  ) ~> cleanSupporter",
+        "cleanSupporter, srcDonation join(",
+        "     supporter_id == supporter_id,",
+        "     joinType: 'left',",
+        "     broadcast: 'auto') ~> joinDonations",
+        "joinDonations aggregate(",
+        "     groupBy(supporter_id, first_name, last_name, status, region, sign_up_date),",
+        "     total_given = sum(amount_gbp),",
+        "     gift_count = count(donation_id),",
+        "     last_gift_date = max(donation_date)",
+        "  ) ~> aggGiving",
+        "aggGiving derive(",
+        "     is_active = iif(status == 'Active', 1, 0),",
+        "     is_major_donor = iif(total_given > 1000, 1, 0),",
+        "     months_since_last_gift = monthsBetween(currentDate(), last_gift_date),",
+        "     value_band = case(total_given > 5000, 'Platinum', total_given > 1000, 'Gold', total_given > 100, 'Silver', 'Bronze')",
+        "  ) ~> deriveFlags",
+        "deriveFlags filter(",
+        "     region != 'Northern Ireland' && status != 'Deceased'",
+        "  ) ~> filterOut",
+        "filterOut select(",
+        "     mapColumn(",
+        "          supporter_id, first_name, last_name, status, region,",
+        "          sign_up_date, total_given, gift_count, last_gift_date,",
+        "          is_active, is_major_donor, value_band",
+        "     ),",
+        "     skipDuplicateMapInputs: true,",
+        "     skipDuplicateMapOutputs: true) ~> selectFinal",
+        "selectFinal sink(allowSchemaDrift: true,",
+        "     validateSchema: false,",
+        "     deletable: false,",
+        "     insertable: true,",
+        "     updateable: false,",
+        "     upsertable: false,",
+        "     truncate: true,",
+        "     format: 'table',",
+        "     errorHandlingOption: 'stopOnFirstError') ~> sinkEnriched"
+      ]
+    }
+  },
+  "type": "Microsoft.DataFactory/factories/dataflows"
+}

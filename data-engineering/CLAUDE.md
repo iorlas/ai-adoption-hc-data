@@ -1,5 +1,8 @@
 # Claude Code Workshop — Data Engineering
 
+Applies to `data-engineering/` only. The analytics stream has its own
+`CLAUDE.md` in `data-analytics/`, with different data and different rules.
+
 A synthetic data-engineering workshop. Each day is its own folder (`day-1/`, and more as the week
 goes); work inside the day's folder, which has its own `README.md` and `CLAUDE.md`.
 

@@ -1,0 +1,38 @@
+// Fundraising Summary — measures
+// Reported on the monthly income pack.
+
+Active Supporters =
+CALCULATE (
+    COUNTROWS ( supporters ),
+    supporters[status] = "Active"
+)
+// Reads status straight off the CRM export. 2,447.
+
+Total Income =
+SUM ( donations[amount_gbp] )
+// Every row in the donations table. £947,088.
+
+Average Gift =
+DIVIDE ( [Total Income], COUNTROWS ( donations ) )
+
+Income This Year =
+CALCULATE (
+    [Total Income],
+    DATESYTD ( 'Date'[Date] )
+)
+
+Gift Aid Income =
+CALCULATE (
+    [Total Income],
+    donations[gift_aid] = 1
+)
+
+Supporters With A Gift =
+CALCULATE (
+    DISTINCTCOUNT ( donations[supporter_id] )
+)
+// Note: counts supporter_ids present in donations, whether or not they exist
+// in the supporters table.
+
+Income Per Active Supporter =
+DIVIDE ( [Total Income], [Active Supporters] )

@@ -1,0 +1,42 @@
+// Supporter Engagement — measures
+// Reported on the quarterly engagement review.
+
+Active Supporters =
+CALCULATE (
+    DISTINCTCOUNT ( donations[supporter_id] ),
+    DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -12, MONTH )
+)
+// "Active" = gave money in the last 12 months. Refunds are already excluded
+// upstream in Power Query. 1,832.
+
+Total Income =
+SUM ( donations[amount_gbp] )
+// Same expression as the Fundraising Summary measure, different number,
+// because this table had refunds removed in Power Query. £930,093.
+
+Open Rate =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( campaign_activity ), campaign_activity[opened] = 1 ),
+    COUNTROWS ( campaign_activity )
+)
+
+Click Through Rate =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( campaign_activity ), campaign_activity[clicked] = 1 ),
+    CALCULATE ( COUNTROWS ( campaign_activity ), campaign_activity[opened] = 1 )
+)
+// Can exceed 100%. Nobody has asked why.
+
+Lapsing Soon =
+CALCULATE (
+    COUNTROWS ( supporters ),
+    supporters[status] = "Active",
+    supporters[last_activity_date] < TODAY () - 300
+)
+
+Consented Supporters =
+CALCULATE (
+    COUNTROWS ( supporters ),
+    supporters[marketing_consent] = 1
+)
+// Assumes marketing_consent is always a number.

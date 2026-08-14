@@ -1,0 +1,193 @@
+campaign_code,campaign_name,category_raw,channel,start_date,end_date,owner_team
+CMP0067,New donor drive 2025,New donor drive,SMS,2025-11-26,2026-01-06,Supporter Care
+CMP0121,wills 2023,LEGACY,Social,2023-11-26,2024-02-01,Supporter Care
+CMP0184,newsletter 2026,newsletter,Social,2026-01-05,2026-02-15,Marketing
+CMP0065,donor-recruitment 2026,Donor Recruitment,Social,2026-03-16,2026-04-19,Register Growth
+CMP0015,Xmas 2023 v2,Xmas,SMS,2023-10-13,2023-10-25,Supporter Care
+CMP0052,spring appeal 2026 v2,Spring Campaign,Social,2026-04-02,2026-04-19,Fundraising
+CMP0146,corporate partnership 2023,,Direct Mail,2023-02-13,2023-03-10,Supporter Care
+CMP0141,challenge-events 2024 v2,event,Email,2024-06-19,2024-09-06,Supporter Care
+CMP0021,Chirstmas appeal 2024 v2,Chirstmas appeal,Phone,2024-08-21,2024-10-02,Supporter Care
+CMP0056,RECRUITMENT 2025,New donor drive,Direct Mail,2025-04-03,2025-05-03,Supporter Care
+CMP0096,regular giving 2024 wave 2,monthly-givers,Direct Mail,2024-09-30,2024-11-18,Supporter Care
+CMP0034,spring appeal 2023 v2,spring appeal,SMS,2023-03-22,2023-05-22,Supporter Care
+CMP0016,christmas 2025,christmas,Phone,2025-08-28,2025-09-08,Fundraising
+CMP0166,corporate partnership 2026 North,CORP,Social,2026-06-28,2026-06-19,Fundraising
+CMP0140,EVENTS 2025 North,EVENTS,SMS,2025-06-29,2025-08-29,Supporter Care
+CMP0173,e-news 2024,newsletter,SMS,2024-09-20,2024-12-10,Register Growth
+CMP0186,Supporter newsletter 2022,Supporter newsletter,Phone,2022-11-25,2023-01-06,Register Growth
+CMP0095,Monthly giving 2025 test,,Email,2025-01-02,2025-01-14,Register Growth
+CMP0054,Donor Recruitment 2026 wave 2,RECRUITMENT,Phone,2026-06-09,2026-06-25,Supporter Care
+CMP0038,SPRING 2024 North,spring-appeal,Phone,2024-08-24,2024-10-25,Fundraising
+CMP0027,spring-appeal 2026 v2,SPRING,Social,2026-06-09,2026-07-30,Supporter Care
+CMP0075,Donor Recruitment 2025 wave 2,donor-recruitment,Email,2025-08-21,2025-11-01,Fundraising
+CMP0088,RG 2023,RG,Social,2023-08-07,2023-09-21,Register Growth
+CMP0163,corporate partnership 2024 wave 2,CORP,SMS,2024-05-14,2024-07-01,Supporter Care
+CMP0171,Newsletter 2023 North,Newsletter,Direct Mail,2023-02-09,2023-02-25,Supporter Care
+CMP0170,CORP 2025 test,CORP,Direct Mail,2025-11-13,2026-02-04,Register Growth
+CMP0044,Spring Campaign 2023 v2,Spring Appeal,Direct Mail,2023-08-14,2023-08-26,Fundraising
+CMP0178,e-news 2026,Supporter newsletter,Direct Mail,2026-02-06,2026-02-26,Register Growth
+CMP0114,wills 2023,LEGACY,Direct Mail,2023-01-14,2023-03-27,Fundraising
+CMP0192,newsletter 2023,Supporter newsletter,Email,2023-01-23,2023-04-10,Register Growth
+CMP0148,Corporate 2025 wave 2,CORP,Email,2025-05-16,2025-05-23,Supporter Care
+CMP0041,spring-appeal 2024 wave 2,SPRING,Direct Mail,2024-01-02,2024-02-05,Supporter Care
+CMP0152,corporate partnership 2026 test,Corporate,Direct Mail,2026-07-12,2026-10-01,Supporter Care
+CMP0017,XMAS-APPEAL 2023 test,Xmas Appeal,Direct Mail,2023-07-15,2023-08-19,Fundraising
+CMP0046,Spring Appeal 2023 v2,Spring Appeal,Social,2023-11-10,2023-11-27,Marketing
+CMP0025,Xmas 2024,XMAS-APPEAL,Social,2024-08-23,2024-10-08,Marketing
+CMP0165,CORP 2024 test,corporate partnership,SMS,2024-11-15,2025-01-21,Supporter Care
+CMP0189,newsletter 2024 North,e-news,Social,2024-06-25,2024-09-16,Fundraising
+CMP0070,donor recruit 2023 North,Recruitment - donors,SMS,2023-02-02,2023-05-01,Supporter Care
+CMP0123,Events 2025 test,event,Email,2025-07-02,2025-08-10,Marketing
+CMP0098,regular giving 2026 v2,regular giving,Social,2026-02-09,2026-04-24,Supporter Care
+CMP0080,regular giving 2024 test,Regular Giving,Direct Mail,2024-06-01,2024-07-29,Register Growth
+CMP0169,corporate partnership 2022 wave 2,Partnerships,Social,2022-12-08,2022-12-30,Fundraising
+CMP0031,spring appeal 2024 wave 2,spring-appeal,Phone,2024-01-29,2024-02-09,Marketing
+CMP0072,donor recruit 2024 test,donor recruit,SMS,2024-11-05,2024-12-24,Register Growth
+CMP0003,Christmas Appeal 2024 2023,Chirstmas appeal,Social,2023-09-22,2023-09-30,Register Growth
+CMP0039,spring-appeal 2023 wave 2,,Phone,2023-06-14,2023-08-23,Marketing
+CMP0024,Christmas appeal 2023 wave 2,XMAS-APPEAL,SMS,2023-04-11,2023-06-17,Supporter Care
+CMP0048,spring-appeal 2023,,Social,2023-09-24,2023-10-13,Marketing
+CMP0137,EVENTS 2024 North,EVENTS,SMS,2024-06-10,2024-07-10,Supporter Care
+CMP0060,Recruitment - donors 2024 test,RECRUITMENT,Email,2024-03-10,2024-05-06,Register Growth
+CMP0116,Legacy 2026,Gifts in Wills,Direct Mail,2026-05-27,2026-08-10,Marketing
+CMP0083,Regular Giving 2024 v2,Monthly giving,Social,2024-11-05,2025-01-12,Register Growth
+CMP0014,Christmas Appeal 2024 2026,Xmas Appeal,SMS,2026-03-24,2026-05-04,Marketing
+CMP0111,Gifts in Wills 2025,Gifts in Wills,Social,2025-08-28,2025-10-30,Fundraising
+CMP0073,Donor Recruitment 2024 v2,donor-recruitment,SMS,2024-06-15,2024-07-02,Register Growth
+CMP0133,Events 2026 test,,Email,2026-01-25,2026-04-14,Marketing
+CMP0150,Corporate 2023 v2,Corporate,Direct Mail,2023-10-27,2023-12-11,Marketing
+CMP0023,XMAS-APPEAL 2026 v2,XMAS-APPEAL,Direct Mail,2026-02-26,2026-04-11,Register Growth
+CMP0011,Christmas appeal 2025 wave 2,XMAS-APPEAL,Social,2025-01-31,2025-02-22,Supporter Care
+CMP0062,donor recruit 2025,donor recruit,SMS,2025-03-06,2025-05-10,Supporter Care
+CMP0012,christmas 2024,Xmas,Email,2024-12-15,2025-02-06,Marketing
+CMP0142,event 2025 North,Challenge Events,SMS,2025-07-24,2025-08-28,Marketing
+CMP0162,Partnerships 2026 wave 2,corporate partnership,Phone,2026-01-24,2026-03-06,Marketing
+CMP0053,Recruitment - donors 2026 North,,SMS,2026-02-21,2026-04-21,Supporter Care
+CMP0047,spring-appeal 2023,spring appeal,Phone,2023-07-03,2023-07-24,Supporter Care
+CMP0176,e-news 2024,Supporter newsletter,Phone,2024-02-08,2024-04-08,Supporter Care
+CMP0001,christmas 2024 v2,Chirstmas appeal,Phone,2024-06-02,2024-07-03,Marketing
+CMP0191,newsletter 2023 wave 2,Supporter newsletter,Direct Mail,2023-01-14,2023-01-25,Supporter Care
+CMP0033,spring-appeal 2024,Spring Campaign,Email,2024-01-24,2024-02-07,Marketing
+CMP0104,wills 2024 test,,Social,2024-08-11,2024-08-24,Marketing
+CMP0119,Gifts in Wills 2023 wave 2,legacy giving,SMS,2023-07-08,2023-07-26,Register Growth
+CMP0172,newsletter 2026,newsletter,Direct Mail,2026-05-17,2026-06-10,Marketing
+CMP0064,donor recruit 2024,Recruitment - donors,Phone,2024-08-17,2024-11-06,Marketing
+CMP0185,NEWS 2025 North,,SMS,2025-08-31,2025-11-20,Register Growth
+CMP0155,Corporate 2024 test,Corporate,SMS,2024-11-06,2025-01-20,Register Growth
+CMP0161,corporate partnership 2026,corporate partnership,SMS,2026-04-20,2026-06-23,Fundraising
+CMP0068,donor recruit 2024,Donor Recruitment,Social,2024-01-12,2024-04-01,Supporter Care
+CMP0009,Xmas 2024 North,Christmas Appeal 2024,SMS,2024-06-24,2024-08-13,Supporter Care
+CMP0008,Christmas Appeal 2024 2024 v2,Christmas Appeal 2024,Social,2024-01-25,2024-03-08,Fundraising
+CMP0144,Marathon 2026 test,event,Phone,2026-01-31,2026-04-12,Supporter Care
+CMP0110,legacy giving 2023,legacy giving,Direct Mail,2023-09-12,2023-12-03,Marketing
+CMP0125,Marathon 2026,Marathon,Phone,2026-01-13,2026-04-08,Register Growth
+CMP0118,Legacy 2023 North,LEGACY,Email,2023-09-07,2023-10-09,Supporter Care
+CMP0058,donor-recruitment 2025,RECRUITMENT,SMS,2025-12-03,2026-01-02,Supporter Care
+CMP0117,wills 2023 wave 2,Legacy,SMS,2023-09-09,2023-09-18,Register Growth
+CMP0145,corporate partnership 2025 test,CORP,Direct Mail,2025-04-30,2025-06-03,Fundraising
+CMP0059,donor-recruitment 2024 North,RECRUITMENT,Email,2024-02-19,2024-02-26,Marketing
+CMP0190,Newsletter 2023 v2,Newsletter,Social,2023-01-04,2023-03-11,Supporter Care
+CMP0175,Supporter newsletter 2025 wave 2,e-news,SMS,2025-11-14,2025-12-01,Register Growth
+CMP0004,Chirstmas appeal 2026,Xmas Appeal,Email,2026-01-24,2026-02-07,Register Growth
+CMP0103,Legacy 2023 test,LEGACY,Direct Mail,2023-11-15,2024-01-22,Fundraising
+CMP0085,Regular Giving 2026,Regular Giving,SMS,2026-05-24,2026-08-22,Register Growth
+CMP0055,Recruitment - donors 2022,Donor Recruitment,Email,2022-12-12,2023-01-13,Register Growth
+CMP0153,CORP 2023 North,Corporate,Direct Mail,2023-02-14,2023-04-24,Supporter Care
+CMP0147,corporate partnership 2025 test,CORP,Social,2025-08-28,2025-09-16,Supporter Care
+CMP0174,e-news 2024 wave 2,Supporter newsletter,Social,2024-09-24,2024-12-02,Supporter Care
+CMP0076,New donor drive 2024 North,donor recruit,Direct Mail,2024-07-31,2024-09-10,Fundraising
+CMP0097,Monthly giving 2024,Reg. Giving,Phone,2024-10-27,2025-01-05,Supporter Care
+CMP0188,NEWS 2024 wave 2,Supporter newsletter,Email,2024-10-20,2024-10-03,Marketing
+CMP0087,monthly-givers 2024 v2,RG,SMS,2024-08-21,2024-08-28,Supporter Care
+CMP0094,Reg. Giving 2026 v2,Regular Giving,Direct Mail,2026-05-12,2026-06-22,Supporter Care
+CMP0135,challenge-events 2023,Marathon,SMS,2023-12-27,2024-03-05,Register Growth
+CMP0032,SPRING 2024,Spring Campaign,Email,2024-10-07,2024-11-11,Fundraising
+CMP0156,corporate partnership 2026 test,Corporate,SMS,2026-03-02,2026-05-10,Fundraising
+CMP0007,Christmas Appeal 2024 2025 v2,Xmas,Phone,2025-03-28,2025-05-23,Marketing
+CMP0129,challenge-events 2023 test,EVENTS,Social,2023-10-14,2024-01-06,Marketing
+CMP0132,Challenge Events 2023 North,,SMS,2023-05-28,2023-05-09,Marketing
+CMP0099,Regular Giving 2024,regular giving,Email,2024-03-18,2024-04-28,Marketing
+CMP0106,LEGACY 2026 North,Gifts in Wills,Phone,2026-06-26,2026-07-26,Marketing
+CMP0127,Marathon 2025,challenge-events,Email,2025-01-19,2025-01-11,Supporter Care
+CMP0069,donor recruit 2026 North,donor recruit,Email,2026-04-30,2026-05-29,Register Growth
+CMP0071,New donor drive 2026 test,RECRUITMENT,Email,2026-07-12,2026-07-23,Marketing
+CMP0181,Newsletter 2024 test,e-news,SMS,2024-01-19,2024-02-12,Marketing
+CMP0138,EVENTS 2026,Marathon,Social,2026-05-05,2026-07-19,Supporter Care
+CMP0167,CORP 2025 v2,Partnerships,Social,2025-04-16,2025-04-24,Marketing
+CMP0086,Monthly giving 2024,RG,Direct Mail,2024-12-26,2025-01-30,Register Growth
+CMP0013,christmas 2024 v2,Christmas appeal,Email,2024-04-16,2024-04-29,Supporter Care
+CMP0018,Xmas 2023,Christmas Appeal 2024,Direct Mail,2023-11-03,2023-12-27,Supporter Care
+CMP0043,Spring Campaign 2024,SPRING,Direct Mail,2024-03-11,2024-05-15,Supporter Care
+CMP0126,Events 2023,Marathon,Social,2023-10-17,2024-01-14,Marketing
+CMP0010,Xmas 2024 test,Chirstmas appeal,Phone,2024-03-27,2024-05-21,Fundraising
+CMP0090,Monthly giving 2024,,Email,2024-08-29,2024-11-20,Supporter Care
+CMP0115,wills 2026,Legacy,Email,2026-07-17,2026-09-26,Fundraising
+CMP0187,Newsletter 2023 v2,newsletter,Email,2023-02-26,2023-05-07,Supporter Care
+CMP0102,regular giving 2023 v2,Regular Giving,Social,2023-06-26,2023-08-08,Marketing
+CMP0120,legacy giving 2025,LEGACY,Email,2025-07-15,2025-09-20,Register Growth
+CMP0131,Challenge Events 2025 test,EVENTS,Social,2025-04-09,2025-05-20,Marketing
+CMP0040,Spring Campaign 2024 v2,SPRING,Direct Mail,2024-02-06,2024-04-01,Fundraising
+CMP0089,monthly-givers 2022 v2,Reg. Giving,Social,2022-12-28,2023-03-20,Supporter Care
+CMP0105,legacy giving 2024 wave 2,Gifts in Wills,Direct Mail,2024-07-26,2024-10-12,Fundraising
+CMP0050,Spring Campaign 2023 North,Spring Appeal,Direct Mail,2023-07-13,2023-07-26,Marketing
+CMP0079,Regular Giving 2022 test,Regular Giving,Social,2022-11-28,2023-01-17,Marketing
+CMP0074,Donor Recruitment 2025,Donor Recruitment,Social,2025-11-30,2026-02-21,Marketing
+CMP0108,wills 2023 wave 2,legacy giving,Direct Mail,2023-10-22,2024-01-18,Supporter Care
+CMP0168,corporate partnership 2023 North,Corporate,Phone,2023-05-26,2023-08-19,Register Growth
+CMP0026,Christmas Appeal 2024 2024 wave 2,Xmas Appeal,Email,2024-11-14,2025-01-04,Register Growth
+CMP0179,Newsletter 2024 North,Newsletter,Social,2024-07-15,2024-08-30,Register Growth
+CMP0029,spring appeal 2023 test,,Direct Mail,2023-02-02,2023-03-09,Register Growth
+CMP0036,SPRING 2025 wave 2,spring appeal,Phone,2025-09-07,2025-10-03,Register Growth
+CMP0028,Spring Campaign 2023,Spring Campaign,Social,2023-01-24,2023-02-03,Supporter Care
+CMP0030,spring-appeal 2023 wave 2,spring appeal,Phone,2023-01-24,2023-02-23,Fundraising
+CMP0122,LEGACY 2024 wave 2,LEGACY,Social,2024-08-21,2024-11-06,Marketing
+CMP0143,Events 2025,Marathon,Direct Mail,2025-04-27,2025-05-30,Register Growth
+CMP0037,spring appeal 2023 North,spring-appeal,Direct Mail,2023-05-07,2023-08-05,Register Growth
+CMP0100,RG 2022 North,Regular Giving,Direct Mail,2022-11-25,2022-12-06,Fundraising
+CMP0042,Spring Campaign 2025,SPRING,Direct Mail,2025-08-14,2025-10-12,Register Growth
+CMP0134,event 2025,EVENTS,SMS,2025-06-27,2025-07-05,Register Growth
+CMP0180,newsletter 2024 v2,newsletter,Direct Mail,2024-07-06,2024-08-01,Fundraising
+CMP0154,CORP 2024 wave 2,Partnerships,Email,2024-02-06,2024-03-04,Fundraising
+CMP0164,Corporate 2023 wave 2,CORP,Email,2023-08-05,2023-09-09,Fundraising
+CMP0128,event 2023 v2,Events,SMS,2023-09-13,2023-12-05,Register Growth
+CMP0182,Newsletter 2025 test,NEWS,Direct Mail,2025-09-03,2025-10-01,Register Growth
+CMP0157,Partnerships 2023 North,Partnerships,Email,2023-09-17,2023-11-17,Supporter Care
+CMP0022,Xmas 2025 test,Christmas appeal,SMS,2025-06-09,2025-07-03,Fundraising
+CMP0061,Recruitment - donors 2026,Recruitment - donors,Phone,2026-02-25,2026-03-30,Register Growth
+CMP0081,regular giving 2023,Regular Giving,Social,2023-10-04,2023-11-11,Marketing
+CMP0091,Reg. Giving 2024,RG,Email,2024-01-18,2024-03-01,Supporter Care
+CMP0082,Monthly giving 2022,monthly-givers,Direct Mail,2022-12-30,2023-02-25,Supporter Care
+CMP0093,monthly-givers 2022,RG,Social,2022-12-31,2023-02-01,Marketing
+CMP0063,Donor Recruitment 2024,,SMS,2024-04-08,2024-05-25,Fundraising
+CMP0183,e-news 2023 North,e-news,Direct Mail,2023-08-20,2023-09-06,Fundraising
+CMP0084,regular giving 2025,Reg. Giving,Phone,2025-07-09,2025-07-02,Marketing
+CMP0158,corporate partnership 2024 test,corporate partnership,Social,2024-11-13,2024-11-21,Supporter Care
+CMP0177,Newsletter 2025,NEWS,Direct Mail,2025-03-15,2025-05-18,Marketing
+CMP0066,New donor drive 2023 test,New donor drive,SMS,2023-02-19,2023-04-19,Supporter Care
+CMP0057,RECRUITMENT 2025 North,RECRUITMENT,Direct Mail,2025-10-06,2025-11-11,Supporter Care
+CMP0002,Christmas Appeal 2024 2026 wave 2,Xmas Appeal,Social,2026-03-13,2026-05-05,Fundraising
+CMP0107,LEGACY 2025 test,Gifts in Wills,Email,2025-07-16,2025-09-08,Marketing
+CMP0109,Gifts in Wills 2024 wave 2,legacy giving,Email,2024-01-05,2024-03-30,Register Growth
+CMP0160,Partnerships 2025 test,Corporate,Email,2025-07-05,2025-07-17,Marketing
+CMP0151,Corporate 2023 wave 2,Partnerships,Direct Mail,2023-03-25,2023-06-12,Marketing
+CMP0077,New donor drive 2026 North,Recruitment - donors,SMS,2026-03-05,2026-04-15,Supporter Care
+CMP0005,Xmas 2025,Chirstmas appeal,Social,2025-11-10,2025-12-15,Marketing
+CMP0051,Spring Appeal 2024 wave 2,Spring Appeal,Email,2024-12-03,2025-03-02,Register Growth
+CMP0035,spring-appeal 2025 test,Spring Appeal,Email,2025-05-09,2025-06-30,Fundraising
+CMP0112,legacy giving 2024 v2,wills,Social,2024-04-22,2024-05-13,Supporter Care
+CMP0139,Events 2024,Challenge Events,Direct Mail,2024-01-06,2024-02-05,Register Growth
+CMP0101,regular giving 2023 wave 2,monthly-givers,Direct Mail,2023-10-19,2023-11-09,Fundraising
+CMP0136,EVENTS 2025 v2,Marathon,Direct Mail,2025-11-12,2025-11-27,Supporter Care
+CMP0078,RG 2024 test,RG,Email,2024-06-21,2024-09-04,Supporter Care
+CMP0092,regular giving 2023 North,Monthly giving,Phone,2023-04-11,2023-07-03,Register Growth
+CMP0159,Corporate 2023 North,Partnerships,Social,2023-11-02,2024-01-24,Register Growth
+CMP0006,christmas 2025 test,XMAS-APPEAL,Social,2025-10-03,2025-11-29,Supporter Care
+CMP0124,event 2025 wave 2,EVENTS,Email,2025-11-13,2025-11-07,Supporter Care
+CMP0113,Legacy 2025 wave 2,wills,Direct Mail,2025-05-18,2025-07-06,Register Growth
+CMP0045,SPRING 2024,Spring Appeal,Email,2024-10-26,2025-01-20,Fundraising
+CMP0020,Christmas appeal 2026 test,XMAS-APPEAL,Email,2026-03-26,2026-04-29,Supporter Care
+CMP0149,Corporate 2024,CORP,Direct Mail,2024-04-05,2024-05-07,Supporter Care
+CMP0130,Marathon 2026 v2,Challenge Events,Phone,2026-06-03,2026-07-04,Supporter Care
+CMP0049,spring-appeal 2025 North,spring-appeal,Social,2025-05-27,2025-08-07,Fundraising
+CMP0019,Chirstmas appeal 2023 test,christmas,Phone,2023-09-03,2023-11-03,Register Growth
