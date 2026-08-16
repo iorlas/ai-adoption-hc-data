@@ -50,9 +50,10 @@ make in advance.
    says it cannot find `data/supporters.csv`, you are in the wrong folder — you
    want the one containing `README.md` and `verify.py`.
 
-2. **Plain English is the interface.** No brackets, no tags, no notation. If you
-   remember the angle-bracket style from July that nobody liked — **you never
-   needed it**, and nothing in these materials uses it.
+2. **Plain English is the interface.** If you remember the angle-bracket style
+   from July — `<request>…</request>` and so on — nothing in these materials
+   uses it. It is a real technique for very long prompts; everything here is one
+   to three sentences, so it would only add typing.
 
 3. **Read the change before you accept it.** Claude edits files. Both cockpits
    show you what is about to happen, and the habit worth building this week is

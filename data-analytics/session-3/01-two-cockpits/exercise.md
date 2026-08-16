@@ -39,8 +39,10 @@ Work it out as a room. You should end up somewhere close to:
 > columns the five most common values. Show me the SQL you ran, then the
 > results.
 
-Notice what it is not: no angle brackets, no tags, no notation. **Plain
-sentences.** If you remember the bracket style from July, you never needed it.
+Notice what it is not: no `<request>` or `<target>` tags. **Plain sentences.**
+If you remember the angle-bracket style from July — it is a real technique, it
+just earns its keep on prompts far longer than anything here. See
+[`reference/prompt-patterns.md`](../../reference/prompt-patterns.md).
 
 The clause doing the most work is the last one — *show me the SQL you ran*.
 Four words, and they turn an answer you have to trust into one you can check.

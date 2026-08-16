@@ -37,9 +37,11 @@ The same exercise doubles as a refresher on something that **did** land in July
 — the anatomy of a prompt: **request · target · location · actions.** Lucie
 played it back accurately at the time, so this is a reminder, not a lesson.
 
-One thing has changed: **the angle-bracket notation is gone.** It was never
-required — it was one person's habit, it cost attention, and nobody adopted it.
-Everything in these materials is plain sentences.
+One thing has changed: **the angle-bracket tags are gone.** In July the four
+parts were written as `<request>…</request>`, `<target>…</target>` and so on.
+That technique is real and it earns its keep on genuinely long prompts — but
+nothing here is long enough to need it, and it cost more attention than it
+bought. Everything in these materials is plain sentences.
 
 We start with a deliberately vague prompt, look at the mediocre answer together,
 and tighten it as a room. That call-and-response format was the strongest twenty
