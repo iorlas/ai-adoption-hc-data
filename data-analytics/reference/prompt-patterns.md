@@ -5,38 +5,8 @@ actions**. Lucie played it back accurately, and the group's best twenty minutes
 of the two days was tightening a prompt together, out loud, with Declan naming
 the project type, Lucie naming the actions block and Sarah naming the path.
 
-That vocabulary is still the vocabulary. This page is just it, applied to the
-work in front of you — and with one thing dropped.
-
-## The notation from July, and why it is gone
-
-In July the four parts were written inside angle-bracket tags, like this:
-
-```xml
-<request>profile this file and tell me what is wrong with it</request>
-<target>data/supporters.csv</target>
-<location>use DuckDB SQL over the CSV</location>
-<actions>show me the SQL, then the results</actions>
-```
-
-That is what the "brackets" were. The session stopped over it — *"you were using
-brackets and specific commands, none of which I recognise"* — and nobody used it
-afterwards.
-
-**To be fair to it: the technique is real.** Tagging the parts of a prompt is
-genuinely useful, and Anthropic recommend it, once a prompt gets long — several
-paragraphs of background, a document pasted in, half a dozen instructions. The
-tags stop the model losing track of which part is the instruction and which is
-the material.
-
-**And it is not what you need here.** Nothing in these two sessions is that
-long. Every prompt in every exercise is one to three plain sentences, and at
-that length the tags add typing and subtract nothing. So: same four parts, no
-tags.
-
-If you ever do find yourself writing a genuinely long prompt — a whole report
-specification, or a document you want analysed against a checklist — the tags
-are there and they work. That is a different day.
+That vocabulary is still the vocabulary. This page is it, applied to the work in
+front of you, written as plain sentences.
 
 ## The four parts, in a sentence
 

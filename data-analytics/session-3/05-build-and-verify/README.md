@@ -27,14 +27,15 @@ know it is right.** A first pass you cannot defend is worth nothing.
 
 ## Two things we will not do
 
-Both because they did not work in July, and both worth saying out loud so you
-know we heard it:
+Both are things you told us, and both are worth saying back so you know we
+heard them:
 
 - **We will not pitch this on speed.** You do not have clients, you do not have
   short deadlines, and you want to do things thoughtfully and correctly. "It's
   faster" is not an argument that means anything to you.
 - **We will not demonstrate anything by recolouring charts.** You have locked
-  custom branding. That demo was never about your work.
+  custom branding, so we will spend the time on something that touches your
+  actual work instead.
 
 Where this does earn its keep: when a dataset is wide enough that nobody can
 hold it all in their head, and the boring part is not deciding what to show, it

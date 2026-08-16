@@ -35,8 +35,8 @@ criterion that matters, and it is different per person:
 
 - If July's terminal clicked for you and you have used it since, **stay there.**
   Nothing in these two days needs the app.
-- If the black screen was part of why it did not stick, **the app removes that**
-  and changes nothing else.
+- If a normal window suits how you work better, **the app gives you that** and
+  changes nothing else.
 - If you are reviewing a lot of edits, the app's side-by-side view is genuinely
   easier on the eye. That is the one real difference you will feel this week.
 
@@ -50,10 +50,8 @@ make in advance.
    says it cannot find `data/supporters.csv`, you are in the wrong folder — you
    want the one containing `README.md` and `verify.py`.
 
-2. **Plain English is the interface.** If you remember the angle-bracket style
-   from July — `<request>…</request>` and so on — nothing in these materials
-   uses it. It is a real technique for very long prompts; everything here is one
-   to three sentences, so it would only add typing.
+2. **Plain English is the interface.** Every prompt in these materials is one to
+   three ordinary sentences. Type what you want; that is the whole of it.
 
 3. **Read the change before you accept it.** Claude edits files. Both cockpits
    show you what is about to happen, and the habit worth building this week is

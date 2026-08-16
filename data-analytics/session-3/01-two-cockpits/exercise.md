@@ -39,10 +39,9 @@ Work it out as a room. You should end up somewhere close to:
 > columns the five most common values. Show me the SQL you ran, then the
 > results.
 
-Notice what it is not: no `<request>` or `<target>` tags. **Plain sentences.**
-If you remember the angle-bracket style from July — it is a real technique, it
-just earns its keep on prompts far longer than anything here. See
-[`reference/prompt-patterns.md`](../../reference/prompt-patterns.md).
+Three plain sentences, and all four parts are in there. That is the whole
+technique — see [`reference/prompt-patterns.md`](../../reference/prompt-patterns.md)
+if you want it on one page.
 
 The clause doing the most work is the last one — *show me the SQL you ran*.
 Four words, and they turn an answer you have to trust into one you can check.
@@ -68,9 +67,9 @@ as the rest of the room, and that is much cheaper to find out at 0:20 than at
 That is the whole comparison. Two windows, one Claude Code, same answer.
 
 **Use whichever you will actually open.** If July's terminal clicked, stay
-there — nothing this week needs the app. If the black screen was part of why it
-did not stick, the app removes that and changes nothing else. Plenty of people
-end up using both.
+there — nothing this week needs the app. If a normal window suits you better,
+the app gives you that and changes nothing else. Plenty of people end up using
+both.
 
 You do not have to decide permanently. You do have to pick one for the next
 three hours.

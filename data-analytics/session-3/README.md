@@ -12,8 +12,8 @@ work on screen — so there is always one of us free to come and unblock you.
 
 Every hands-on part works the same way: **we do it, then you do it, then you
 tell us you are ready, and only then do we move on.** If something is going too
-fast, stop us. People getting lost and not being able to pick back up was the
-main thing that went wrong in July.
+fast, stop us — you asked for more doing and less watching, and the readiness
+check is how we hold ourselves to that.
 
 ## The day
 

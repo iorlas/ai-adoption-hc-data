@@ -4,9 +4,9 @@
 
 ## What we cover
 
-**Where July got to.** Two sessions, and one honest summary: the useful half was
-the parts where you did the work yourselves, and the parts that did not land
-were the ones pitched on speed against work you do carefully and rarely.
+**Where July got to.** Two sessions that covered a lot of ground — prompting as
+a discipline, Power BI as something you can read and diff, `CLAUDE.md`, Genie,
+tokens and context. Today builds directly on the parts you use most.
 
 **What we heard from you since.** The August call reordered this whole plan. In
 particular:
@@ -29,14 +29,11 @@ this explicitly, and mean it — the readiness check is not rhetorical.
 
 ## One thing to say once, and then never again
 
-> "Everything from here is Claude."
-
-July showed two vendors' tools to make a point about the method not being tied
-to one of them. Fair point, wrong cost — AN has no ChatGPT licences, so half of
-what was on screen was never reproducible on these machines. One tool from here.
+> "Everything from here is Claude Code — that is what you have licences for, so
+> that is what we build the habits in."
 
 **The desktop app gets its own twelve minutes next**, in part 1 — including the
-honest comparison against the terminal. Do not pre-empt it here.
+comparison against the terminal. Do not pre-empt it here.
 
 ## Two things to say plainly at the start
 
