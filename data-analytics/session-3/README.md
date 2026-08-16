@@ -20,17 +20,29 @@ check is how we hold ourselves to that.
 | # | Folder | Min | What you do |
 |---|---|---|---|
 | 0 | `00-opening/` | 8 | Where July got to, and how today is shaped |
-| 1 | `01-two-cockpits/` | 12 | Same Claude Code in two windows, and a prompt refresher |
+| 1 | `01-prompt-refresher/` | 14 | The shape of a prompt that works — and both windows |
 | 2 | `02-data-quality/` | 30 | Find what is wrong with the shared data, and write rules that catch it |
-| 3 | `03-genie-vs-claude-code/` | 10 | Watch the same question go into Databricks Genie and into Claude Code |
+| 3 | `03-genie-vs-claude-code/` | 8 | Watch the same question go into Databricks Genie and into Claude Code |
 | — | *break* | 10 | |
 | 4 | `04-shared-definitions/` | 40 | Two reports, one measure, two numbers. Agree one definition and write it down |
 | 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
 | 6 | `06-close/` | 15 | Retro, and one thing to try before Tuesday |
 
-Every folder holds **`README.md`** (what this part is about) and, where there is
-something to run, **`exercise.md`** (exactly what to do). The opening, the Genie
-comparison and the close have no exercise.
+Every teaching part runs the same way:
+
+| | |
+|---|---|
+| **`README.md`** | read it — what this is, and why it matters |
+| **`exercise.md`** | do it — the prompts, and what you should see |
+| **`game.md`** | a few minutes out loud, to catch what stuck |
+
+The game is not a test and nothing is written down. It is five or six cards, you
+call the answer, we reveal it — the format that worked best in July. Some cards
+are deliberately fine as they are, so "nothing wrong with this one" is a real
+answer.
+
+The opening and the close have neither exercise nor game; the Genie comparison
+has a game but nothing to run.
 
 ## The thread running through it
 

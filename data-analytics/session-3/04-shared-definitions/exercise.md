@@ -72,9 +72,8 @@ know Claude reads `CLAUDE.md`, is to put everything in `CLAUDE.md` — and that 
 how a `CLAUDE.md` becomes four hundred lines that slow down every conversation
 and that nobody reads.
 
-Run the drill in
-[`reference/where-knowledge-lives.md`](../../reference/where-knowledge-lives.md)
-together. Eight items, four homes, answers out loud before the reveal.
+Run **[`game.md`](game.md)** together. Eight items, four homes, answers out loud
+before the reveal.
 
 Item 7 is the one worth arguing about. It is also, not coincidentally, the exact
 thing you just found in step 1.

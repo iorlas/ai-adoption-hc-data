@@ -70,9 +70,8 @@ Once you know Claude reads `CLAUDE.md`, the instinct is to put everything in it.
 Do that and within a month it is four hundred lines, every conversation is
 slower, and nobody reads it — because **it is read on every single message.**
 
-So this segment includes a five-minute sorting exercise, out loud, on what
-belongs in `CLAUDE.md` and what belongs one pointer away:
-[`reference/where-knowledge-lives.md`](../../reference/where-knowledge-lives.md).
+So this segment includes a five-minute sorting game, out loud, on what belongs
+in `CLAUDE.md` and what belongs one pointer away: **[`game.md`](game.md)**.
 
 Getting that split wrong is the most common way a team's first `CLAUDE.md`
 becomes useless within a quarter, and it costs five minutes to avoid.
