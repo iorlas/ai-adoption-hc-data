@@ -46,7 +46,7 @@ than two `.pbix` files.
 
 If you are thinking *"but July said a dashboard is text you can diff"* — you
 remembered correctly, and it is squared off properly in
-`session-3/04-build-and-verify/README.md`. Short version: that was PBIP, PBIP is
+`session-3/05-build-and-verify/README.md`. Short version: that was PBIP, PBIP is
 real, you are on `.pbix` today, and nobody is asking you to migrate.
 
 Your facilitators will also have both reports open in Power BI Desktop, so you

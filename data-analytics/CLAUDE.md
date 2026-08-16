@@ -34,4 +34,4 @@ result.
 
 <!-- Session 3 fills this in. Right now Claude has to guess, and it will. -->
 
-_TODO — see `session-3/03-shared-definitions/`._
+_TODO — see `session-3/04-shared-definitions/`._

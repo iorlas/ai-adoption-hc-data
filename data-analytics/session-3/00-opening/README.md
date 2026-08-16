@@ -1,4 +1,4 @@
-# 0 — Opening (10 min)
+# 0 — Opening (8 min)
 
 *No tools. Discussion.*
 
@@ -20,34 +20,23 @@ particular:
 - *"If we're all using the same data we can show that we get the same output."*
   → one shared dataset, which everyone has loaded.
 
-**How today is shaped.** One question, four parts, each feeding the next. Say
+**How today is shaped.** One question, six parts, each feeding the next. Say
 out loud what the day ends with: a definition your team shares, rules that catch
 bad data, and a report you can defend.
 
 **The rhythm.** We do it, you do it, you tell us you are ready, we move on. Say
 this explicitly, and mean it — the readiness check is not rhetorical.
 
-## The desktop-app beat (3 min, do not skip)
+## One thing to say once, and then never again
 
-Nobody in this room has been taught the desktop app — July was the terminal and,
-for half of Day 1, a different vendor's tool entirely. The first hands-on
-segment starts at ten past, so three minutes here is cheap insurance.
+> "Everything from here is Claude."
 
-`reference/claude-desktop.md` went out with the repo and covers it in five
-minutes. On the day, demonstrate exactly four things, live, and nothing else:
+July showed two vendors' tools to make a point about the method not being tied
+to one of them. Fair point, wrong cost — AN has no ChatGPT licences, so half of
+what was on screen was never reproducible on these machines. One tool from here.
 
-1. **Opening the workshop folder as a project** — and what the error looks like
-   when it is the wrong folder.
-2. **Asking a plain-English question.** Say out loud that the bracket notation
-   from July is not needed and never was.
-3. **Seeing what Claude changed before accepting it.** Flag that one exercise
-   later today depends on noticing exactly this.
-4. **Starting a new conversation** — used twice today, deliberately.
-
-Then say the other thing plainly: **everything from here is Claude.** July
-showed two vendors' tools to make a point about method, and it cost more than it
-bought — AN has no ChatGPT licences, so half of that was never reproducible on
-these machines. One tool from here on.
+**The desktop app gets its own twelve minutes next**, in part 1 — including the
+honest comparison against the terminal. Do not pre-empt it here.
 
 ## Two things to say plainly at the start
 

@@ -19,7 +19,7 @@ worth stopping for.
 
 Two things, fifteen minutes total:
 
-1. **[`reference/claude-desktop.md`](reference/claude-desktop.md)** — the app is
+1. **[`reference/desktop-or-terminal.md`](reference/desktop-or-terminal.md)** — the app is
    new to everyone. July was the terminal. Five minutes.
 2. **[`reference/checking-the-answer.md`](reference/checking-the-answer.md)** —
    five tells for a wrong answer. Keep it open during both sessions; it is the

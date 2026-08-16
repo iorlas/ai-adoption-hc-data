@@ -1,6 +1,6 @@
 # Session 3 — Numbers you can defend
 
-Monday 17 August 2026 · 2 hours 55 · both teams together throughout.
+Monday 17 August 2026 · 3 hours · both teams together throughout.
 
 The whole day answers one question:
 
@@ -19,13 +19,14 @@ main thing that went wrong in July.
 
 | # | Folder | Min | What you do |
 |---|---|---|---|
-| 0 | `00-opening/` | 10 | Where July got to, and how today is shaped |
-| 1 | `01-data-quality/` | 30 | Find what is wrong with the shared data, and write rules that catch it |
-| 2 | `02-genie-vs-claude-code/` | 15 | Watch the same question go into Databricks Genie and into Claude Code |
+| 0 | `00-opening/` | 8 | Where July got to, and how today is shaped |
+| 1 | `01-two-cockpits/` | 12 | Same Claude Code in two windows, and a prompt refresher |
+| 2 | `02-data-quality/` | 30 | Find what is wrong with the shared data, and write rules that catch it |
+| 3 | `03-genie-vs-claude-code/` | 10 | Watch the same question go into Databricks Genie and into Claude Code |
 | — | *break* | 10 | |
-| 3 | `03-shared-definitions/` | 40 | Two reports, one measure, two numbers. Agree one definition and write it down |
-| 4 | `04-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
-| 5 | `05-close/` | 15 | Retro, and one thing to try before Tuesday |
+| 4 | `04-shared-definitions/` | 40 | Two reports, one measure, two numbers. Agree one definition and write it down |
+| 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
+| 6 | `06-close/` | 15 | Retro, and one thing to try before Tuesday |
 
 Every folder holds **`README.md`** (what this part is about) and, where there is
 something to run, **`exercise.md`** (exactly what to do). The opening, the Genie
@@ -35,12 +36,14 @@ comparison and the close have no exercise.
 
 Each part hands something to the next:
 
-1. You find out the data is messier than the reports admit.
-2. You see that two tools answer the same question differently, and why.
-3. You discover two live reports disagree about "active supporters" — and the
-   messiness from part 1 is one of the reasons.
-4. You agree a definition, write it into `CLAUDE.md`, and then build a new
-   report that uses it — and check it against the old ones.
+1. You warm up on the shared data and settle which window you are working in —
+   and the profile you produce is where part 2 starts.
+2. You find out the data is messier than the reports admit.
+3. You see that two tools answer the same question differently, and why.
+4. You discover two live reports disagree about "active supporters" — and the
+   messiness from part 2 is one of the reasons.
+5. You agree a definition, write it down where your team and Claude both read
+   it, then build a new report that uses it — and check it against the old ones.
 
 By the close you have a written definition your team shares, a set of
 data-quality rules, and a report you built *and* verified.
@@ -54,8 +57,9 @@ data-quality rules, and a report you built *and* verified.
 
 ## Two pages worth having open
 
-- **[`reference/claude-desktop.md`](../reference/claude-desktop.md)** — read it
-  before Monday. Five minutes. The app is new to everyone; July was the terminal.
+- **[`reference/desktop-or-terminal.md`](../reference/desktop-or-terminal.md)** —
+  read it before Monday. Five minutes. July was the terminal; the desktop app is
+  new. They are the same Claude Code and either is fine — part 1 shows you both.
 - **[`reference/checking-the-answer.md`](../reference/checking-the-answer.md)** —
   keep it open all day. Five tells for a wrong answer and the cheap question
   that catches each. You will use three of them before the break.
