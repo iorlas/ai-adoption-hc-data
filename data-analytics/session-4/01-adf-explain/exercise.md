@@ -2,9 +2,14 @@
 
 **25 minutes.** 5 min we demo · 15 min you do it · 5 min share what you found.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 ## Step 1 — The overview (~5 min)
+
+**▸ We run it first, then you.**
 
 > Read everything in `adf/`. Explain what `PL_Supporter_Weekly_Load` does, in
 > order. For each activity: what it does, what it depends on, and whether that
@@ -23,6 +28,8 @@ JSON.
 
 ## Step 2 — Trace one number back (~4 min)
 
+**▸ Your turn.**
+
 Pick a column in the output and follow it all the way home:
 
 > The output table `dw.dim_supporter_enriched` has a column `value_band`. Trace
@@ -40,6 +47,8 @@ Then the same question in the form you actually get asked it:
 
 ## Step 3 — Find the baked-in decisions (~4 min)
 
+**▸ Your turn.**
+
 > List every hardcoded value, filter, default and exclusion in this pipeline.
 > For each: where it is, what it does, and what would break if it were wrong.
 
@@ -54,6 +63,8 @@ When you find the business rule, ask the real question:
 > reading the output know it was applied?
 
 ## Step 4 — Interrogate the explanation (~2 min)
+
+**▸ Your turn.**
 
 > Which parts of your explanation are things the JSON states directly, and which
 > are things you inferred? List the inferences separately.

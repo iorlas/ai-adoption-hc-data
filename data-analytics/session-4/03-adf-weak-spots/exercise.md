@@ -3,9 +3,14 @@
 **20 minutes.** 4 min we demo · 12 min you do it · 4 min share the worst one
 you found.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 ## Step 1 — Enumerate (~3 min)
+
+**▸ We run it first, then you.**
 
 > Go through `PL_Supporter_Weekly_Load` and the data flow activity by activity.
 > For each, tell me what happens if the input is wrong or missing: a source
@@ -20,6 +25,8 @@ instead, tell it to re-rank by consequence — a rare silent corruption beats a
 frequent loud failure every time.
 
 ## Step 2 — Chase the silent ones (~3 min)
+
+**▸ Your turn.**
 
 Take the ones it graded "succeeds with wrong data" and make it be specific:
 
@@ -37,6 +44,8 @@ against the previous run. Cheap, and it converts the worst category of failure
 into the least bad one.
 
 ## Step 3 — The two specific ones worth finding yourself (~4 min)
+
+**▸ Together, out loud.**
 
 Two questions to ask directly, because they are the most instructive and it is
 easy to skim past them:
@@ -65,6 +74,8 @@ pipelines are not two problems.** You can do yesterday's work perfectly and
 still be wrong, because the thing that broke the data also hid the break.
 
 ## Step 4 — Write it down (~2 min)
+
+**▸ Your turn.**
 
 > Add a "Weak spots" section to `adf/PL_Supporter_Weekly_Load.md`. Rank them by
 > consequence, and for each give the failure mode, whether it is silent, and the

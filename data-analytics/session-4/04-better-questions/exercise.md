@@ -6,6 +6,9 @@ Two hypotheses to test. **The first is fundraising-shaped, the second is
 operational-shaped** — pick whichever is closer to your team's work and do that
 one properly rather than both badly. If you have time, do the other.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 # Hypothesis A — fundraising
@@ -14,6 +17,8 @@ one properly rather than both badly. If you have time, do the other.
 > supporters who came in through Direct Mail."**
 
 ## A1. Before you ask, say what would change your mind (~3 min)
+
+**▸ We run it first, then you.**
 
 Write it down first — one line. Something like: *"if the difference is under
 10%, or if it disappears once I account for how long each group has been on the
@@ -33,6 +38,8 @@ to see the difference.
 
 ## A2. Read the query, not the number (~5 min)
 
+**▸ Your turn.**
+
 Three things to check in the SQL it wrote:
 
 - Did it exclude refunded donations? Does that match what you agreed on Monday?
@@ -44,6 +51,8 @@ If it did not handle those, that is not a failure of the tool. It is the part
 that was always yours.
 
 ## A3. Attack your own result (~8 min)
+
+**▸ Your turn.**
 
 > Now control for time on the database — compare average giving per year since
 > sign-up rather than lifetime total. Does the conclusion hold?
@@ -57,6 +66,8 @@ At least one of these should change your picture. If none of them does, you have
 a robust finding — which is worth knowing with confidence rather than assuming.
 
 ## A4. The sentence (~3 min)
+
+**▸ Your turn.**
 
 > Write two sentences I could say in a meeting: what we found, and what it does
 > not tell us.
@@ -74,6 +85,8 @@ Same shape, using `data/fulfilment_tasks.csv`.
 
 ## B1. Say what would change your mind (~3 min)
 
+**▸ We run it first, then you.**
+
 Then:
 
 > Test this against `data/fulfilment_tasks.csv`: complaints take longer to
@@ -83,6 +96,8 @@ Then:
 > Before the answer: what in this data could make this result misleading?
 
 ## B2. The specific traps in this table (~5 min)
+
+**▸ Your turn.**
 
 Ask each of these directly:
 
@@ -100,6 +115,8 @@ quietly leave the sample.
 
 ## B3. Push on the trend (~5 min)
 
+**▸ Your turn.**
+
 > Is the trend real, or is it an artefact of recent tasks not having been
 > completed yet? Show me how you would tell the difference.
 
@@ -107,6 +124,8 @@ That is survivorship bias, and it is the single most common way an operational
 "it's getting worse / better" finding turns out to be nothing.
 
 ## B4. The sentence (~3 min)
+
+**▸ Your turn.**
 
 Same as A4: what we found, and what it does not tell us.
 

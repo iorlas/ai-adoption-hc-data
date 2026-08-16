@@ -28,21 +28,23 @@ check is how we hold ourselves to that.
 | 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
 | 6 | `06-close/` | 15 | Retro, and one thing to try before Tuesday |
 
-Every teaching part runs the same way:
+Every part is one folder, and the files are always the same:
 
 | | |
 |---|---|
-| **`README.md`** | read it — what this is, and why it matters |
-| **`exercise.md`** | do it — the prompts, and what you should see |
-| **`game.md`** | a few minutes out loud, to catch what stuck |
+| **`README.md`** | **Read it** — what this part is, and why it matters |
+| **`exercise.md`** | **Do it** — every step marked with who drives |
+| **`game.md`** | **Capture it** — a few cards, called out loud. Only some parts have one |
 
-The game is not a test and nothing is written down. It is five or six cards, you
-call the answer, we reveal it — the format that worked best in July. Some cards
-are deliberately fine as they are, so "nothing wrong with this one" is a real
-answer.
+`exercise.md` is the single description of what happens, so there is never a
+question of whether you or we are driving a given step:
 
-The opening and the close have neither exercise nor game; the Genie comparison
-has a game but nothing to run.
+> **▸ We run it first, then you** — watch, then repeat the same thing
+> **▸ Your turn** — you drive, we are on the floor
+> **▸ Together** — whole room, out loud
+
+Nothing is a test and nothing is graded. The openings and closes have neither
+exercise nor game.
 
 ## The thread running through it
 

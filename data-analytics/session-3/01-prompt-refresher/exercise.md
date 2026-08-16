@@ -4,7 +4,13 @@
 
 ---
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
+
 ## Run it
+
+**▸ Your turn — and we run the same prompt alongside you, in both windows.**
 
 Type this into whichever window you are using — terminal or desktop app:
 

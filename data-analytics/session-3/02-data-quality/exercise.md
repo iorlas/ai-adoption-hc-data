@@ -5,9 +5,14 @@
 Open the Claude desktop app with this repository folder as your project. Start
 each prompt fresh in the same conversation; Claude keeps the context.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
-## Step 1 — Profile the data (you drive, ~6 min)
+## Step 1 — Profile the data (~6 min)
+
+**▸ We run it first, then you.**
 
 > Profile `data/supporters.csv` and `data/donations.csv` using DuckDB SQL.
 > For every column tell me: how many rows, how many are blank, how many distinct
@@ -28,7 +33,9 @@ values, not the summary sentence Claude writes about them.
 If you asked for a summary you might have been told there are four statuses.
 There are five. One of them is a typo.
 
-## Step 2 — Make it find the defects (you drive, ~5 min)
+## Step 2 — Make it find the defects (~5 min)
+
+**▸ We run it first, then you.**
 
 > Find data-quality problems in these files. For each one: what the problem is,
 > the SQL that finds it, and the number of rows affected. Look at least for
@@ -54,6 +61,8 @@ single figures to low tens, and a few dozen duplicated gifts. If Claude reports
 a defect in the thousands, ask it to prove that one first.
 
 ## Step 3 — Turn findings into rules, then throw most of them away (~6 min)
+
+**▸ Your turn.**
 
 > From what you found, propose data-quality rules for these files. One per line:
 > the column, the check as a SQL predicate, and one sentence on why a violation
@@ -82,7 +91,13 @@ If you want to see what a finished one looks like — a different organisation, 
 it does not hand you today's answers — `templates/example-library/docs/` has one.
 **After you write yours, not before.**
 
-## Step 4 — Confirm ready
+## Step 4 — Then the game
+
+**▸ Together, out loud.** [`game.md`](game.md) — six proposed rules, keep or
+bin. That is how we check this landed, and it replaces the old show-me-your-file
+check.
+
+Before it starts, have ready:
 
 Tell us when you have `docs/data-quality-rules.md` open on screen and can answer
 these two:

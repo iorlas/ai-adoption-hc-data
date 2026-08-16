@@ -5,9 +5,14 @@
 
 The middle two are the ones that matter. The tool work is the easy half.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 ## Step 0 — The "before" answer (2 min, do not skip)
+
+**▸ Everyone, us included — you need your own saved answer, not ours.**
 
 Before you tell Claude anything, ask it:
 
@@ -20,6 +25,8 @@ We come back to this at the end. If you skip it now, the end of this exercise
 loses its point entirely.
 
 ## Step 1 — Find where the two reports differ (~7 min)
+
+**▸ We run it first, then you.**
 
 > Read `reports/fundraising-summary/` and `reports/supporter-engagement/`.
 > Both report a measure called Active Supporters and they give different
@@ -48,6 +55,8 @@ the Advanced Editor that nobody outside that team knows exists.
 
 ## Step 2 — Find the numbers neither report gives you (~5 min)
 
+**▸ Your turn.**
+
 > Using the definitions you just found, what other reasonable definitions of
 > "active supporter" could this data support? Give me each one, the SQL, and the
 > number it produces.
@@ -63,7 +72,9 @@ headline figure eighteen real people.
 
 ---
 
-## Step 3 — Where does this knowledge live? (~5 min, out loud, as a room)
+## Step 3 — Where does this knowledge live? (~5 min)
+
+**▸ Together, out loud.**
 
 Stop typing for five minutes.
 
@@ -78,7 +89,9 @@ before the reveal.
 Item 7 is the one worth arguing about. It is also, not coincidentally, the exact
 thing you just found in step 1.
 
-## Step 4 — Decide (~8 min, as a room)
+## Step 4 — Decide (~8 min)
+
+**▸ Together, out loud.**
 
 This part is not Claude's, and it is the reason the session exists.
 
@@ -99,6 +112,8 @@ answer, and it is worth saying out loud why:
 ---
 
 ## Step 5 — Write it up (~9 min)
+
+**▸ Your turn.**
 
 Three homes, from the drill you just did. All three files already exist with
 their headings in place.

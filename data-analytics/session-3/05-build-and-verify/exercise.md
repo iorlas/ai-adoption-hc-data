@@ -10,11 +10,16 @@ not exist yet, and neither of the two reports in `reports/` covers it.
 Keep Power BI Desktop and the Claude app side by side. You will be moving text
 between them constantly — that is the working pattern, not a workaround.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 # Part A — Build (about 25 minutes)
 
 ## A1. Ask for the model, not the report (~6 min)
+
+**▸ We run it first, then you.**
 
 > I want to build a campaign performance report in Power BI from the five CSVs
 > in `data/`. Propose the model first: which tables, which relationships and in
@@ -35,6 +40,8 @@ with it is allowed and is usually where the learning is.
 
 ## A2. The measures (~10 min)
 
+**▸ We run it first, then you.**
+
 > Write the DAX for: total income by campaign, number of distinct supporters who
 > gave to each campaign, average gift, email open rate, and click-through rate.
 > Use the Active Supporters definition from `CLAUDE.md` where it applies. Give
@@ -49,6 +56,8 @@ things to catch, both of which Claude may get wrong and both of which matter:
   different numbers with the same name — which is the whole theme of today.
 
 ## A3. The visuals (~9 min)
+
+**▸ Your turn.**
 
 > For each of these measures, tell me which visual answers the question best and
 > why. If a table is the right answer, say so rather than proposing a chart.
@@ -69,6 +78,8 @@ A first pass you cannot defend is worth nothing. Now break it.
 
 ## B1. Check it against your own definition (~6 min)
 
+**▸ We run it first, then you.**
+
 Copy your measures out of Desktop and paste them back:
 
 > Here are the measures as they now exist in my report. Check each one against
@@ -79,6 +90,8 @@ This is the copy-out-ask-paste-back loop, and it is the single most useful habit
 from today.
 
 ## B2. Cross-check against the reports that already exist (~12 min)
+
+**▸ Your turn.**
 
 This is the check Lucie described as the last thing she does before anything
 goes live:
@@ -111,6 +124,8 @@ Write the answer down. That sentence is the actual output of this exercise.
 
 ## B3. Where did it guess? (~5 min)
 
+**▸ Your turn.**
+
 > Go back through everything you produced in this session. List every place you
 > made a decision I did not explicitly ask for — a filter, a default, a data
 > type, a definition. For each one, say what you assumed and what the
@@ -120,7 +135,12 @@ Expect a longer list than you are comfortable with. That is the point: the
 assumptions were always there, and now they are visible and you can accept or
 reject each one on purpose.
 
-## B4. Confirm ready
+## B4. Then the game
+
+**▸ Together, out loud.** [`game.md`](game.md) — five stakeholders holding two
+numbers each, and what you say to them.
+
+Have ready:
 
 Tell us when you can show:
 

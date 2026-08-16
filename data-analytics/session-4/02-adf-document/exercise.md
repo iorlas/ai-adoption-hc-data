@@ -5,9 +5,14 @@
 You are writing `adf/PL_Supporter_Weekly_Load.md`. By the end it should be
 something you would be content to hand to a colleague on their first week.
 
+> **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
+> **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
+> out loud. Nothing here is a test.
 ---
 
 ## Step 1 — The first draft (~6 min)
+
+**▸ We run it first, then you.**
 
 > Using everything you worked out in the last exercise, write
 > `adf/PL_Supporter_Weekly_Load.md` documenting this pipeline. Structure it as:
@@ -25,6 +30,8 @@ documentation that misleads.
 
 ## Step 2 — Read it as the person who inherits it (~5 min)
 
+**▸ Your turn.**
+
 Read the draft with one question in mind: *at 3am, does this help?*
 
 Specific things to check:
@@ -40,6 +47,8 @@ Specific things to check:
 
 ## Step 3 — Make it answer the questions you actually get asked (~5 min)
 
+**▸ Your turn.**
+
 > Add a section called "Questions people ask about this pipeline" with the five
 > most likely questions a stakeholder or an analyst would ask about the data it
 > produces, and the answer, with a pointer to where in the pipeline the answer
@@ -49,6 +58,8 @@ Start it with the two real ones: *why is this supporter missing?* and *why does
 this number not match the other report?*
 
 ## Step 4 — Make it work as context (~4 min)
+
+**▸ Your turn.**
 
 > Add a pointer to this documentation from `CLAUDE.md`, in a Pipelines section.
 > One or two lines — enough that a future conversation knows the document exists
