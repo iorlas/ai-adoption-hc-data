@@ -1,4 +1,4 @@
-# 5 — Close (15 min)
+# 6 — Close (15 min)
 
 *No tools. Retro and one ask.*
 

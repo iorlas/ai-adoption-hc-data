@@ -1,4 +1,4 @@
-# 0 — Opening (8 min)
+# 0 — Opening (5 min)
 
 *No tools. Discussion.*
 
@@ -32,7 +32,7 @@ this explicitly, and mean it — the readiness check is not rhetorical.
 > "Everything from here is Claude Code — that is what you have licences for, so
 > that is what we build the habits in."
 
-**The desktop app gets its own twelve minutes next**, in part 1 — including the
+**The desktop app gets its own time next**, in part 1 — including the
 comparison against the terminal. Do not pre-empt it here.
 
 ## Two things to say plainly at the start

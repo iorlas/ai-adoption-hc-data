@@ -20,10 +20,10 @@ check is how we hold ourselves to that.
 
 | # | Folder | Min | What you do |
 |---|---|---|---|
-| 0 | `00-opening/` | 8 | Where July got to, and how today is shaped |
-| 1 | `01-prompt-refresher/` | 14 | The shape of a prompt that works — and both windows |
+| 0 | `00-opening/` | 5 | Where July got to, and how today is shaped |
+| 1 | `01-prompt-refresher/` | 20 | The shape of a prompt that works — and both windows |
 | 2 | `02-data-quality/` | 30 | Find what is wrong with the shared data, and write rules that catch it |
-| 3 | `03-genie-vs-claude-code/` | 8 | Watch the same question go into Databricks Genie and into Claude Code |
+| 3 | `03-genie-vs-claude-code/` | 5 | Watch the same question go into Databricks Genie and into Claude Code |
 | — | *break* | 10 | |
 | 4 | `04-shared-definitions/` | 40 | Two reports, one measure, two numbers. Agree one definition and write it down |
 | 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
@@ -65,12 +65,16 @@ data-quality rules, and a report you built *and* verified.
 
 ## What you need in front of you
 
-- The Claude desktop app, signed in
+- Claude open and signed in — desktop app or Git Bash terminal, whichever you
+  chose
 - This folder, on your machine
 - Power BI Desktop with the five CSVs from `data/` loaded
 - `uv run verify.py` showing green
 
 ## Two pages worth having open
+
+And one more for when something misbehaves: **[`quirks.md`](../quirks.md)** —
+Windows rough edges with the fix. Look there before asking.
 
 - **[`reference/desktop-or-terminal.md`](../reference/desktop-or-terminal.md)** —
   the two windows and how they differ. Part 1 covers it live; keep this for

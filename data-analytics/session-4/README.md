@@ -57,7 +57,10 @@ as text.
 
 ## What you need in front of you
 
-- The Claude desktop app, signed in
+If anything misbehaves, **[`quirks.md`](../quirks.md)** has the fix.
+
+- Claude open and signed in — desktop app or Git Bash terminal, whichever you
+  chose
 - This folder on your machine, including yesterday's `CLAUDE.md` with your
   definitions in it, and `docs/data-quality-rules.md`
 - Power BI Desktop is **not** needed today

@@ -1,4 +1,4 @@
-# 3 — One definition, shared across the team
+# 4 — One definition, shared across the team
 
 **40 minutes, hands-on · Claude Code + a shared Markdown file (`CLAUDE.md`) + SQL**
 
@@ -32,7 +32,7 @@ March.
 **Neither report is lying.** They are answering different questions, both of
 which are reasonable, and neither of which is written down anywhere. And there
 is a third number available that neither of them reports, and a fourth that only
-appears once you have done part 1 of this session.
+appears once you have done part 2 of this session.
 
 ## Why writing it down is the fix
 

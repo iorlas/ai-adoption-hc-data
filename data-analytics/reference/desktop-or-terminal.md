@@ -16,7 +16,10 @@ never opened the app and finding that out at 10:15 is expensive.
 
 ## The honest comparison
 
-| | Terminal (what you used in July) | Desktop app |
+**On Windows, "the terminal" means Git Bash** — in VS Code, the `∨` beside the
+`+` in the terminal panel. Not PowerShell.
+
+| | Git Bash terminal (what you used in July) | Desktop app |
 |---|---|---|
 | What it looks like | A black screen you type into | A normal window |
 | Getting into the project | `cd` to the folder, run `claude` | Open the folder |
@@ -68,7 +71,7 @@ make in advance.
 Genuinely, in either cockpit. They will not come up:
 
 - Any command starting with a slash
-- Git commands — you will not type one
+- Git, beyond the one `git clone` that starts the day — no others
 - Python — you will not write any
 - Settings, models, tokens
 

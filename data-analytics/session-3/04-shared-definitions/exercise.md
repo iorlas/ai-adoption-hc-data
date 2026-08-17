@@ -62,7 +62,7 @@ the Advanced Editor that nobody outside that team knows exists.
 > number it produces.
 
 You should end up looking at **four different numbers**, all defensible. One of
-them depends on something you found in part 1 of this session:
+them depends on something you found in part 2 of this session:
 
 > Does the `status` column have any data-quality problem that changes the
 > Fundraising Summary number?

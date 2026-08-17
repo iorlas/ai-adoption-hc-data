@@ -1,6 +1,6 @@
-# 2 — Genie and Claude Code, side by side
+# 3 — Genie and Claude Code, side by side
 
-**10 minutes, watch only · Databricks Genie vs Claude Code**
+**5 minutes, watch only · Databricks Genie vs Claude Code**
 
 **Nobody needs Databricks access for this.** We run it on our own workspace
 while you watch. Nothing is required from Lucie's team, and there is no token to

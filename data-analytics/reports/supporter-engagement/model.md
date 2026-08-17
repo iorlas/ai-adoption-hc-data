@@ -23,7 +23,8 @@ deliberately ignores the CRM status field and looks at behaviour instead.
 
 ```m
 let
-    Source = Csv.Document(File.Contents("data\donations.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    // replace with the full path to your own data\donations.csv
+    Source = Csv.Document(File.Contents("C:\...\ai-adoption-hc-data\data-analytics\data\donations.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Typed = Table.TransformColumnTypes(Promoted, {
         {"donation_id", Int64.Type}, {"supporter_id", Int64.Type},

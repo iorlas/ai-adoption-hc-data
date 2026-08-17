@@ -1,6 +1,7 @@
 # Supporter Analytics — workshop sample repository
 
-> **Sessions 3 & 4, start here.** Two commands and you are running:
+> **Sessions 3 & 4, start here.** Open the **Git Bash** terminal, then two
+> commands and you are running:
 >
 > ```bash
 > cd ai-adoption-hc-data/data-analytics
@@ -50,6 +51,8 @@ session-4/    Tuesday — one folder per part of the day
 CLAUDE.md     project instructions for Claude. Deliberately thin on Monday
               morning; you fill it in during Session 3
 verify.py     the green check — run it first, expect 4,022 supporters
+quirks.md     when something misbehaves. Windows, every rough edge we know
+              about, with the fix
 ```
 
 ## Set up
@@ -67,6 +70,9 @@ uv run verify.py
 `verify.py` checks Python, `uv`, DuckDB and that all five CSVs are readable, and
 prints one row count per file. **If anything is not green, say so straight away**
 — it takes a minute to fix at the start and costs you the morning if it waits.
+
+Anything that misbehaves — here or later — is in
+**[`quirks.md`](quirks.md)**, with the fix.
 
 ## Power BI — during the break, not now
 

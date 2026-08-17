@@ -7,7 +7,7 @@ You are building a **campaign performance** report: which campaigns brought in
 money, from how many supporters, and how the email campaigns performed. It does
 not exist yet, and neither of the two reports in `reports/` covers it.
 
-Keep Power BI Desktop and the Claude app side by side. You will be moving text
+Keep Power BI Desktop and Claude side by side. You will be moving text
 between them constantly — that is the working pattern, not a workaround.
 
 > **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
@@ -158,7 +158,7 @@ usually a column name it guessed. Do not retype it by hand; make it fix its own
 output, because that is the loop you want to be fluent in.
 
 **Relationships will not create.** Almost always duplicate values on the
-one-side, which is a data-quality problem from part 1 arriving in a new form.
+one-side, which is a data-quality problem from part 2 arriving in a new form.
 Ask: *"why can I not make this a one-to-many relationship?"* and let it find the
 duplicates.
 

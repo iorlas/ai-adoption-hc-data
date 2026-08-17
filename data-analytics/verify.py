@@ -5,7 +5,7 @@
 # ///
 """Green check for Analytics Sessions 3 & 4.
 
-Run this BEFORE Session 3:
+Run this at the start of Session 3:
 
     uv run verify.py
 
@@ -69,10 +69,10 @@ def main() -> int:
         for p in problems:
             print(f"  - {p}")
         print()
-        print("Send us this output and we will sort it before Monday.")
+        print("Show us this output and we will sort it now.")
         return 1
 
-    print("Green. Nothing else to do before Session 3.")
+    print("Green. Nothing else to do.")
     return 0
 
 

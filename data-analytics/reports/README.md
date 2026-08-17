@@ -6,8 +6,8 @@ not agree, and neither of them is lying.
 
 | Report | Who owns it | Active supporters | Total income |
 |---|---|---|---|
-| `fundraising-summary/` | Fundraising | 2,447 | £947,088 |
-| `supporter-engagement/` | Supporter Care | 1,832 | £930,093 |
+| `fundraising-summary/` | Fundraising | 2,447 | £947,087.50 |
+| `supporter-engagement/` | Supporter Care | 1,832 | £930,092.50 |
 
 This is the situation Lucie described: the last thing she does before a
 dashboard goes live is hunt the service for other dashboards carrying the same

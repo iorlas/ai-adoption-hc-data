@@ -102,5 +102,8 @@ There is no database to install. DuckDB reads the CSVs in place:
 uv run python -c "import duckdb; print(duckdb.sql(\"SELECT status, count(*) FROM 'data/supporters.csv' GROUP BY status ORDER BY 2 DESC\"))"
 ```
 
+**Run it in Git Bash, not PowerShell** — PowerShell does not accept `\"` as an
+escaped quote and the line will not parse there. See [`../quirks.md`](../quirks.md).
+
 Claude Code will do this for you — you write the question, it writes the SQL.
 You still read the SQL before you believe the answer.

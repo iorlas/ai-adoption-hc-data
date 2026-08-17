@@ -2,7 +2,8 @@
 
 **30 minutes.** 8 min we demo · 17 min you do it · 5 min we compare answers.
 
-Open the Claude desktop app with this repository folder as your project. Start
+Open Claude — desktop app or terminal, whichever you settled on — with this
+repository folder as your project. Start
 each prompt fresh in the same conversation; Claude keeps the context.
 
 > **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
@@ -115,7 +116,7 @@ it slide.
 
 **Claude writes Python instead of SQL.** Say so: *"use DuckDB SQL over the CSVs,
 not pandas."* `CLAUDE.md` already says this, but it is thin today and gets
-overridden. Part 3 is where you fix that properly.
+overridden. Part 4 is where you fix that properly.
 
 **A query fails on a date comparison.** The CSV columns are text until you cast
 them. `CAST(sign_up_date AS DATE)` — and it is fair to just paste the error back

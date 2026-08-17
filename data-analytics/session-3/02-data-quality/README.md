@@ -1,11 +1,11 @@
-# 1 — Data quality: what is wrong, how much, and what would catch it
+# 2 — Data quality: what is wrong, how much, and what would catch it
 
 **30 minutes, hands-on · Claude Code + SQL**
 
 ## Why this one is first
 
 It was your top ask in June, and it is also the foundation for everything else
-today. In part 3 you will find two reports disagreeing about how many active
+today. In part 4 you will find two reports disagreeing about how many active
 supporters there are. One of the reasons will be sitting in this exercise.
 
 We do it **in SQL, not Python**, because SQL is what most of your people use

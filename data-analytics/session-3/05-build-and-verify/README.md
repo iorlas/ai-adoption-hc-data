@@ -1,4 +1,4 @@
-# 4 — Build a report, then prove it is right
+# 5 — Build a report, then prove it is right
 
 **55 minutes, hands-on · Claude Code + Power BI Desktop — DAX, Power Query M,
 your normal `.pbix`**
