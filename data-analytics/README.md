@@ -97,18 +97,14 @@ means redoing it.
 
 Each numbered folder is one part of the day and is self-contained:
 
-- **`README.md`** — what this part is about and why it matters. Read it, or let
-  us talk you through it in the room.
-- **`exercise.md`** — exactly what to do: the prompts to run, what you should
-  see, and how to tell whether it worked.
+- **`README.md`** — the part itself. Why it matters, then every step: the
+  prompts to run, what you should see, and how to tell whether it worked.
+  **We share our screen and read this same page with you.**
+- **`game.md`** — a few cards called out loud. Only some parts have one.
 
-Parts with nothing for you to run — the openings, the two watch-only
-demonstrations, the closes — have a `README.md` but no exercise.
-
-We also keep a facilitator note per part: the clock, what we demonstrate, and
-how we check you got there. **Those carry the answers, so they arrive after the
-sessions, not before** — you will get the whole set, it just would spoil the two
-exercises the days are built around.
+We also keep an answer key per part. **Those arrive after the sessions, not
+before** — you will get the whole set, it just would spoil the two exercises the
+days are built around.
 
 The rhythm is the same every time: **we do it, then you do it, then you tell us
 you are ready, and only then do we move on.** If we are going too fast, stop us.

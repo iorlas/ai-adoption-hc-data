@@ -40,8 +40,9 @@ AutoML tries a range of model types, tunes them, and hands you the best one plus
 the notebook that produced it. It genuinely removes the part that used to need a
 specialist.
 
-What it does **not** remove: deciding what to predict, assembling the table,
-knowing whether the answer is any good, and deciding what to do about it.
+> AutoML removes the part that used to need a specialist. It does not remove
+> deciding what to predict, assembling the table, knowing whether the answer is
+> any good, or deciding what to do about it.
 
 ### 3. How you would know whether to believe it
 
@@ -65,10 +66,12 @@ We will not call this AI magic, and we will not suggest it replaces a judgement
 your team currently makes.
 
 We will also be precise about a distinction that gets blurred everywhere:
-**this is a trained statistical model, which is a different thing from the
-language model in Claude.** Both get called AI. They fail in completely different
-ways and are trustworthy under completely different conditions. Knowing which
-one you are looking at is a genuinely useful thing to walk away with.
+
+> This is a trained statistical model. That is a different thing from the
+> language model in Claude. Both get called AI, they fail in completely
+> different ways, and they are trustworthy under completely different
+> conditions. Knowing which one you are looking at is genuinely useful to walk
+> away with.
 
 ## This is a taster
 
@@ -78,8 +81,13 @@ you that than pretend half an hour covers it.
 
 If you want it, say so in the close.
 
-## No exercise file
+## Nothing to run
 
-There is nothing for you to run. Watch, interrupt, and ask. The most useful
+There is nothing for you to do here. Watch, interrupt, and ask. The most useful
 question you can ask during this half hour is *"how would we know if that were
 wrong?"* — at any point.
+
+And the one we will ask you at the end:
+
+> **"If I showed you this model's output next month, what would you ask me
+> before acting on it?"**

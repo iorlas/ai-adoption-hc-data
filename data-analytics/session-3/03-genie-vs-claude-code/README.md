@@ -1,6 +1,11 @@
 # 3 — Genie and Claude Code, side by side
 
 **5 minutes, watch only · Databricks Genie vs Claude Code**
+*2 min framing · 3 min the same question into both, on our workspace.*
+
+> **Who does what:** we run it, you watch — there is nothing for you to type.
+> The one **▸ Together** moment is the game at the end. Questions out loud
+> whenever you like.
 
 **Nobody needs Databricks access for this.** We run it on our own workspace
 while you watch. Nothing is required from Lucie's team, and there is no token to
@@ -52,16 +57,57 @@ Watch two things:
 
 ## The transferable idea
 
-Both tools are answering by **writing a query**. Neither is reading your rows
-into a model. The difference is what each one already knows about your world —
-and both of them let you fix that, in the same way: by writing the definitions
-down where the tool will find them.
+> **Notice that both of them answered by writing a query.** Neither read your
+> rows into a model. The difference is what each one already knows about your
+> world — and both let you fix that the same way: by writing the definitions
+> down where the tool will find them.
 
 Which is exactly what the next part of the session does.
 
+## The question to hold onto
+
+**Which of the two would you reach for on the thing you just did in data
+quality, and why?** Your reason matters more than your pick.
+
+**▸ Together, out loud.** [`game.md`](game.md) — five questions, and which tool
+you would point each one at.
+
 ## Note for the room
 
-There is no exercise file for this part because there is nothing for you to run.
-Watch, ask questions, and tell us if it changes where you would use which. If
-you want Genie properly — as a hands-on session on your own workspace — say so
-in the close, and we will scope it.
+There is nothing for you to run in this part. Watch, ask questions, and tell us
+if it changes where you would use which. If you want Genie properly — as a
+hands-on session on your own workspace — say so in the close, and we will scope
+it.
+
+---
+
+## Before the break — load Power BI
+
+This part ends the morning, so this is the moment to get Power BI ready. The
+full version is in [`setup.md`](../01-prompt-refresher/setup.md); the short one:
+
+> Open Power BI Desktop — dismiss the sign-in form if you get one, you do not
+> need to sign in. Then **Get data → Text/CSV** and **Load** the five files from
+> `data/`, one at a time, about three minutes. Then stop. No relationships, no
+> measures — we build the model together straight after.
+
+Three questions come up almost every time:
+
+- **"Do I need a new workspace?"** No. Workspaces are Power BI *Service*, for
+  publishing. Everything today is a file on your own laptop, and you do not need
+  to sign in to Power BI at all.
+- **"Where do I create the file?"** In the Power BI window. If it opens on the
+  Home screen, **New → Report**; otherwise the blank canvas is already the new
+  report. Not in VS Code — a `.pbix` is a binary file, nothing else makes one.
+- **"Which folder do I save it in?"** Anywhere you will find it again. If your
+  save dialog offers **Power BI Project (.pbip)** you have the preview feature
+  on — pick **.pbix**.
+
+## If it goes wrong
+
+Every rough edge we know about in the Power BI load — the sign-in prompt, a
+dialog you cannot close, columns that all arrive as Text, a date column full of
+errors, and why **Get data → Folder** gives you nonsense — is in
+[`quirks.md`](../../quirks.md), with the fix.
+
+**If a fix does not work in thirty seconds, say so and pair with a neighbour.**

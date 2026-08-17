@@ -16,10 +16,13 @@ If you did try it, three things worth hearing:
 - Was the answer usable, or did it need context Claude did not have?
 - What did you have to tell it that you did not have to tell it on Monday?
 
-That last one is the bridge into today. **On your own work, the context is the
-work.** The pipeline in `adf/` has no documentation, and the first thing you do
-this morning is build the context that lets anyone — you or Claude — reason
-about it.
+That last one is the bridge into today.
+
+> "What did you have to tell Claude that we did not have to tell it yesterday?"
+
+**On your own work, the context is the work.** The pipeline in `adf/` has no
+documentation, and the first thing you do this morning is build the context that
+lets anyone — you or Claude — reason about it.
 
 ## How today is shaped
 
@@ -35,13 +38,21 @@ minutes on machine learning that you watch rather than run.
   The pipeline is five JSON files on your laptop.
 - **We are not proposing you stop using the ADF interface.** In your words:
   *"it's not that we want to bypass using ADF, it's that we want to make
-  ourselves using ADF easier."*
+  ourselves using ADF easier."* That is exactly what today is.
 
 ## Before we start
 
 You need Claude open and signed in, and this folder on your machine — including
 yesterday's `CLAUDE.md` with your definitions in it, and
 `docs/data-quality-rules.md`.
+
+Three things to check you have:
+
+1. Claude desktop app open, workshop folder as the project
+2. `CLAUDE.md` has a Definitions section
+3. `docs/data-quality-rules.md` exists and has content
+
+Item 3 is the one people forget to check, and it is needed at 1:10.
 
 **Power BI is not needed today.**
 

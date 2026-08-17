@@ -32,11 +32,10 @@ Every part is one folder, and the files are always the same:
 
 | | |
 |---|---|
-| **`README.md`** | **Read it** — what this part is, and why it matters |
-| **`exercise.md`** | **Do it** — every step marked with who drives |
+| **`README.md`** | **The part.** Why it matters, then every step. We read it with you |
 | **`game.md`** | **Capture it** — a few cards, called out loud. Only some parts have one |
 
-`exercise.md` is the single description of what happens, so there is never a
+`README.md` is the single description of what happens, so there is never a
 question of whether you or we are driving a given step:
 
 > **▸ We run it first, then you** — watch, then repeat the same thing

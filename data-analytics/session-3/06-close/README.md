@@ -1,6 +1,10 @@
 # 6 — Close (15 min)
 
 *No tools. Retro and one ask.*
+*10 min retro, three questions · 5 min the practice ask before Tuesday.*
+
+> **Who does what:** this part is **▸ Together** — whole room, out loud. Nothing
+> here is a test.
 
 ## The retro (~10 min)
 
@@ -52,3 +56,10 @@ completely acceptable answer** and we would rather have that than silence.
 
 If your own work is campaign tagging, this is the moment for the DotDigital tags
 and the Google Worksheet export.
+
+## Anything bigger
+
+If something came up today that is larger than a session — Genie hands-on on
+your own workspace, or anything else — say it now and we write it down. The
+follow-up sessions get named at tomorrow's close, and this is where the list
+starts.

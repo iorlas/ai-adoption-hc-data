@@ -1,6 +1,11 @@
 # 0 — Opening (5 min)
 
 *No tools. Nothing to run yet.*
+*3 min July, and what the August call changed · 2 min the shape of the day, and
+the rhythm.*
+
+> **Who does what:** this part is **▸ Together** — whole room, out loud. Nothing
+> here is a test.
 
 ## Where July got to
 
@@ -26,15 +31,21 @@ have **a definition your team shares, rules that catch bad data, and a report
 you can defend.**
 
 **The rhythm is the same every time:** we do it, you do it, you tell us you are
-ready, and only then do we move on. The readiness check is not rhetorical — if
-we are going too fast, stop us.
+ready, and only then do we move on. The readiness check is not rhetorical:
+
+> **If we are going too fast, stop us.** You asked for more doing and less
+> watching — the readiness check after every part is how we hold ourselves to
+> that.
+
+**Everything from here is Claude Code.** It is what you have licences for, so it
+is what we build the habits in.
 
 ## Two things worth being clear about
 
 1. **All the data is synthetic.** Nothing here is a real supporter. Nothing you
    do today puts real data anywhere near an AI tool.
 2. **Nobody needs Databricks access today.** There is one Databricks moment
-   later this morning, and we run it on our own workspace while you watch.
+   before the break, and we run it on our own workspace while you watch.
 
 ## Before we start
 
