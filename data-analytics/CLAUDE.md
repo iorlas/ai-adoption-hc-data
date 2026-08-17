@@ -15,7 +15,7 @@ in `adf/`.
 The CSVs are queried in place with DuckDB — there is no database server.
 
 ```bash
-uv run python -c "import duckdb; print(duckdb.sql(\"SELECT count(*) FROM 'data/supporters.csv'\"))"
+uv run --with duckdb python -c "import duckdb; print(duckdb.sql(\"SELECT count(*) FROM 'data/supporters.csv'\"))"
 ```
 
 Run it from the `data-analytics` folder — the paths are relative to where you

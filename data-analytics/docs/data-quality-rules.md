@@ -1,7 +1,7 @@
 # Data-quality rules
 
 <!--
-SKELETON — you fill this in Session 3, part 1.
+SKELETON — you fill this in Session 3, part 2.
 
 The headings are here so you are editing rather than starting. Keep the
 "Rejected" section: it is the more interesting half, and it is what stops this

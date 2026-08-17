@@ -100,5 +100,5 @@ activity and describe what actually happens."*
 five. A list of fifty is the same as a list of none.
 
 **It misses the truncate-then-copy problem.** Ask about it directly, as in Step
-3. It is worth making sure the room sees that one — it is the clearest example
+3. Worth a close look — it is the clearest example
 of a step that is individually sensible and collectively dangerous.

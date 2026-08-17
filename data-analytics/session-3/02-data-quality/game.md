@@ -29,7 +29,7 @@ not a defect — normalise on read. Keep this rule and you have an alert firing
 
 ### 3. Every supporter must have an email address
 
-**Bin it.** 124 do not, and plenty of people legitimately never give one. That
+**Bin it.** 146 do not, and plenty of people legitimately never give one. That
 is a fact about your supporters, not a fault in the data.
 
 ### 4. A donation must reference a supporter who exists

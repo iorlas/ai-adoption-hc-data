@@ -6,9 +6,9 @@ refreshes a Power BI dataset off the back of it.
 
 | File | What it is |
 |---|---|
-| `pipeline_supporter_weekly_load.json` | The pipeline — ten activities |
+| `pipeline_supporter_weekly_load.json` | The pipeline — eleven activities (twelve, counting the one inside the ForEach) |
 | `dataflow_supporter_enrich.json` | The Mapping Data Flow it calls |
-| `datasets.json` | The seven datasets it reads and writes |
+| `datasets.json` | The eight datasets it reads and writes |
 | `linked_services.json` | The connections |
 | `trigger_weekly.json` | The schedule |
 

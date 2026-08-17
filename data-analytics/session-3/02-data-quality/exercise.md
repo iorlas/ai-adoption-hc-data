@@ -98,8 +98,6 @@ it does not hand you today's answers — `templates/example-library/docs/` has o
 bin. That is how we check this landed, and it replaces the old show-me-your-file
 check.
 
-Before it starts, have ready:
-
 Tell us when you have `docs/data-quality-rules.md` open on screen and can answer
 these two:
 

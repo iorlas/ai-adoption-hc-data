@@ -99,10 +99,11 @@ exercise stops working for everyone else.
 There is no database to install. DuckDB reads the CSVs in place:
 
 ```bash
-uv run python -c "import duckdb; print(duckdb.sql(\"SELECT status, count(*) FROM 'data/supporters.csv' GROUP BY status ORDER BY 2 DESC\"))"
+uv run --with duckdb python -c "import duckdb; print(duckdb.sql(\"SELECT status, count(*) FROM 'data/supporters.csv' GROUP BY status ORDER BY 2 DESC\"))"
 ```
 
-**Run it in Git Bash, not PowerShell** — PowerShell does not accept `\"` as an
+Run it from the `data-analytics` folder — the path is relative to where you
+are. **Use Git Bash, not PowerShell** — PowerShell does not accept `\"` as an
 escaped quote and the line will not parse there. See [`../quirks.md`](../quirks.md).
 
 Claude Code will do this for you — you write the question, it writes the SQL.

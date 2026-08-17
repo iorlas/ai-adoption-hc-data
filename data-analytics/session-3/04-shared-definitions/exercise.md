@@ -183,9 +183,11 @@ Tell us when you can show:
 
 ## If it goes wrong
 
-**It reproduces the numbers but they do not match.** Check the reference date.
-The engagement measure is "last 12 months" relative to the latest date in the
-data, not to today. Say so and ask it to redo it.
+**It reproduces the numbers but they do not match.** Two usual causes. Ask
+whether it joined `supporters` — counting distinct `supporter_id` in
+`donations.csv` alone gives 1,843, because some donations point at supporters
+who are not on file. And check the reference date: "last 12 months" means the
+twelve months back from today.
 
 **It rewrites the whole of `CLAUDE.md`.** It was told not to. Undo it and ask
 again, more narrowly. This is worth seeing happen rather than avoiding: it is

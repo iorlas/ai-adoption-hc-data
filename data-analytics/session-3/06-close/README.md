@@ -35,9 +35,7 @@ deciding what is true and using a tool to get there with less typing.
 ## The ask before Tuesday (~5 min)
 
 Written up in full in **[`take-home.md`](take-home.md)** — the two options, the
-exact prompts, and what to bring back. Point at it rather than dictating it;
-Sarah asked twice in July whether there was something written down, and this is
-part of the answer.
+exact prompts, and what to bring back.
 
 Not homework, not graded, nothing to hand in — but a real ask:
 
@@ -52,5 +50,5 @@ teaches the loop.
 We open Session 4 by asking what happened. **"I did not get to it" is a
 completely acceptable answer** and we would rather have that than silence.
 
-Lauren, optionally: if you want it to land on the campaign-tagging problem, this
-is the moment for the DotDigital tags and the Google Worksheet export.
+If your own work is campaign tagging, this is the moment for the DotDigital tags
+and the Google Worksheet export.

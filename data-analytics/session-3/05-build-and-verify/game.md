@@ -6,7 +6,7 @@ Five situations. Someone has two numbers in front of them and wants to know
 which is right. **What do you say?**
 
 There is a wrong answer available every time, and it is *"let me go and check"* —
-because you already know. That is what the last fifty minutes were for.
+because you already know. That is what the last fifty-five minutes were for.
 
 ---
 
@@ -14,7 +14,7 @@ because you already know. That is what the last fifty minutes were for.
 
 > *"Fundraising says £947,000. Your new report says £930,000. Which is right?"*
 
-**Both.** Yours excludes refunded gifts; theirs does not. £17,000 of gifts were
+**Both.** Yours excludes refunded gifts; theirs does not. about £17,000 of gifts were
 given and later returned.
 
 Then the useful sentence: *"which of those two is the number you want depends on
@@ -36,8 +36,9 @@ data sends someone off to fix something that is not broken.
 > *"Your click-through rate is over 100%. That's obviously wrong."*
 
 **They are right to flag it, and the number is real.** 77 rows record a click
-with no open — a tracking artefact. The measure divides clicks by opens, so it
-can exceed 100%.
+with no open — a tracking artefact. Across the whole dataset that only lifts
+click-through to about 19%, but the measure divides clicks by opens, so for an
+individual supporter or a single campaign it can exceed 100%.
 
 The answer is to say which denominator you used and why, not to quietly change
 it to make the number look sensible.

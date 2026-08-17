@@ -36,7 +36,7 @@ Ask of every step: **if this went wrong, would anybody know?**
 ## Why Claude is genuinely useful here
 
 Not because it knows more about ADF than you do. Because this analysis is
-tedious, mechanical and easy to lose your place in — ten activities, seven
+tedious, mechanical and easy to lose your place in — eleven activities, eight
 datasets, a data flow, and you have to hold "what if this input were wrong" in
 your head at each one.
 

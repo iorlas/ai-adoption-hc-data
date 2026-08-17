@@ -4,7 +4,7 @@
 
 ## The situation
 
-`adf/` holds one pipeline. Ten activities, a Mapping Data Flow, seven datasets,
+`adf/` holds one pipeline. Eleven activities, a Mapping Data Flow, eight datasets,
 three linked services, a weekly trigger. Last published November 2024 by someone
 who has left. Its folder is `Legacy/Supporter`, it is annotated `do-not-touch`,
 and one activity is called `Copy1`.

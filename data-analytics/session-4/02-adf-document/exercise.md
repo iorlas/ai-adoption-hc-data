@@ -93,5 +93,5 @@ quality, and long documentation does not get read at 3am.
 things you could not read directly from the files."*
 
 **It invents a business reason.** This is the failure mode to look out for, and
-if it happens in the room it is worth stopping on — it is a live example of the
-thing the whole workshop is about. Point at it, name it, and fix the prompt.
+it is worth stopping on — it is a live example of the
+thing the whole workshop is about. Name it, and fix the prompt.

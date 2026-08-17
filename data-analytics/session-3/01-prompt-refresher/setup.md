@@ -57,10 +57,10 @@ on the files. In the break:
 anything; everything you build is a file on your own laptop.
 
 **Stop after loading.** No relationships, no date table, no measures — building
-the model is the first thing we do together at 1:50, and doing it early means
+the model is the first thing we do together after the break, and doing it early means
 redoing it.
 
-We will remind you. Nothing before 1:50 depends on it.
+We will remind you. Nothing before the break depends on it.
 
 ---
 

@@ -1,7 +1,7 @@
 # Measure definitions
 
 <!--
-SKELETON — you fill this in Session 3, part 3.
+SKELETON — you fill this in Session 3, part 4.
 
 This is the *referenced document*: the full definitions live here, and
 CLAUDE.md carries only a pointer plus the two or three that come up constantly.

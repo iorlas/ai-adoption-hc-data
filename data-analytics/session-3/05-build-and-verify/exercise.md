@@ -140,8 +140,6 @@ reject each one on purpose.
 **▸ Together, out loud.** [`game.md`](game.md) — five stakeholders holding two
 numbers each, and what you say to them.
 
-Have ready:
-
 Tell us when you can show:
 
 1. A working report with at least four measures

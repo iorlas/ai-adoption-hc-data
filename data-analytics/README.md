@@ -4,11 +4,13 @@
 > commands and you are running:
 >
 > ```bash
+> git clone https://github.com/iorlas/ai-adoption-hc-data.git
 > cd ai-adoption-hc-data/data-analytics
 > uv run verify.py
 > ```
 >
-> Every line should say `OK`, ending in **4,022 rows**. Say that number out loud
+> Every line should say `OK`, and `supporters.csv` should read **4,022 rows**.
+> Say that number out loud
 > — it is how we know the whole room is on the same data.
 >
 > **Power BI is not needed until after the break.** Everything this morning runs
@@ -88,7 +90,8 @@ every report you build is a file on your own laptop, and you do not need to sign
 in to Power BI to do any of it.
 
 **Stop once the five tables are loaded** — no relationships, no measures. We
-build the model together at 1:50, and starting early just means redoing it.
+build the model together straight after the break, and starting early just
+means redoing it.
 
 ## How each session folder works
 

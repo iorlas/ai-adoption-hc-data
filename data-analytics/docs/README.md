@@ -7,9 +7,9 @@ blank page teaches nothing.
 
 | File | Filled in | By |
 |---|---|---|
-| `data-quality-rules.md` | Session 3, part 1 | You |
-| `measure-definitions.md` | Session 3, part 3 | You |
-| `decisions/` | Session 3, part 3 | You, one record |
+| `data-quality-rules.md` | Session 3, part 2 | You |
+| `measure-definitions.md` | Session 3, part 4 | You |
+| `decisions/` | Session 3, part 4 | You, one record |
 
 Session 4 adds a fourth — `adf/PL_Supporter_Weekly_Load.md` — which lives next
 to the pipeline it describes rather than in here, for the reason given in that
