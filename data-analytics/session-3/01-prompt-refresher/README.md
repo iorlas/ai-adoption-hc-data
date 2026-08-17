@@ -1,7 +1,7 @@
 # 1 — Prompt refresher (and two windows)
 
-**20 minutes · Claude Code, in the terminal and in the desktop app**
-*6 min setup · 2 min two windows · 3 min the shape of a prompt · 5 min the game
+**17 minutes · Claude Code, in the terminal and in the desktop app**
+*6 min setup · 2 min two windows · 3 min the shape of a prompt · 2 min the game
 · 4 min you run one real prompt.*
 
 > **Who does what:** **▸ We run it first, then you** — watch, then repeat it ·
@@ -84,14 +84,14 @@ send it?
 
 **Scene.** Your window — terminal or desktop app, whichever you settled on above
 — pointed at the `data-analytics` folder you cloned ten minutes ago. One file in
-play: `data/supporters.csv`. **This conversation stays open all morning**; part 2
-starts from what comes back.
+play: `data/supporters.csv`. **Keep this conversation open through part 2**,
+which starts from what comes back. Part 3 onward starts fresh.
 
 Type this in:
 
 > Profile `data/supporters.csv` using DuckDB SQL. For every column give me the
-> row count, how many are blank, how many distinct values, and for the text
-> columns the five most common values. Show me the SQL you ran, then the
+> row count, how many are blank, and how many distinct values — and for the date
+> columns the earliest and latest value. Show me the SQL you ran, then the
 > results.
 
 Three sentences. Situation is implied — the file is right there. The last clause

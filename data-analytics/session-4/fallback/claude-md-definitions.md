@@ -24,7 +24,7 @@ people who engage without giving.
 
 These are two different measures. **Never call either of them just "active
 supporters"** — that name is retired, and using it is what produced a
-615-person disagreement between two live reports.
+633-person disagreement between two live reports.
 
 ### Hard rules
 

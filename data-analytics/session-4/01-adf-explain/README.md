@@ -145,7 +145,7 @@ Tell us when you can answer these three without looking:
 
 ## If it goes wrong
 
-**It only reads one file.** Say: *"read all five files in `adf/`, including the
+**It only reads one file.** Say: *"read all five JSON files in `adf/`, including the
 data flow script lines and the datasets."* The data flow holds most of the logic
 and is a separate file.
 

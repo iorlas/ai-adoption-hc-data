@@ -2,6 +2,7 @@
   "permissions": {
     "deny": [
       "Read(./facilitator/**)",
+      "Read(./**/facilitator/**)",
       "Read(./**/answers.md)",
       "Read(./session-4/fallback/**)"
     ]

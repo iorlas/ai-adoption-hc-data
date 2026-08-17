@@ -31,7 +31,7 @@ an existing one, with the sentence they would say about it.
 | 1:50 | 55 | `05-build-and-verify/` | **MYKOLA** | Denis |
 | 2:45 | 15 | `06-close/` | **DENIS** | Mykola |
 
-**Denis 70 min · Mykola 100 min · 3 handoffs.**
+**Denis 67 min · Mykola 103 min · 3 handoffs.**
 
 ---
 
@@ -101,7 +101,8 @@ the retro.
 - **Plain English prompts**, and **no commentary on how they were written in
   July.** Just write them plainly. If asked directly, one light sentence — the
   wording is in stage 1's facilitator note.
-- **One tool.** Claude. No second vendor on screen at any point.
+- **One tool in their hands.** Claude. Databricks appears on our screen twice
+  and is watch-only both times; nothing they type today is a second vendor.
 - **Blocked tool = pair, and the blocked person writes every prompt.** The
   driver only types. Prompt-writing is the skill, so this is honest, not
   consolation.

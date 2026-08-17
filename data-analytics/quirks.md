@@ -89,9 +89,11 @@ instead — if that works, Python is installed and only the PATH is wrong.
 You mostly do not care: everything today goes through `uv run`, which uses its
 own Python regardless.
 
-### It says OK but the row count is not 4,022
+### It says WARN, or the row count is not 4,022
 
-An older copy of the folder. `git pull`.
+Almost always the wrong folder — an older copy of the repo from a previous
+clone, or a `data-analytics` inside something else. Run `pwd` and check you are
+in the folder you cloned this morning. If you are, `git pull`.
 
 ---
 
@@ -131,11 +133,15 @@ This one looks like a crash and is not one.
 Type detection is switched off on your machine.
 **File → Options and settings → Options → Global → Data load → Type detection.**
 
+That setting only applies to *new* imports, so **remove the table and load the
+file again** afterwards — toggling it alone changes nothing on screen.
+
 ### A date column is full of errors
 
-Right-click the column header → **Change type → Using locale** → Date, then pick
-the locale. Plain "change type to Date" re-runs the same failing read and fails
-the same way.
+First **Home → Transform data** to open the Power Query Editor — this fix does
+not exist in the report view. Then right-click the column header →
+**Change type → Using locale** → Date, and pick the locale. Plain "change type
+to Date" re-runs the same failing read and fails the same way.
 
 ### I used Get Data → Folder and it looks like nonsense
 

@@ -46,7 +46,9 @@ owns is there with the exact steps. Hand him that, not this.
       at 4,022 / 12,376, and the comparison **recorded as a fallback**. Steps:
       `prep-mykola.md` §1. Nothing of this exists yet.
 - [ ] **AutoML example built and rehearsed**, with the leakage column ready to
-      add live.
+      add live, and the feature-column list ready to show. Steps:
+      `prep-mykola.md` §3. Nothing of this exists in the repo either — it is the
+      largest unbuilt item in the two days.
 - [ ] **The Windows setup sheet validated end to end on a real Windows machine.**
       It has never been run by anyone. Three traps it claims to cover — the PATH
       checkbox, the App Execution Alias stub, and the PowerShell execution

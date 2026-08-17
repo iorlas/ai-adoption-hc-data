@@ -4,8 +4,8 @@ Two of Tuesday's parts assume you have files that Session 3 produced:
 
 | Tuesday part | Expects | Made in |
 |---|---|---|
-| `03-adf-weak-spots/`, step 3 | `docs/data-quality-rules.md` | Session 3, part 1 |
-| `04-better-questions/` | A Definitions section in `CLAUDE.md` | Session 3, part 3 |
+| `03-adf-weak-spots/`, step 3 | `docs/data-quality-rules.md` | Session 3, part 2 |
+| `04-better-questions/` | A Definitions section in `CLAUDE.md` | Session 3, part 4 |
 
 If you missed Monday, joined late, or your files got mangled — take the two in
 this folder and carry on. Nothing in Tuesday is blocked.

@@ -27,11 +27,8 @@ Not "is this good code". Narrower:
 3. **It succeeds with the wrong data.** Worst by a long way. Nothing alerts, the
    numbers look plausible, and it may be months before anyone notices.
 
-Spend the twenty minutes on category 3. This pipeline has several:
-
-- A missing value silently replaced with a default
-- A schema setting that lets an upstream column change reshape the output
-- A step that empties a table before it knows there is any replacement data at all
+Spend the twenty minutes on category 3. **This pipeline has several, and they
+are not where you would look first.**
 
 Ask of every step: **if this went wrong, would anybody know?**
 
@@ -123,13 +120,14 @@ The strongest argument either session makes:
 
 **▸ Your turn.**
 
-> Add a "Weak spots" section to `adf/PL_Supporter_Weekly_Load.md`. Rank them by
+> Fill in the **Known weaknesses** section of
+> `adf/PL_Supporter_Weekly_Load.md` — the heading is already there. Rank them by
 > consequence, and for each give the failure mode, whether it is silent, and the
 > smallest change that would make it loud.
 
 ## Step 5 — Confirm ready
 
-Show us the **Weak spots** section in `adf/PL_Supporter_Weekly_Load.md` on
+Show us the **Known weaknesses** section in `adf/PL_Supporter_Weekly_Load.md` on
 screen, and name:
 
 1. The weak spot you would fix first, and why that one

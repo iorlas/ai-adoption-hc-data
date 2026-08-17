@@ -49,9 +49,10 @@ play: `data/supporters.csv` and `data/donations.csv`, plus the skeleton at
 
 **▸ We run it first, then you.**
 
-> Profile `data/supporters.csv` and `data/donations.csv` using DuckDB SQL.
-> For every column tell me: how many rows, how many are blank, how many distinct
-> values, and for the text columns the five most common values. Show me the SQL
+You profiled `supporters` in part 1. Now go wider and deeper in one step:
+
+> Now do the same for `data/donations.csv`. Then, for **both** files, give me
+> every text column's five most common values with their counts. Show me the SQL
 > you ran, then the results.
 
 **What you should see: 4,022** supporters and **12,376** donations. Different

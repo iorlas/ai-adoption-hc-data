@@ -1,7 +1,7 @@
 # 3 — Genie and Claude Code, side by side
 
-**5 minutes, watch only · Databricks Genie vs Claude Code**
-*2 min framing · 3 min the same question into both, on our workspace.*
+**8 minutes, watch only · Databricks Genie vs Claude Code**
+*2 min framing · 3 min the same question into both, on our workspace · 3 min the game.*
 
 > **Who does what:** we run it, you watch — there is nothing for you to type.
 > The one **▸ Together** moment is the game at the end. Questions out loud

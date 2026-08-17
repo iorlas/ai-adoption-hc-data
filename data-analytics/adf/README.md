@@ -15,8 +15,8 @@ refreshes a Power BI dataset off the back of it.
 **There is no documentation, and that is deliberate.** It was last published in
 November 2024 by someone who has left. Its folder is `Legacy/Supporter` and it
 is annotated `do-not-touch`. One activity is called `Copy1` and another is
-called `Stored procedure1`. One has a comment that just says *"leave this in -
-fixes the timing issue with the CRM pipeline (RB 2022)"*.
+called `Stored procedure1`. At least one carries a comment written by someone who
+knew they were leaving a problem behind.
 
 This is the shape you described: enormous, inherited, nobody in the room made
 it, and the documentation is very weak.

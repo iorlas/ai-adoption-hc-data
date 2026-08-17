@@ -75,8 +75,9 @@ against. Claude writes to the first one directly; watch it change.
 > `adf/PL_Supporter_Weekly_Load.md` documenting this pipeline. Structure it as:
 > what it is for in business terms · schedule and trigger · the activities in
 > order with their dependencies · the data flow's transformations · where each
-> output column comes from · hardcoded decisions and exclusions · known
-> weaknesses · what to do if it fails overnight.
+> output column comes from · hardcoded decisions and exclusions · what to do if
+> it fails overnight. **Leave the "Known weaknesses" section empty** — we fill
+> that in later.
 >
 > Mark anything you inferred rather than read directly from the JSON with
 > **[inferred]**. Do not guess at business reasons — where the reason for a
@@ -121,7 +122,8 @@ number not match the other report?*
 
 Then test it. **New conversation:**
 
-> What does the weekly supporter load do about supporters in Northern Ireland?
+> Which supporters never make it into the output table of the weekly supporter
+> load, and why?
 
 **What you should see:** the answer comes back immediately and correctly, without
 Claude re-reading five JSON files. That is the compounding part — the half-hour

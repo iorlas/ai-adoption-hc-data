@@ -89,8 +89,11 @@ working pattern, not a workaround.
 
 - **Left: Power BI Desktop**, with the five tables from `data/` already loaded in
   the break — `supporters`, `campaigns`, `donations`, `campaign_activity`,
-  `tasks`. No relationships, no measures yet. If yours is empty, the three-minute
-  load is in [`quirks.md`](../../quirks.md); do it now, do not wait.
+  `fulfilment_tasks`. No relationships, no measures yet. If yours is empty, the
+  three-minute load is in
+  [`01-prompt-refresher/setup.md`](../01-prompt-refresher/setup.md); do it now,
+  do not wait. If something misbehaves,
+  [`quirks.md`](../../quirks.md) has the fix.
 - **Right: Claude Code**, in the `data-analytics` folder, **same conversation as
   part 4** — it must still be holding the definitions you just wrote into
   `CLAUDE.md`.

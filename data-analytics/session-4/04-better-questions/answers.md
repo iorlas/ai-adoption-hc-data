@@ -67,6 +67,37 @@ Anyone stopping here writes a recommendation to move budget into events.
 The entire original finding was tenure. Event was the acquisition channel years
 ago; Direct Mail is where the recent supporters came from.
 
+**Two things to have ready.** The naive table's top row is **Partner** (£299),
+not Event (£289) — the hypothesis is Event-vs-Direct-Mail, so Partner is not a
+counter-example, but say so before someone else does. And the £70 assumes
+non-donors count as £0; average the ratios rather than ratio the averages and it
+reads £80 instead. The *order* is identical under every method — lead with the
+order, not the figure.
+
+### The distribution question — the one that can bite you
+
+A3 asks *"is it driven by a small number of large gifts? Show me the
+distribution."* **The reversal survives almost everything — except one cut, and
+you want to walk into that one deliberately rather than be caught by it.**
+
+| Cut | Direct Mail | Event | Holds? |
+|---|---|---|---|
+| mean per year | £72 | £41 | yes |
+| top 1% of gifts removed | £64 | £34 | yes |
+| trimmed mean (5–95) | £89 | £46 | yes |
+| duplicates merged | £71 | £42 | yes |
+| **median across all supporters** | **£20** | **£25** | **no — it flips back** |
+| median among donors only | £75 | £42 | yes |
+
+**Why.** Only **61%** of Direct Mail supporters ever gave, against **77%** of
+Event supporters. Those zeros drag Direct Mail's median down, while a longer
+tail of large gifts pulls its mean up.
+
+**This is the best moment in the exercise, not a flaw in it.** The honest
+statement is: *Direct Mail supporters give more on average, but fewer of them
+give at all.* Two true sentences, one finding — and which you lead with is a
+judgement about the decision being made, not about the data.
+
 The duplicate-supporter check is a real but small effect (22 people) and does
 **not** change the conclusion. Worth noting out loud: not every check overturns
 something, and knowing a finding is robust is also a result.
@@ -93,16 +124,33 @@ something, and knowing a finding is robust is also a result.
 | 2025 Q3 | 15.5 | 6.1% |
 | 2025 Q4 | 15.1 | 8.4% |
 | 2026 Q1 | 15.7 | 7.0% |
-| 2026 Q2 | **17.7** | 9.5% |
+| 2026 Q2 | **17.8** | 9.5% |
 | 2026 Q3 | 15.4 | **53.3%** |
 
 Read the middle column alone and the story is "a blip in Q2, back to normal in
 Q3." **That is wrong.** More than half of Q3 has not finished, and the fast ones
 finish first — the slow half has not entered the average yet.
 
-The truth in the data: resolution times really are **55% worse** for recent
-work. Survivorship bias, and it is the most common way an operational trend
-finding is wrong. **Make sure the room sees this one.**
+**Do not put a percentage on how much worse it got.** Among tasks that
+completed, recent ones average 17.3 days against 15.5 — about **12%** — and that
+figure is itself understated by the same censoring. Any larger number you say
+out loud is one query away from being contradicted on screen.
+
+**Use the measure censoring cannot touch: completed within 30 days**, counted
+only on tasks that are at least 30 days old.
+
+| Quarter | Done within 30 days |
+|---|---|
+| 2026 Q1 | 82.3% |
+| 2026 Q2 | 76.6% |
+| 2026 Q3 | 69.1% |
+
+Every task in that table had its full thirty days, so nothing is hiding in the
+unfinished half. It really is getting worse — this is how you show it without
+being wrong about by how much.
+
+Survivorship bias is the most common way an operational trend finding is wrong.
+**Make sure the room sees this one.**
 
 ### The two smaller traps in B
 - `status` is `'Complete'` (190) and `'Completed'` (5,149). Filter on one and

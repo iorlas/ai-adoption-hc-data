@@ -8,6 +8,11 @@
 
 **Last reviewed:** 2026-08-17 · **Owner:** Analytics
 
+> **Eight, not six.** Session 3 argued for around six — enough that people still
+> read the list. This copy keeps eight because two of them (7 and 8) are cheap
+> and catch money errors. If your own list is shorter, that is not a mistake;
+> the number is a judgement, not a rule.
+
 ## Rules we keep
 
 | # | Table | Rule | SQL predicate | Failing now | Why it matters |

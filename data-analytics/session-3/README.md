@@ -16,9 +16,9 @@ move on.** If it is going too fast, stop us.
 | # | Folder | Min | What you do |
 |---|---|---|---|
 | 0 | `00-opening/` | 5 | Where July got to, and how today is shaped |
-| 1 | `01-prompt-refresher/` | 20 | The shape of a prompt that works — and both windows |
+| 1 | `01-prompt-refresher/` | 17 | The shape of a prompt that works — and both windows |
 | 2 | `02-data-quality/` | 30 | Find what is wrong with the shared data, and write rules that catch it |
-| 3 | `03-genie-vs-claude-code/` | 5 | Watch the same question go into Databricks Genie and into Claude Code |
+| 3 | `03-genie-vs-claude-code/` | 8 | Watch the same question go into Databricks Genie and into Claude Code |
 | — | *break* | 10 | |
 | 4 | `04-shared-definitions/` | 40 | Two reports, one measure, two numbers. Agree one definition and write it down |
 | 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
@@ -82,9 +82,10 @@ Not slides. Files, in this folder, that keep working after Monday:
 |---|---|
 | `docs/data-quality-rules.md` | part 2 |
 | `docs/measure-definitions.md` | part 4 |
-| `docs/decisions/0001-active-supporter.md` | part 4 |
+| A decision record in `docs/decisions/` | part 4 |
 | A Definitions section in `CLAUDE.md` | part 4 |
 | Your own report, built and then verified | part 5 |
 
-The first four already exist as skeletons with the headings in place. You are
-filling them in, not starting from a blank page.
+The first three exist as skeletons with the headings in place, and
+`docs/decisions/` has a template to copy. You are filling them in, not starting
+from a blank page.

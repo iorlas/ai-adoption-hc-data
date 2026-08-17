@@ -1,7 +1,7 @@
 # Setup — six minutes, and then we start properly
 
-**▸ Everyone, right now.** Three commands. Everything you were asked to install
-is already on your machine; nothing new goes on it today.
+**▸ Everyone, right now.** Three steps, four commands. Everything you were asked
+to install is already on your machine; nothing new goes on it today.
 
 **Open the Git Bash terminal**, not PowerShell — in VS Code it is in the
 dropdown next to the `+` at the top of the terminal panel.
@@ -9,8 +9,12 @@ dropdown next to the `+` at the top of the terminal panel.
 ## 1. Get the folder
 
 ```bash
+cd ~
 git clone https://github.com/iorlas/ai-adoption-hc-data.git
 ```
+
+The `cd ~` matters — Git Bash opens wherever VS Code last was, and without it
+the folder lands somewhere you will not find again.
 
 ## 2. Check it works
 
@@ -19,13 +23,21 @@ cd ai-adoption-hc-data/data-analytics
 uv run verify.py
 ```
 
-Every line should say `OK`, ending with:
+Every line should say `OK`, and it ends like this:
 
 ```
+OK   Python 3.12.13
+OK   DuckDB 1.5.5
 OK   supporters.csv — 4022 rows
-...
+OK   campaigns.csv — 192 rows
+OK   donations.csv — 12376 rows
+OK   campaign_activity.csv — 22591 rows
+OK   fulfilment_tasks.csv — 6000 rows
+
 Green. Nothing else to do.
 ```
+
+The two version numbers will differ from these. Nothing else should.
 
 **Say the number out loud: 4,022.** If yours is different, or anything says
 FAIL, tell us now — not at eleven o'clock. That number is why everyone works
@@ -33,12 +45,18 @@ from the same data.
 
 ## 3. Open it in Claude
 
-Point Claude at the `data-analytics` folder — the one containing `README.md` and
-`verify.py`.
-
-**Not sure which to open?** If you are not already a terminal person, use the
+**Not sure which to use?** If you are not already a terminal person, use the
 desktop app. If you are, stay in the terminal. Same Claude, same answers — just
 do not switch mid-day.
+
+**Terminal** — you are already in the right folder from step 2:
+
+```bash
+claude
+```
+
+**Desktop app** — open it and point it at the `data-analytics` folder, the one
+containing `README.md` and `verify.py`. Not the folder above it.
 
 ---
 

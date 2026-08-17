@@ -22,14 +22,20 @@ files describing them. That contrast is the segment.
    Date = CALENDAR(DATE(2016, 1, 1), DATE(2026, 8, 17))
    ```
 
-   related to `donations[donation_date]`. `CALENDARAUTO()` scans every date
-   column in the model, including the 13 deliberate future `sign_up_date` rows
-   and the stray 2026-11-30 donation, so it runs to 2027-12-31. The engagement
-   measure is `DATESINPERIOD(..., MAX('Date'[Date]), -12, MONTH)`, which would
-   then cover 2027 — a year with no donations — and **the Active Supporters
-   card reads blank instead of 1,832.**
+   related to `donations[donation_date]`.
+
+   `CALENDARAUTO()` scans every date column in the model — `date_of_birth`
+   starts in **1946**, the 13 deliberate future `sign_up_date` rows and the
+   stray 2026-11-30 donation push the top to **2027-12-31** — so it builds a
+   ~29,950-row table. Neither Active Supporters measure touches `'Date'`, so
+   the four gate numbers below survive it; what it breaks is `Income This Year`
+   (`DATESYTD`) and every by-month visual, which gain eighty years of empty axis.
 
    **Check before you go further: `MAX('Date'[Date])` must read 2026-08-17.**
+
+   One row stays outside the range whatever you do: the 2026-11-30 donation
+   lands in the blank date member and disappears from anything sliced by month.
+   Deliberate, and harmless — the totals do not go through the Date table.
 4. Add every measure from `reports/fundraising-summary/measures.dax` verbatim.
 5. Canvas: two card visuals — **Active Supporters** and **Total Income** —
    then income by campaign and income by channel underneath.

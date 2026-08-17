@@ -63,7 +63,7 @@ Normal, and not a decision you make in advance.
 
 ## Things you do not need
 
-- Any command starting with a slash
+- Any slash command beyond `/diff`
 - Git, beyond the one `git clone` that starts the day
 - Python — you will not write any
 - Settings, models, tokens

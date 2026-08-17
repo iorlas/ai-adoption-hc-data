@@ -98,7 +98,10 @@ whether it told you it was choosing one. Skip this and the end loses its point.
 
 **Scene.** Same conversation as step 0 — Claude needs to still be holding its own
 "before" answer. Files in play: the two folders under `reports/`, each holding a
-`measures.dax` and a `README.md`, plus the CSVs in `data/`.
+`measures.dax` and a `model.md`, plus the CSVs in `data/`.
+
+**Ask for the SQL, not the number.** Both counts are written in comments inside
+those `.dax` files, so Claude can hand them back without running anything.
 
 > Read `reports/fundraising-summary/` and `reports/supporter-engagement/`.
 > Both report a measure called Active Supporters and they give different
@@ -179,10 +182,11 @@ You will probably land on **two named measures**, not one:
 
 Three homes, from the drill.
 
-**Scene.** Same conversation. Three files that already exist in the repo, each
-with its headings in place and its content blank: `docs/measure-definitions.md`,
-`CLAUDE.md` (top level), `reports/*/README.md`. **Open each one before you prompt
-so you can see it change.**
+**Scene.** Same conversation. Three homes that already exist in the repo, with
+their headings in place and their content blank: `docs/measure-definitions.md`,
+`CLAUDE.md` (top level), and `docs/decisions/` (which has a template at
+`0000-template.md`). **Open each one before you prompt so you can see it
+change.**
 
 **5a — the depth, into the referenced document (~3 min)**
 

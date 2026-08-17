@@ -102,9 +102,10 @@ Each numbered folder is one part of the day and is self-contained:
   **We share our screen and read this same page with you.**
 - **`game.md`** — a few cards called out loud. Only some parts have one.
 
-We also keep an answer key per part. **Those arrive after the sessions, not
-before** — you will get the whole set, it just would spoil the two exercises the
-days are built around.
+- **`answers.md`** — our own notes for running the part, answers included.
+  It is right there in the folder; nothing is hidden from you. **Read it after
+  the part, not before.** Two of these exercises only work if you go in cold,
+  and you get one go at that.
 
 The rhythm is the same every time: **we do it, then you do it, then you tell us
 you are ready, and only then do we move on.** If we are going too fast, stop us.

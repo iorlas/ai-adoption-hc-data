@@ -16,13 +16,27 @@ pipeline in order. Then ask:
 > `Update Watermark` — what is its dependency condition, and what does that mean
 > if the data flow fails?
 
-The answer is `Completed`, not `Succeeded`. So the data flow fails, the
-watermark advances anyway, and next week's run starts *after* data that was
-never loaded.
+The answer is `Completed`, not `Succeeded`. The data flow fails and the watermark
+advances anyway.
 
-**That single detail sells the segment.** It is one word in a JSON file, it has
-been there since 2024, and no amount of staring at the ADF canvas would have
-shown it to you. Let the room get there rather than telling them.
+**Be careful how you state the consequence, because the obvious version is
+wrong.** Nothing in this pipeline actually *reads* the watermark:
+`Lookup Watermark` runs, and no activity ever references its output. `Copy1`
+selects files by `wildcardFolderPath: "supporters/@{formatDateTime(utcnow(),
+'yyyy/MM/dd')}"` — today's date, every time — and the sink is `truncate: true`,
+a full replace. So the watermark cannot cause a skipped load.
+
+**What it actually does is worse in a quieter way: the only record of when the
+data last loaded successfully is now a lie**, and the first person to build
+incremental loading on top of that table inherits a silent bug from 2024.
+
+**If someone in the room says "but nothing reads it" — that is the best possible
+outcome.** They have read the JSON rather than the explanation, which is the
+entire skill this segment teaches. Say so out loud and give them the credit.
+
+**That one word sells the segment.** It has been there since 2024, and no amount
+of staring at the ADF canvas would have shown it to you. Let the room get there
+rather than telling them.
 
 **During the 15 minutes**, watch for people accepting the first fluent
 explanation. The skill is not getting the explanation — it is interrogating it.
@@ -35,7 +49,8 @@ the judging.
 2. **Which supporters never reach the output table?**
 3. **Name one hardcoded value that should not be in the file.**
 
-Answers: it advances anyway · Northern Ireland and Deceased · the plaintext
+Answers: it advances anyway, and the watermark table starts lying — though
+nothing downstream reads it · Northern Ireland and Deceased · the plaintext
 password (or the Northern Ireland exclusion, or the 300-second `Wait1`).
 
 ## Answer key

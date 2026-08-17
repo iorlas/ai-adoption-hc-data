@@ -68,8 +68,9 @@ sends someone off to fix something that is not broken.
 
 **They are right to flag it, and the number is real.** 77 rows record a click
 with no open — a tracking artefact. Across the whole dataset that only lifts
-click-through to about 19%, but the measure divides clicks by opens, so for one
-supporter or one campaign it can exceed 100%.
+click-through to about 19%, and no campaign goes above 27%. What those rows
+actually produce is **blank cells** — divide by zero opens and the measure
+returns nothing, so those sends drop silently out of the rate.
 
 Say which denominator you used and why. Do not quietly change it to make the
 number look sensible.

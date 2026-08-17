@@ -34,7 +34,7 @@ we move on.
 > **If we are going too fast, stop us.** You asked for more doing and less
 > watching — the readiness check is how we hold ourselves to that.
 
-**Everything from here is Claude Code.** It is what you have licences for.
+**Everything you type today is Claude Code.** It is what you have licences for.
 
 ## Two things worth being clear about
 

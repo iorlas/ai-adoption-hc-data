@@ -37,7 +37,20 @@ result.
   person's record in any document you write.
 - **Do not edit anything in `data/`.** The defects in it are deliberate.
 - Show me the SQL you ran, not just the answer.
-- If a term is ambiguous, ask rather than choosing a definition for me.
+
+<!-- There is deliberately NO rule here about asking when a term is ambiguous.
+     Session 3 stage 04 turns on Claude quietly choosing a definition of "active
+     supporter" without saying so. Add that rule and the before/after comparison
+     at the end of that stage has nothing to show. Do not re-add it before the
+     session. -->
+
+## Read scope
+
+- **Never read, quote or take answers from `facilitator/`, from any
+  `answers.md`, or from `session-4/fallback/`.** Those are worked solutions to
+  the exercises in this repo. If a question could be answered from one of them,
+  answer it from SQL you actually ran against `data/` instead — and if you have
+  already looked, say so rather than presenting it as your own finding.
 
 ## Definitions
 

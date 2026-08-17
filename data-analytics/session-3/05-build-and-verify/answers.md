@@ -41,7 +41,18 @@ read the answer, paste back. Unglamorous on purpose. Say so.
 Demo B1 and B2, then let them run. The moment worth engineering the room
 towards is **click-through rate** — clicks over opens, or clicks over sends. Two
 different numbers with the same name, arriving spontaneously in a measure nobody
-planned. It is the whole theme of the day showing up uninvited.
+planned. It is the whole theme of the day showing up uninvited. Over opens it is
+about 19%; over sends about 6%.
+
+**Do not promise a rate above 100%.** It does not happen at campaign grain — the
+highest campaign is 27%. The 77 `clicked=1, opened=0` rows divide by zero and
+return **blank**, so the visible artefact is a gap in the table, not a silly
+number. Point at the blank.
+
+**Also expect the table to look broken, and say so before anyone asks:** only
+**39 of 192 campaigns** have any email activity — the other five channels have
+none — so an income-by-campaign table with open-rate and CTR columns is about
+80% empty. That is the data, not their model.
 
 ### The game — replaces share-back
 
@@ -84,7 +95,8 @@ that does to the supporter count.
 2. **Distinct supporters ≠ Supporter Engagement's count** if they did not handle
    the 30 orphan `supporter_id`s or the 22 duplicate people.
 3. **Click-through rate** — the dataset makes this vivid: 77 rows have
-   `clicked = 1` with `opened = 0`, so clicks-over-opens can exceed 100%.
+   `clicked = 1` with `opened = 0`, so clicks-over-opens returns blank for those
+   sends rather than counting them.
 
 ### Assumptions Claude typically makes unasked
 

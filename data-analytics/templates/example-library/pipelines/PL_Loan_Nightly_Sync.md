@@ -61,20 +61,25 @@ exist in staging and stop there, so nothing downstream can report on them.
 
 ## Known weaknesses
 
-1. **`Update Watermark` runs on `Completed`, not `Succeeded`.** A failed data
-   flow still advances the mark, so the next run starts after rows that were
-   never loaded. **Silent, and permanent** — nothing ever goes back for them.
-2. **Truncate-then-load with no validation.** If `Copy Loans` succeeds and finds
-   nothing, the warehouse table is emptied and every dashboard reads zero.
-3. **Failure alerting covers one activity of five**, and emails a person who
-   left.
-4. **Three columns dropped before the sink**, so quality rules written against
-   the source cannot be checked downstream.
+1. **`Lookup Active Members` has no `firstRowOnly: false` guard, and ADF caps a
+   lookup at 5,000 rows.** Membership passed 5,000 in March. The run still
+   succeeds; members past the cap are simply never enriched, and no count
+   anywhere reveals it. **Succeeds with wrong data** — the worst category.
+2. **The trigger is set in `Europe/London`, not UTC.** On the October clock
+   change the 01:30 run fires twice, and `Copy Loans` is not idempotent, so
+   `loan_event` gains one duplicated night per year. Someone reconciles it by
+   hand each autumn; this page is the only place that is written down.
+3. **`renewal_fee_pence` arrives as text and is cast with schema drift on**, so a
+   value carrying a stray currency symbol becomes null instead of failing. The
+   nulls are then summed as zero in branch revenue.
+4. **The enrichment step has no alerting at all.** The copy is monitored; the
+   transformation producing every derived column is not.
 
 ## If it fails overnight
 
 The dashboards show **yesterday's** numbers with no warning banner — they do not
 know the load failed.
 
-Re-running is safe: set `etl.watermark` back to the last known-good date first,
-otherwise the failed night is skipped permanently.
+Re-running is safe on any normal date — the sink is a full replace keyed on
+`loan_date`, so a repeat run gives the same table. **Do not** re-run across the
+October clock change without checking `loan_event` for duplicates first.

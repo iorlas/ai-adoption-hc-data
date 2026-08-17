@@ -27,9 +27,9 @@ ask which of their rules this pipeline defeats.
 | Rule | Verdict | Why |
 |---|---|---|
 | 1 · `status` not in the vocabulary (18 `Activ`) | **survives** | `iifNull(trim(status), 'Active')` only fills nulls. `trim()` does not repair a typo, and there are no blank statuses |
-| 2 · duplicate people | **survives** | untouched by the flow |
-| 3 · malformed email | **survives the flow, but is moot** — `email` is not in `selectFinal`, so no report downstream can check it |
-| 4 · `last_activity_date` before `sign_up_date` (34) | **defeated** | `last_activity_date` is not in `selectFinal`'s `mapColumn` list. The column ceases to exist |
+| 2 · duplicate people (22) | **defeated** | the duplicate rows themselves survive, but the rule's predicate needs `date_of_birth`, which is in neither `aggGiving`'s `groupBy` nor `mapColumn`. The check cannot be run downstream at all |
+| 3 · `sign_up_date` not in the future (13) | **survives** | it is in the `groupBy` and in `mapColumn`, and nothing transforms it on the way |
+| 4 · `last_activity_date` before `sign_up_date` (34) | **defeated** | dropped at `aggGiving` — not in the `groupBy` — and not in `mapColumn` either |
 | 5 · orphan donations (30) | **defeated** | `joinDonations` is a **left** join — orphan donation rows disappear on the null side |
 | 6 · duplicate gifts (44) | **defeated** | `aggGiving` sums to `total_given`; individual rows never reach the output |
 | 7 · amount ≤ 0 (20) | **defeated** | same `sum()` |
@@ -38,6 +38,17 @@ ask which of their rules this pipeline defeats.
 **Rule 1 is the one to dwell on.** It survives *because* `trim()` cannot fix a
 typo — the helpful default was not helpful enough to hide the real defect, and
 was never aimed at it. That is worth saying out loud.
+
+**Two things to say before you start reading rules out.**
+
+**Match by rule text, not by number.** These verdicts are numbered against
+`session-4/fallback/data-quality-rules.md`. Anyone who was in Session 3 wrote
+their own list in their own order, so read the rule out and let them find it.
+
+**Rules 3 and 4 die one transformation earlier than the obvious answer.**
+Someone will say "dropped at `aggGiving`" rather than "not in `mapColumn`". They
+are right, and they are more right than the short version — the `groupBy` is
+what kills the column; `selectFinal` never had the chance.
 
 **Four of twelve output columns are all that remain of donations.** The pipeline
 does not lie by filling blanks; it lies by *summarising* and by *dropping
@@ -73,10 +84,23 @@ iterations each truncate the table the others are writing into. **The pipeline
 succeeds.** The staging table holds a nondeterministic subset. Nothing ever
 alerts, and the row count changes week to week for no visible reason.
 
-**★ `iifNull` masks the defects.** `status = iifNull(trim(status), 'Active')`
-and `region = iifNull(region, 'Unknown')`. A supporter with a missing status
-silently becomes **Active** and is counted everywhere downstream. This is the
-one that connects to Monday.
+**Someone will notice `stg.campaign` feeds nothing.** They are right —
+`srcCampaign` is declared in the data flow and never joined, so today the race
+corrupts a table with no consumer. Say so first, then reframe: the bug is
+latent, and the first person to wire a campaign column into the warehouse
+inherits it silently. Latent defects in shared staging tables are exactly the
+kind nobody finds by testing the thing they just built.
+
+**★ `iifNull` masks the defects.** `region = iifNull(region, 'Unknown')` turns
+**40 blank regions** into a value that looks deliberate, and `Unknown` then sails
+past the regional filter. The same pattern sits on status —
+`status = iifNull(trim(status), 'Active')` — which would silently make a missing
+status **Active** everywhere downstream.
+
+**Lead with region, not status.** This data has **zero** blank statuses, so the
+status default never fires; if someone checks, the claim collapses. Region is
+real, countable, and makes the same point. This is the one that connects to
+Monday.
 
 **★ The undocumented regional exclusion.** `ExcludeRegion: "Northern Ireland"`
 passed to the merge proc, **and** a separate `region != 'Northern Ireland'`
@@ -87,8 +111,24 @@ output has no way to know a whole region is missing.
 Already found in part 1 — it belongs on this list too.
 
 **★ Truncate-then-copy with no safety net.** `Truncate Staging` empties the
-table, then `Copy1` runs with `retry: 0`. If the copy fails, staging is empty
-and stays empty. Smallest fix: load into a new table and swap.
+table, then `Copy1` runs with `retry: 0`. **Two branches, and the room is asked
+about both.**
+
+*The copy **fails*** — staging is empty and stays empty. Bad, but **noticed**:
+the pipeline fails and `Notify Failure` is wired to exactly this activity.
+
+*The copy **succeeds and finds no files*** — the worse one, and the one that
+gets skipped. Staging is empty, the data flow runs happily, and the sink is
+`truncate: true`: **`dw.dim_supporter_enriched` is wiped**. The merge proc runs,
+the Power BI dataset refreshes to zero, and `Update Watermark` advances because
+it fires on `Completed`. Nothing alerts, because nothing failed.
+
+**If Claude says the copy would error on a missing folder, accept it and move
+on.** Nothing in this JSON decides — no `validateDataConsistency`, no row-count
+check, `"schema": []` — and *that* is the answer worth landing: the file does not
+say, so nobody can know without running it.
+
+Smallest fix for both: load into a new table and swap, plus a row-count gate.
 
 ### The rest, briefly
 Schema drift on everywhere (`"schema": []`, `validateSchema: false`,
