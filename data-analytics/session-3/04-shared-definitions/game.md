@@ -24,6 +24,44 @@ Eight things. For each: **which home?** Call it, then read the answer.
 
 ---
 
+## The cards
+
+**1.** *"Our reports live in `reports/`, one folder each."*
+
+**2.** *"The full definition of every measure we report, with the SQL, the DAX,
+and what each one excludes — all fourteen of them."*
+
+**3.** *"We define active supporters by behaviour, not by the CRM status field —
+and we rejected the status version because it counts people who last gave in
+2019."*
+
+**4.** *"How many active supporters were there in July?"*
+
+**5.** *"`Activ` is a typo in the status column, not a real status. Treat it as
+Active until the source is fixed."*
+
+**6.** *"Every column in the supporter table, what it means, and what makes a
+value valid."*
+
+**7.** *"Refunded gifts are excluded from income, and the Fundraising Summary
+report does not do this."*
+
+**8.** *"The supporter export landed two hours late this morning."*
+
+---
+---
+---
+
+# STOP
+
+**Call all eight first.** Everything below is the answers.
+
+---
+---
+---
+
+## Verdicts
+
 **1.** *"Our reports live in `reports/`, one folder each."*
 
 → **`CLAUDE.md`.** One line, always true, saves a hunt every conversation.

@@ -1,6 +1,6 @@
 # Game — which one would you reach for?
 
-**3 minutes, out loud.** Replaces the closing discussion.
+**3 minutes, out loud.**
 
 Five questions. For each: **Genie, Claude Code, or either?**
 
@@ -9,6 +9,33 @@ warehouse someone has already curated. Claude Code is stronger when the answer
 needs context that is not in the warehouse.**
 
 ---
+
+## The cards
+
+**1.** *"How many donations came in last month, by campaign?"*
+
+**2.** *"Why does this dashboard's supporter count differ from that one's?"*
+
+**3.** *"Which of our campaign codes have no matching campaign record?"*
+
+**4.** *"What does the weekly supporter pipeline do to records with a missing
+region?"*
+
+**5.** *"Give me the same figures as last quarter's board pack, refreshed."*
+
+---
+---
+---
+
+# STOP
+
+**Call all five first.** Everything below is the answers.
+
+---
+---
+---
+
+## Verdicts
 
 **1.** *"How many donations came in last month, by campaign?"*
 

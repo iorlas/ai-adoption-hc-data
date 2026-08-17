@@ -9,9 +9,47 @@ No trick — two of the five are fine as they are.
 
 ---
 
+## The cards
+
 ### Card A
 
 > *"look at the donations file and tell me if there's anything wrong with it"*
+
+### Card B
+
+> *"how many rows are in supporters.csv?"*
+
+### Card C
+
+> *"profile the supporter data and give me a summary of the data quality"*
+
+### Card D
+
+> *"I have a CSV file called `supporters.csv` which lives in the data folder of
+> this project. It contains supporter records. I would like you to look at the
+> `status` column in that file. My question is: what values does it contain? For
+> your task, please count how many times each value appears and then present
+> the results to me in a table."*
+
+### Card E
+
+> *"how many active supporters do we have?"*
+
+---
+---
+---
+
+# STOP
+
+**Call all five first.** Everything below is the answers.
+
+---
+---
+---
+
+## Verdicts
+
+### Card A
 
 **Send it? — Nearly.** The question is clear and the file is findable.
 
@@ -20,11 +58,7 @@ Missing the **task** — what you want handed back.
 
 **Fix:** *"…show me the SQL you ran and how many rows fail each check."*
 
----
-
 ### Card B
-
-> *"how many rows are in supporters.csv?"*
 
 **Send it. Nothing is missing.**
 
@@ -34,11 +68,7 @@ Adding a situation paragraph would make it longer and no better.
 **A short prompt is not a lazy prompt.** If someone wanted to add something
 here, that is the instinct worth naming and dropping.
 
----
-
 ### Card C
-
-> *"profile the supporter data and give me a summary of the data quality"*
 
 **Do not send.** Two problems, and the second is the dangerous one.
 
@@ -49,15 +79,7 @@ largely clean with some minor issues."*
 **Fix:** name the means and demand the exceptions. *"…using DuckDB SQL. For each
 problem, the SQL, the row count, and five example rows."*
 
----
-
 ### Card D
-
-> *"I have a CSV file called `supporters.csv` which lives in the data folder of
-> this project. It contains supporter records. I would like you to look at the
-> `status` column in that file. My question is: what values does it contain? For
-> your task, please count how many times each value appears and then present
-> the results to me in a table."*
 
 **Send it — it will work fine.** It is four times longer than it needs to be.
 
@@ -67,11 +89,7 @@ status with its row count"` gets the same result.
 **Filling in all the parts is not the goal.** The goal is an answer you can
 check.
 
----
-
 ### Card E
-
-> *"how many active supporters do we have?"*
 
 **Do not send** — the interesting one, because nothing is structurally missing.
 
