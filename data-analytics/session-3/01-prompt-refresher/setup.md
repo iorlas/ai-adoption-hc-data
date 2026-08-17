@@ -30,7 +30,7 @@ You want every line to say `OK`, ending with:
 ```
 OK   supporters.csv — 4022 rows
 ...
-Green. Nothing else to do before Session 3.
+Green. Nothing else to do.
 ```
 
 **Say the number out loud when you get it: 4,022.** If yours is different, or

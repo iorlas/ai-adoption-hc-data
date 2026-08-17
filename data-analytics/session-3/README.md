@@ -73,8 +73,8 @@ data-quality rules, and a report you built *and* verified.
 ## Two pages worth having open
 
 - **[`reference/desktop-or-terminal.md`](../reference/desktop-or-terminal.md)** —
-  read it before Monday. Five minutes. July was the terminal; the desktop app is
-  new. They are the same Claude Code and either is fine — part 1 shows you both.
+  the two windows and how they differ. Part 1 covers it live; keep this for
+  afterwards. They are the same Claude Code and either is fine.
 - **[`reference/checking-the-answer.md`](../reference/checking-the-answer.md)** —
   keep it open all day. Five tells for a wrong answer and the cheap question
   that catches each. You will use three of them before the break.

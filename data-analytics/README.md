@@ -1,9 +1,17 @@
 # Supporter Analytics — workshop sample repository
 
-> **Sessions 3 & 4, start here.** You need three things working: the Claude
-> desktop app, this folder on your machine, and the sample data loaded into
-> Power BI Desktop. Then run `uv run verify.py` — a green result means you are
-> ready for Monday.
+> **Sessions 3 & 4, start here.** Two commands and you are running:
+>
+> ```bash
+> cd ai-adoption-hc-data/data-analytics
+> uv run verify.py
+> ```
+>
+> Every line should say `OK`, ending in **4,022 rows**. Say that number out loud
+> — it is how we know the whole room is on the same data.
+>
+> **Power BI is not needed until after the break.** Everything this morning runs
+> on these files.
 
 A small, synthetic supporter-analytics dataset and codebase for the Claude Code
 workshop. It is shaped like a charity's supporter and fundraising data
@@ -15,15 +23,14 @@ Everyone in the room works from **this same data**, on purpose. When you follow
 a step, you should get the same number we got — and if you do not, that is
 worth stopping for.
 
-## Read this before Monday
+## Two pages to keep open
 
-Two things, fifteen minutes total:
-
-1. **[`reference/desktop-or-terminal.md`](reference/desktop-or-terminal.md)** — the app is
-   new to everyone. July was the terminal. Five minutes.
-2. **[`reference/checking-the-answer.md`](reference/checking-the-answer.md)** —
-   five tells for a wrong answer. Keep it open during both sessions; it is the
-   one page that outlives the workshop.
+1. **[`reference/checking-the-answer.md`](reference/checking-the-answer.md)** —
+   five tells for a wrong answer, and the cheap question that catches each. **If
+   you keep one page from these two days, keep this one.**
+2. **[`reference/desktop-or-terminal.md`](reference/desktop-or-terminal.md)** —
+   terminal or desktop app, and the honest differences. They are the same Claude
+   Code; either is fine for everything here.
 
 ## What's in here
 
@@ -42,15 +49,14 @@ session-3/    Monday — one folder per part of the day
 session-4/    Tuesday — one folder per part of the day
 CLAUDE.md     project instructions for Claude. Deliberately thin on Monday
               morning; you fill it in during Session 3
-verify.py     the green check you run before Session 3
+verify.py     the green check — run it first, expect 4,022 supporters
 ```
 
 ## Set up
 
-Nothing to install beyond the prerequisites you were sent (Claude desktop app,
-Python 3.11+, `uv`, Git, VS Code). There is **no database to install**. The CSVs
-are queried in place through DuckDB, which `uv` fetches automatically the first
-time it is needed.
+Nothing to install beyond the prerequisites you were sent (Claude, Python 3.11+,
+`uv`, Git, VS Code). There is **no database to install** — the CSVs are queried
+in place through DuckDB, which `uv` fetches for you the first time it is needed.
 
 ```bash
 git clone https://github.com/iorlas/ai-adoption-hc-data.git
@@ -59,14 +65,14 @@ uv run verify.py
 ```
 
 `verify.py` checks Python, `uv`, DuckDB and that all five CSVs are readable, and
-prints one row count per file. **Do this before Session 3, not on the morning
-of it.** If it is not green, tell us on Friday and we will fix it with you.
+prints one row count per file. **If anything is not green, say so straight away**
+— it takes a minute to fix at the start and costs you the morning if it waits.
 
-## Load the data into Power BI
+## Power BI — during the break, not now
 
-Open Power BI Desktop → **Get Data → Text/CSV** → load all five files from
-`data/`. Save the `.pbix` anywhere you like. That is all the preparation
-Session 3 needs; we build the model together in the room.
+Nothing before the break needs it. **In the break**, open Power BI Desktop →
+**Get Data → Text/CSV** → load all five files from `data/`. Save the `.pbix`
+anywhere. We build the model together in the room afterwards.
 
 ## How each session folder works
 
