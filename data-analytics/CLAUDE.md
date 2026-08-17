@@ -28,6 +28,11 @@ result.
 
 ## Rules
 
+- **Never read, quote or take answers from `facilitator/`, from any
+  `answers.md`, or from `session-4/fallback/`.** Those are worked solutions to
+  the exercises in this repo. If a question could be answered from one of them,
+  answer it from SQL you actually ran against `data/` instead — and if you have
+  already looked, say so rather than presenting it as your own finding.
 - **All data here is synthetic.** Never invent an example that looks like a real
   person's record in any document you write.
 - **Do not edit anything in `data/`.** The defects in it are deliberate.

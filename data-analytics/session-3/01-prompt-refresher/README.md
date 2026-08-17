@@ -82,7 +82,12 @@ send it?
 
 **▸ Your turn — and we run the same prompt alongside you, in both windows.**
 
-Type this into whichever window you are using — terminal or desktop app:
+**Scene.** Your window — terminal or desktop app, whichever you settled on above
+— pointed at the `data-analytics` folder you cloned ten minutes ago. One file in
+play: `data/supporters.csv`. **This conversation stays open all morning**; part 2
+starts from what comes back.
+
+Type this in:
 
 > Profile `data/supporters.csv` using DuckDB SQL. For every column give me the
 > row count, how many are blank, how many distinct values, and for the text

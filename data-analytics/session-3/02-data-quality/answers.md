@@ -59,7 +59,7 @@ campaign_activity **22,591** · fulfilment_tasks **6,000**
 | `donation_date` before the supporter signed up | 60 |
 | Donations referencing a supporter that does not exist | 30 |
 | Donations referencing a campaign that does not exist | 17 |
-| Duplicate donation rows | 44 |
+| Duplicate donation rows | 44 — **or 43** (see below) |
 | Negative amounts | 12 |
 | Zero amounts | 8 |
 | `marketing_consent` as `'Y'`/`'N'` text | 15 |
@@ -68,6 +68,18 @@ campaign_activity **22,591** · fulfilment_tasks **6,000**
 | Blank region | 40 |
 | `clicked = 1` while `opened = 0` | 77 |
 | `campaigns.end_date` before `start_date` | 6 |
+
+### 44 or 43 — take this one to the room, do not correct it
+
+Grouping on `supporter_id + donation_date + amount_gbp` gives **44**. Add
+`campaign_code` to the grouping and it gives **43** — one pair of otherwise
+identical gifts sits against different campaigns.
+
+**Both are right.** If two people call out different numbers, that is the best
+live example of the day: *"duplicate donation" is an undefined term*, and the two
+of them have quietly chosen two different definitions — which is the entire
+argument you are about to have in part 4, arriving three hours early. Ask which
+definition each used before you say anything else.
 
 ## Noise they should reject — the graded half
 

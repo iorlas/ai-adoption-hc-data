@@ -41,7 +41,15 @@ in *how the data is used*.
 
 ## What we run
 
-The same question, in both:
+**Scene.** Two windows side by side on our screen. **Left:** a browser on our own
+Databricks workspace, in the Genie space **AN Workshop**, whose only tables are
+`an_workshop.supporters` and `an_workshop.donations` — the same two CSVs you have
+in `data/`, uploaded ahead of today. **Right:** Claude Code, in the
+`data-analytics` folder, a fresh conversation.
+
+Same data on both sides. Only the tool differs.
+
+The same question typed into both, word for word:
 
 > Which columns in the supporter table have values that do not belong to the
 > column's vocabulary, and how many rows are affected?

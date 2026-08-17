@@ -65,6 +65,12 @@ A finished example, for a different organisation, is in
 
 **▸ We run it first, then you.**
 
+**Scene.** **Same conversation as part 1** — this step spends the understanding
+you just built, and a fresh chat throws it away. Two files open beside Claude:
+`adf/PL_Supporter_Weekly_Load.md`, the skeleton you are filling in, and
+`adf/pipeline_supporter_weekly_load.json`, the source of truth you check it
+against. Claude writes to the first one directly; watch it change.
+
 > Using everything you worked out in the last exercise, write
 > `adf/PL_Supporter_Weekly_Load.md` documenting this pipeline. Structure it as:
 > what it is for in business terms · schedule and trigger · the activities in

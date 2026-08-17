@@ -69,6 +69,13 @@ closer to your team's work and do it properly rather than both badly.**
 
 **▸ We run it first, then you.**
 
+**Scene.** Claude Code, in the `data-analytics` folder, **a new conversation** —
+the ADF thread is finished and its context only gets in the way here. Files in
+play: `data/supporters.csv` — the column that matters is **`source_channel`**,
+with six values, of which `Event` (703) and `Direct Mail` (667) are the two under
+test — plus `data/donations.csv`, and `CLAUDE.md`, which still holds the
+definitions written on Monday.
+
 One line, written down first. *"If the difference is under 10%, or disappears
 once I account for how long each group has been on the database, I do not believe
 it."*
@@ -133,6 +140,10 @@ Same shape, using `data/fulfilment_tasks.csv`.
 ## B1. Say what would change your mind (~4 min)
 
 **▸ We run it first, then you.**
+
+**Scene.** Same as A — Claude Code, `data-analytics` folder, a new conversation.
+One file: `data/fulfilment_tasks.csv`. **If you did hypothesis A, start a fresh
+conversation for this one** rather than continuing; A's framing will bias it.
 
 Then:
 

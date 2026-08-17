@@ -29,15 +29,21 @@ So, of every candidate rule:
 > is it just different from how I would have typed it?**
 
 Postcodes written `m19bh` instead of `M1 9BH` are not wrong. A supporter whose
-`status` says `Activ` **is** wrong, and it is shrinking a number somebody
-reports to a trustee board.
+`status` holds a value **nobody agreed to** is wrong — and a value like that
+quietly shrinks a number somebody reports to a trustee board.
+
+Whether this dataset has one of those is the first thing you are about to find
+out.
 
 ---
 
 # The exercise
 
-Open Claude with this repository folder as your project. Keep one conversation;
-Claude keeps the context.
+**Scene.** Claude Code, pointed at the **`data-analytics`** folder — not the repo
+root, which also holds `data-engineering/` and will break every path below.
+**Same conversation as part 1**, still holding the profile you just ran. Files in
+play: `data/supporters.csv` and `data/donations.csv`, plus the skeleton at
+`docs/data-quality-rules.md` you will fill in at step 3.
 
 ## Step 1 — Profile the data (~6 min)
 
@@ -86,7 +92,7 @@ check.
 - a status typo — tens of rows
 - duplicate people — tens
 - donations pointing at supporters who do not exist — tens
-- impossible dates — single figures to low tens
+- impossible dates — a handful up to around sixty, depending which check
 - duplicated gifts — a few dozen
 
 If Claude reports a defect in the thousands, make it prove that one first.
@@ -107,9 +113,9 @@ choice, not a defect. Supporters with no donations are normal.
 
 > Fill in `docs/data-quality-rules.md`. Keep only these rules: [list them]. For
 > each: the table, the SQL predicate, the count of rows currently failing, and
-> one sentence on why a violation matters. Then fill the "Rejected" table with
-> the rules I threw out and one line each on why they are noise. Leave the
-> headings as they are.
+> one sentence on why a violation matters. Then fill in the section headed
+> **"Rules we rejected, and why"** with the rules I threw out and one line each
+> on why they are noise. Leave every heading exactly as it is.
 
 **Six kept rules is a good target. Twenty is a list nobody will read.**
 
@@ -151,9 +157,11 @@ interesting half.**
 **Claude writes Python instead of SQL.** Say *"use DuckDB SQL over the CSVs, not
 pandas."* `CLAUDE.md` says this, but it is thin today and gets overridden.
 
-**A query fails on a date comparison.** The CSV columns are text until you cast
-them. `CAST(sign_up_date AS DATE)` — or paste the error back and let it fix its
-own query.
+**A query fails comparing a column to a number.** DuckDB reads the date columns
+as real dates, so those are fine — but `marketing_consent` holds a few `'Y'` and
+`'N'` values, which makes the whole column text. `marketing_consent = 1` fails;
+`marketing_consent = '1'` works. Paste the error back and let Claude fix its own
+query — then read what it changed, because that column is a defect in disguise.
 
 **It says the data is clean.** It ran on something else, or summarised without
 checking. Ask for `value_counts` and for failing rows.

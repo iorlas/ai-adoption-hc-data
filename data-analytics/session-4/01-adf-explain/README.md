@@ -62,6 +62,20 @@ Understand an inherited pipeline.
 
 **▸ We run it first, then you.**
 
+**Scene.** Claude Code, in the `data-analytics` folder, **a new conversation** —
+nothing from Session 3 should be in it. One folder in play, `adf/`, holding five
+exported Azure Data Factory files:
+
+```
+adf/pipeline_supporter_weekly_load.json   the pipeline — the one we read
+    dataflow_supporter_enrich.json        the mapping data flow it calls
+    datasets.json  linked_services.json   what it reads and writes
+    trigger_weekly.json                   when it runs
+```
+
+**Open `pipeline_supporter_weekly_load.json` yourself in a second tab** and leave
+it there. Every claim Claude makes today gets checked against that file.
+
 > Read everything in `adf/`. Explain what `PL_Supporter_Weekly_Load` does, in
 > order. For each activity: what it does, what it depends on, and whether that
 > dependency is on success or on something else. Write it as prose a colleague

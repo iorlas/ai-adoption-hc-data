@@ -52,6 +52,12 @@ Where will this break, and would anyone notice?
 
 **▸ We run it first, then you.**
 
+**Scene.** **Same conversation as parts 1 and 2** — you are now three steps into
+one thread about one pipeline, and that accumulated context is exactly what makes
+this step cheap. Same two files in play:
+`adf/pipeline_supporter_weekly_load.json` and `adf/dataflow_supporter_enrich.json`.
+Nothing new to open.
+
 > Go through `PL_Supporter_Weekly_Load` and the data flow activity by activity.
 > For each, tell me what happens if the input is wrong or missing: a source
 > column renamed or removed, a file that arrives empty, a value that changes

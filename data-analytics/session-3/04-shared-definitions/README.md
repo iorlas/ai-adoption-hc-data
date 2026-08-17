@@ -81,6 +81,10 @@ wrong is the most common way a team's first `CLAUDE.md` dies within a quarter.
 
 **▸ Everyone, us included — you need your own saved answer, not ours.**
 
+**Scene.** Claude Code, in the `data-analytics` folder. **Start a new
+conversation** — a fresh one, not the data-quality thread. That matters: this
+step is about what Claude does when it has been told nothing.
+
 Before you tell Claude anything, ask it:
 
 > How many active supporters are there in this dataset?
@@ -91,6 +95,10 @@ whether it told you it was choosing one. Skip this and the end loses its point.
 ## Step 1 — Find where the two reports differ (~7 min)
 
 **▸ We run it first, then you.**
+
+**Scene.** Same conversation as step 0 — Claude needs to still be holding its own
+"before" answer. Files in play: the two folders under `reports/`, each holding a
+`measures.dax` and a `README.md`, plus the CSVs in `data/`.
 
 > Read `reports/fundraising-summary/` and `reports/supporter-engagement/`.
 > Both report a measure called Active Supporters and they give different
@@ -169,7 +177,12 @@ You will probably land on **two named measures**, not one:
 
 **▸ Your turn.**
 
-Three homes, from the drill. All three files exist with their headings in place.
+Three homes, from the drill.
+
+**Scene.** Same conversation. Three files that already exist in the repo, each
+with its headings in place and its content blank: `docs/measure-definitions.md`,
+`CLAUDE.md` (top level), `reports/*/README.md`. **Open each one before you prompt
+so you can see it change.**
 
 **5a — the depth, into the referenced document (~3 min)**
 

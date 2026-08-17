@@ -2,6 +2,9 @@
 
 **FACILITATOR ONLY.** Ordered by how much damage it does if it is missed.
 
+**Mykola has his own page — [`prep-mykola.md`](prep-mykola.md).** Everything he
+owns is there with the exact steps. Hand him that, not this.
+
 ## Blocking — the sessions do not work without these
 
 - [x] **Prerequisites letter + Windows setup sheet sent, both teams confirmed**
@@ -38,10 +41,10 @@
 
 ## Near-blocking — a segment degrades without these
 
-- [ ] **Databricks workspace live**, with a **Genie space configured** over
-      something resembling the supporter data.
-- [ ] **The Genie comparison recorded as a fallback.** If the workspace is slow
-      on the day, this segment must not eat the room's time.
+- [ ] **Databricks + Genie built to the exact spec** — schema `an_workshop`, the
+      two uploaded tables, a Genie space named **AN Workshop**, counts confirmed
+      at 4,022 / 12,376, and the comparison **recorded as a fallback**. Steps:
+      `prep-mykola.md` §1. Nothing of this exists yet.
 - [ ] **AutoML example built and rehearsed**, with the leakage column ready to
       add live.
 - [ ] **The Windows setup sheet validated end to end on a real Windows machine.**

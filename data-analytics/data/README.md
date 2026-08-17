@@ -99,7 +99,7 @@ exercise stops working for everyone else.
 There is no database to install. DuckDB reads the CSVs in place:
 
 ```bash
-uv run --with duckdb python -c "import duckdb; print(duckdb.sql(\"SELECT status, count(*) FROM 'data/supporters.csv' GROUP BY status ORDER BY 2 DESC\"))"
+uv run --with duckdb python -c "import duckdb; print(duckdb.sql(\"SELECT task_type, count(*) FROM 'data/fulfilment_tasks.csv' GROUP BY 1 ORDER BY 2 DESC\"))"
 ```
 
 Run it from the `data-analytics` folder — the path is relative to where you

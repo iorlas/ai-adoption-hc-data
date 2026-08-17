@@ -85,6 +85,20 @@ working pattern, not a workaround.
 
 **▸ We run it first, then you.**
 
+**Scene — set this up before you prompt anything.** Two windows, side by side.
+
+- **Left: Power BI Desktop**, with the five tables from `data/` already loaded in
+  the break — `supporters`, `campaigns`, `donations`, `campaign_activity`,
+  `tasks`. No relationships, no measures yet. If yours is empty, the three-minute
+  load is in [`quirks.md`](../../quirks.md); do it now, do not wait.
+- **Right: Claude Code**, in the `data-analytics` folder, **same conversation as
+  part 4** — it must still be holding the definitions you just wrote into
+  `CLAUDE.md`.
+
+**Nothing moves between the two windows on its own.** You copy DAX out of Claude
+and paste it into Desktop by hand, and back again. That is the whole working
+pattern for the next hour.
+
 > I want to build a campaign performance report in Power BI from the five CSVs
 > in `data/`. Propose the model first: which tables, which relationships and in
 > which direction, which columns I do not need, and where I will need a date
@@ -106,6 +120,17 @@ supporter count first.
 ## A2. The measures (~10 min)
 
 **▸ We run it first, then you.**
+
+**Scene.** Desktop on the **Model** view with the relationships from A1 in place,
+and a **Date table** created — otherwise the time-based measures have nothing to
+sit on. Create it in Desktop with **Modeling → New table**:
+
+```dax
+Date = CALENDAR(DATE(2016, 1, 1), DATE(2026, 8, 17))
+```
+
+Then mark it as a date table and join `Date[Date]` to `donations[donation_date]`.
+Each measure below goes in via **Modeling → New measure**, one at a time.
 
 > Write the DAX for: total income by campaign, number of distinct supporters who
 > gave to each campaign, average gift, email open rate, and click-through rate.
@@ -147,7 +172,10 @@ A first pass you cannot defend is worth nothing. Now break it.
 
 **▸ We run it first, then you.**
 
-Copy your measures out of Desktop and paste them back:
+**Scene.** In Desktop, open the **Model** view, click each measure you created,
+and copy the formula out of the formula bar. Paste the lot into Claude in one
+message. **Your measures, not the ones it gave you** — they have drifted, and the
+drift is the point.
 
 > Here are the measures as they now exist in my report. Check each one against
 > the definitions in `CLAUDE.md`. Where does it not match? Where did you make an
@@ -166,7 +194,10 @@ The check you described as the last thing before anything goes live:
 > you could drop 2 dashboards in and say, are there any things that look the
 > same that are reporting different numbers?"
 
-So do exactly that:
+**Scene.** Claude only — Desktop can sit idle for this one. The two files it will
+read are `reports/fundraising-summary/measures.dax` and
+`reports/supporter-engagement/measures.dax`, both already in the repo. **Open
+them yourself first**, so you are checking Claude rather than trusting it.
 
 > Compare my measures against `reports/fundraising-summary/measures.dax` and
 > `reports/supporter-engagement/measures.dax`. List every measure that appears

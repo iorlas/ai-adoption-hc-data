@@ -12,6 +12,30 @@ the session is behind it shrinks to the table alone — one prompt, then the
 table. It is here because Lucie raised Genie herself and answering her on day
 one beats making her wait.
 
+## Pre-flight — do this the day before, not in the room
+
+**This is the only stage in Session 3 that depends on a live external system,
+and none of it exists until someone builds it.** Roughly 20 minutes.
+
+1. In our own Databricks workspace, create schema **`an_workshop`**.
+2. Upload `data/supporters.csv` and `data/donations.csv` (**Data → Create table →
+   Upload file**), landing them as `an_workshop.supporters` and
+   `an_workshop.donations`. Let it infer types.
+3. Confirm the counts match ours before you go further: **4,022** supporters,
+   **12,376** donations. A different number means the upload truncated or
+   re-typed something, and the whole side-by-side falls apart on screen.
+4. **Genie → New space**, name it **AN Workshop**, add those two tables only.
+   Nothing else — extra tables give Genie a bigger world than Claude Code has and
+   the comparison stops being fair.
+5. Add no curated instructions yet. The demo's point is partly *what each tool
+   had to be told first*; a pre-tuned space hides that.
+6. Run the question once yourself and **screen-record it**. That recording is the
+   fallback below.
+
+**If nobody has done this by the morning of the session, cut the live half.**
+Show the table and the two-windows screenshot instead. The segment survives that;
+it does not survive a Genie space being built while ten people watch.
+
 ## What you do
 
 **Say it before you start and again at the end:** we run this on *our*
