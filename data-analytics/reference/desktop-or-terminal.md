@@ -11,7 +11,7 @@ matters. What changes is the window around it.
 every exercise works identically in both. Nobody is going to tell you which to
 use, and we are not going to spend the day selling you a window.
 
-We do spend twelve minutes on it on Monday morning, because half the room has
+We do spend a few minutes on it on Monday morning, because half the room has
 never opened the app and finding that out at 10:15 is expensive.
 
 ## The honest comparison
