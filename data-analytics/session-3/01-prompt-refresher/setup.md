@@ -46,8 +46,22 @@ tool and either is fine.
 ## Not until the break — Power BI
 
 **You do not need Power BI until after the break.** Everything this morning runs
-on the files. During the break, load the five CSVs from `data/` into Power BI
-Desktop — Get Data → Text/CSV, five times — and you are ready for the afternoon.
+on the files. In the break:
+
+1. **Power BI Desktop → File → New.** That is where the report gets made — in
+   the Power BI window, not in a text editor. A `.pbix` is not a text file.
+2. **Get Data → Text/CSV**, pick one file from `data/`, **Load**. Repeat for all
+   five. Three minutes, and the files are small.
+3. **Save it somewhere you will find again.** Any folder on your own machine.
+
+**No new workspace, and nothing to ask IT for.** Workspaces are a Power BI
+*Service* thing — for publishing a report so other people can see it. We never
+publish anything; every report you build lives as a file on your own laptop. You
+do not need to sign in to Power BI for any of it.
+
+**Stop after loading.** No relationships, no date table, no measures — building
+the model is the first thing we do together at 1:50, and doing it early means
+redoing it.
 
 We will remind you. Nothing before 1:50 depends on it.
 

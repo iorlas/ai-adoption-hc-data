@@ -70,9 +70,17 @@ prints one row count per file. **If anything is not green, say so straight away*
 
 ## Power BI — during the break, not now
 
-Nothing before the break needs it. **In the break**, open Power BI Desktop →
-**Get Data → Text/CSV** → load all five files from `data/`. Save the `.pbix`
-anywhere. We build the model together in the room afterwards.
+Nothing before the break needs it. **In the break**: Power BI Desktop → **File →
+New** → **Get Data → Text/CSV** → load all five files from `data/`, one at a
+time. Save the `.pbix` anywhere on your own machine.
+
+**No new workspace, and nothing to ask IT for.** Workspaces belong to Power BI
+*Service* — for publishing a report to other people. Nothing here is published;
+every report you build is a file on your own laptop, and you do not need to sign
+in to Power BI to do any of it.
+
+**Stop once the five tables are loaded** — no relationships, no measures. We
+build the model together at 1:50, and starting early just means redoing it.
 
 ## How each session folder works
 
