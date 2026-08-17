@@ -35,8 +35,11 @@ whole reason everyone works from the same data.
 ## 3. Open it in Claude
 
 Point Claude at the `data-analytics` folder — the one containing `README.md` and
-`verify.py`. Desktop app or terminal, whichever you installed; they are the same
-tool and either is fine.
+`verify.py`.
+
+**Not sure which to open?** If you are not already a terminal person, use the
+desktop app. If you are, stay in the terminal. Same Claude, same answers — just
+do not switch mid-day.
 
 ---
 

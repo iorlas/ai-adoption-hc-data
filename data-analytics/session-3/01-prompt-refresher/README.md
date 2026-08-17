@@ -25,6 +25,10 @@ sitting under the rest of the day.
 > **For everything in these two days they are equal.** Every prompt in every
 > exercise works identically in both.
 
+> **If you are not already a terminal person, use the desktop app. If you are,
+> stay in the terminal.** Same Claude, same answers. Whichever you pick, do not
+> switch mid-day.
+
 Use whichever you will actually open. If the terminal suits you, stay in the
 terminal — nothing this week needs the app. If you would rather work in a normal
 window, the app gives you that and changes nothing else. Plenty of people end up

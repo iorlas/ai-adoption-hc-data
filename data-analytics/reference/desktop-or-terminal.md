@@ -14,6 +14,10 @@ use, and we are not going to spend the day selling you a window.
 We do spend a few minutes on it on Monday morning, because half the room has
 never opened the app and finding that out at 10:15 is expensive.
 
+> **If you are not already a terminal person, use the desktop app. If you are,
+> stay in the terminal.** Same Claude, same answers. Whichever you pick, do not
+> switch mid-day.
+
 ## The honest comparison
 
 **On Windows, "the terminal" means Git Bash** — in VS Code, the `∨` beside the
