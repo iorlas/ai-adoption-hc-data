@@ -9,9 +9,8 @@ the rhythm.*
 
 ## Where July got to
 
-Two sessions that covered a lot of ground — prompting as a discipline, Power BI
-as something you can read and diff, `CLAUDE.md`, Genie, tokens and context.
-Today builds directly on the parts you use most.
+Prompting as a discipline, Power BI as something you can read and diff,
+`CLAUDE.md`, Genie, tokens and context. Today builds on the parts you use most.
 
 ## What you told us since, and what it changed
 
@@ -26,32 +25,27 @@ The August call reordered this whole plan:
 
 ## How today is shaped
 
-One question, six parts, each feeding the next. By the end of the day you will
-have **a definition your team shares, rules that catch bad data, and a report
-you can defend.**
+One question, six parts, each feeding the next. By the end: **a definition your
+team shares, rules that catch bad data, and a report you can defend.**
 
-**The rhythm is the same every time:** we do it, you do it, you tell us you are
-ready, and only then do we move on. The readiness check is not rhetorical:
+**The rhythm every time:** we do it, you do it, you tell us you are ready, then
+we move on.
 
 > **If we are going too fast, stop us.** You asked for more doing and less
-> watching — the readiness check after every part is how we hold ourselves to
-> that.
+> watching — the readiness check is how we hold ourselves to that.
 
-**Everything from here is Claude Code.** It is what you have licences for, so it
-is what we build the habits in.
+**Everything from here is Claude Code.** It is what you have licences for.
 
 ## Two things worth being clear about
 
-1. **All the data is synthetic.** Nothing here is a real supporter. Nothing you
-   do today puts real data anywhere near an AI tool.
-2. **Nobody needs Databricks access today.** There is one Databricks moment
-   before the break, and we run it on our own workspace while you watch.
+1. **All the data is synthetic.** Nothing today puts real data near an AI tool.
+2. **Nobody needs Databricks access today.** One Databricks moment before the
+   break, on our own workspace, while you watch.
 
 ## Before we start
 
-You need Claude open and signed in — desktop app or Git Bash terminal, whichever
-you installed — and Git and `uv` working, because the next thing we do is get the
-workshop folder onto your machine.
+You need Claude open and signed in — desktop app or Git Bash terminal — and Git
+and `uv` working. Next we get the workshop folder onto your machine.
 
 **If anything is missing, say so now.** You will pair with a neighbour, and the
 person without a working machine writes every prompt while the other types.

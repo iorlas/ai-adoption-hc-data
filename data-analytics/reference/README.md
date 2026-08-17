@@ -1,7 +1,7 @@
 # Reference
 
-Four short pages. None of them is a session — they are the things worth having
-open while we work, and worth keeping afterwards.
+Four short pages. None is a session — they are worth having open while we work,
+and worth keeping afterwards.
 
 | Page | Read it |
 |---|---|
@@ -10,5 +10,4 @@ open while we work, and worth keeping afterwards.
 | [`prompt-patterns.md`](prompt-patterns.md) | When a prompt is not getting you what you wanted. Builds on July's request / target / location / actions |
 | [`where-knowledge-lives.md`](where-knowledge-lives.md) | Used inside Session 3. Read it after if you want it again |
 
-`checking-the-answer.md` is the one that outlives the workshop. If you keep one
-page from these two days, keep that one.
+If you keep one page from these two days, keep `checking-the-answer.md`.

@@ -9,21 +9,22 @@
 
 ## The situation
 
-`adf/` holds one pipeline. Eleven activities, a Mapping Data Flow, eight datasets,
-three linked services, a weekly trigger. Last published November 2024 by someone
-who has left. Its folder is `Legacy/Supporter`, it is annotated `do-not-touch`,
-and one activity is called `Copy1`.
+`adf/` holds one pipeline:
 
-Nobody in this room has seen it before. That is on purpose — this is the exact
-position you are in with the ones you inherited.
+- Eleven activities, a Mapping Data Flow, eight datasets, three linked services,
+  a weekly trigger
+- Last published November 2024 by someone who has left
+- Folder `Legacy/Supporter`, annotated `do-not-touch`, one activity called
+  `Copy1`
+
+Nobody here has seen it before — on purpose. It is the exact position you are in
+with the ones you inherited.
 
 ## What makes this possible without ADF
 
-The pipeline is **JSON**. Claude reads JSON as well as it reads anything. So the
-whole of today's ADF work happens on text files on your laptop: no factory, no
-Azure connection, no permissions, nothing that could run by accident.
-
-This is worth internalising because it generalises.
+The pipeline is **JSON**, and Claude reads JSON as well as it reads anything. No
+factory, no Azure connection, nothing that could run by accident. This
+generalises:
 
 > Anything in your world stored as text is readable — pipeline definitions, DAX,
 > M, SQL, config, YAML. Anything that is a binary or lives only inside a GUI is
@@ -32,17 +33,16 @@ This is worth internalising because it generalises.
 
 ## What "explain it" actually means
 
-Not a summary. Four specific questions a maintainer needs answered:
+Not a summary. Four questions a maintainer needs answered:
 
-1. **What is the order of operations, and what depends on what?** Including
-   which dependencies are on success and which are not — that distinction is
-   where the surprises live.
-2. **Where does a given number come from?** Pick a column in the output table
-   and trace it back to its source. This is the question you get asked when a
-   figure looks wrong, and it is the one that takes half a day by hand.
-3. **What decisions are baked in?** Filters, defaults, exclusions. Things
-   somebody decided once, for a reason nobody remembers.
-4. **What is the schedule and what happens if a run is missed?**
+1. **Order of operations, and what depends on what** — including which
+   dependencies are on success and which are not. That is where the surprises
+   live.
+2. **Where does a given number come from?** Asked whenever a figure looks wrong,
+   and half a day by hand.
+3. **What decisions are baked in?** Filters, defaults, exclusions — decided once,
+   for a reason nobody remembers.
+4. **What is the schedule, and what happens if a run is missed?**
 
 ## The thing that will actually happen
 
@@ -50,10 +50,7 @@ Not a summary. Four specific questions a maintainer needs answered:
 > it will be wrong, because it is inferring intent from JSON with no comments.
 > You are the one who can tell which.
 
-So the skill here is not getting the explanation. It is **interrogating it**:
-picking the claims that matter and checking them against the JSON yourself. You
-know what ADF activities do. You are the one who can tell whether the
-explanation is right — Claude is doing the reading, not the judging.
+The skill is not getting the explanation — it is **interrogating it**.
 
 ---
 
@@ -70,31 +67,26 @@ Understand an inherited pipeline.
 > dependency is on success or on something else. Write it as prose a colleague
 > could read, not a bullet list of activity names.
 
-Read it. Then check **one** thing yourself against the JSON, before you believe
-any of the rest:
+Then check **one** thing yourself against the JSON, before believing the rest:
 
 > `Update Watermark` — what is its dependency condition, and what does that mean
 > if the data flow fails?
 
-The answer is not `Succeeded`. Work out what follows from that. It is the kind
-of detail that survives in a pipeline for years because nobody has ever read the
-JSON.
+**The answer is not `Succeeded`.** Details like this survive for years because
+nobody has read the JSON.
 
 ## Step 2 — Trace one number back (~4 min)
 
 **▸ Your turn.**
 
-Pick a column in the output and follow it all the way home:
-
 > The output table `dw.dim_supporter_enriched` has a column `value_band`. Trace
 > it back to source: which transformation creates it, what it is derived from,
 > and which rows never reach it at all.
 
-That last clause is the one that matters. Something is filtered out before the
-sink, and if you were asked "why is this supporter missing from the report?"
-this is where the answer lives.
+That last clause matters. Something is filtered out before the sink — which is
+where "why is this supporter missing from the report?" gets answered.
 
-Then the same question in the form you actually get asked it:
+Then the same question as you actually get asked it:
 
 > A colleague says a supporter is missing from the dashboard. Given this
 > pipeline, list every place they could have been dropped, in order.
@@ -106,12 +98,10 @@ Then the same question in the form you actually get asked it:
 > List every hardcoded value, filter, default and exclusion in this pipeline.
 > For each: where it is, what it does, and what would break if it were wrong.
 
-Expect several. At least one is a business rule that somebody typed once and
-that is still silently shaping every number downstream. At least one is a
-comment that admits it is a workaround. At least one should not be in the file
-at all.
+Expect several. One is a business rule silently shaping every number downstream.
+One is a comment admitting it is a workaround. One should not be in the file.
 
-When you find the business rule, ask the real question:
+When you find the business rule:
 
 > Is this filter documented anywhere in the pipeline, and how would anyone
 > reading the output know it was applied?
@@ -123,10 +113,9 @@ When you find the business rule, ask the real question:
 > Which parts of your explanation are things the JSON states directly, and which
 > are things you inferred? List the inferences separately.
 
-This is the habit worth taking away from the whole session. A confident
-explanation of undocumented code is **partly inference**, always. Making it
-separate the two is a ten-second question that tells you which half needs a
-human to check it.
+The habit worth taking away. A confident explanation of undocumented code is
+**partly inference, always** — and one ten-second question tells you which half
+needs a human.
 
 ## Step 5 — Confirm ready
 
@@ -141,13 +130,12 @@ Tell us when you can answer these three without looking:
 ## If it goes wrong
 
 **It only reads one file.** Say: *"read all five files in `adf/`, including the
-data flow script lines and the datasets."* The data flow is where most of the
-logic is, and it is easy to miss because it is a separate file.
+data flow script lines and the datasets."* The data flow holds most of the logic
+and is a separate file.
 
 **The explanation is too shallow.** Push: *"explain it to someone who has to be
-on call for it tonight."* Changes the answer considerably.
+on call for it tonight."*
 
-**You disagree with it.** Good. Say so, in the conversation, with your reason.
-Watch what it does — a well-argued correction usually gets a real reconsideration,
-and occasionally you turn out to be the one who was wrong. Both outcomes are the
-exercise.
+**You disagree with it.** Good — say so, with your reason. A well-argued
+correction usually gets a real reconsideration, and occasionally you turn out to
+be wrong. Both outcomes are the exercise.

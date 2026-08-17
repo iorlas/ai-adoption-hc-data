@@ -3,16 +3,11 @@
 In July you used Claude Code in the **terminal**. The prerequisites asked you to
 install the **desktop app** as well.
 
-That is not a correction and it is not an upgrade. It is the **same Claude
-Code** — same model, same `CLAUDE.md`, same files, same everything that
-matters. What changes is the window around it.
+Not a correction, not an upgrade. It is the **same Claude Code** — same model,
+same `CLAUDE.md`, same files. Only the window changes.
 
-**For everything in these two sessions, the two are equal.** Every prompt in
-every exercise works identically in both. Nobody is going to tell you which to
-use, and we are not going to spend the day selling you a window.
-
-We do spend a few minutes on it on Monday morning, because half the room has
-never opened the app and finding that out at 10:15 is expensive.
+**For these two sessions the two are equal**, and every prompt works identically
+in both.
 
 > **If you are not already a terminal person, use the desktop app. If you are,
 > stay in the terminal.** Same Claude, same answers. Whichever you pick, do not
@@ -37,51 +32,46 @@ never opened the app and finding that out at 10:15 is expensive.
 
 ## So which one?
 
-**Whichever you will actually open.** That is not a dodge — it is the only
-criterion that matters, and it is different per person:
+**Whichever you will actually open.** The only criterion that matters:
 
-- If July's terminal clicked for you and you have used it since, **stay there.**
-  Nothing in these two days needs the app.
-- If a normal window suits how you work better, **the app gives you that** and
-  changes nothing else.
-- If you are reviewing a lot of edits, the app's side-by-side view is genuinely
-  easier on the eye. That is the one real difference you will feel this week.
+- July's terminal clicked for you → **stay there.** Nothing here needs the app.
+- A normal window suits you better → **the app gives you that** and changes
+  nothing else.
+- Reviewing a lot of edits → the app's side-by-side view is easier on the eye.
+  The one real difference you will feel this week.
 
-Some people end up using both — the app for reading and reviewing, the terminal
-when they are moving fast. That is normal and it is not a decision you have to
-make in advance.
+Some people use both — the app for reviewing, the terminal when moving fast.
+Normal, and not a decision you make in advance.
 
 ## The four things worth knowing, whichever you pick
 
 1. **Claude works inside a folder.** Point it at the workshop folder once. If it
-   says it cannot find `data/supporters.csv`, you are in the wrong folder — you
-   want the one containing `README.md` and `verify.py`.
+   cannot find `data/supporters.csv`, you are in the wrong folder — you want the
+   one containing `README.md` and `verify.py`.
 
-2. **Plain English is the interface.** Every prompt in these materials is one to
-   three ordinary sentences. Type what you want; that is the whole of it.
+2. **Plain English is the interface.** Every prompt here is one to three ordinary
+   sentences.
 
 3. **Read the change before you accept it.** Claude edits files. Both cockpits
-   show you what is about to happen, and the habit worth building this week is
-   not clicking straight through. One exercise on Monday turns on noticing
-   exactly this.
+   show what is about to happen; the habit worth building is not clicking
+   straight through. One Monday exercise turns on noticing exactly this.
 
 4. **Start a new conversation when the subject changes.** A conversation carries
-   everything said in it — usually helpful, occasionally not. Twice on Monday
-   you are asked to start a fresh one deliberately, so that an earlier answer
-   cannot contaminate a later one.
+   everything said in it — usually helpful, occasionally not. Twice on Monday you
+   start a fresh one deliberately, so an earlier answer cannot contaminate a
+   later one.
 
 ## Things you do not need
 
-Genuinely, in either cockpit. They will not come up:
-
 - Any command starting with a slash
-- Git, beyond the one `git clone` that starts the day — no others
+- Git, beyond the one `git clone` that starts the day
 - Python — you will not write any
 - Settings, models, tokens
 
 ## If something is broken on Monday
 
-Tell us at the start rather than working around it quietly. Pairing is a fine
-outcome, and the person **without** the working machine writes every prompt
-while the other only types. Writing the prompt is the skill being taught, so
-that is the better seat, not the consolation one.
+Tell us at the start rather than working around it quietly.
+
+Pairing is a fine outcome — and the person **without** the working machine writes
+every prompt while the other types. Writing the prompt is the skill being taught,
+so that is the better seat.

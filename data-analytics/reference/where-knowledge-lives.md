@@ -1,16 +1,16 @@
 # Where does this knowledge live?
 
-The four homes, and the rule for choosing between them. The full sorting drill
-runs inside Session 3 —
+The four homes, and the rule for choosing. The full sorting drill runs inside
+Session 3 —
 [`session-3/04-shared-definitions/game.md`](../session-3/04-shared-definitions/game.md).
 
 ## Why it matters
 
-`CLAUDE.md` is read on **every single message**. It is a cost you pay
-constantly, so it holds pointers and hard rules, and the depth lives elsewhere
-and gets read only when a task needs it.
+`CLAUDE.md` is read on **every single message** — a cost you pay constantly. So
+it holds pointers and hard rules; depth lives elsewhere and is read only when a
+task needs it.
 
-Get that split wrong and your `CLAUDE.md` is four hundred lines within a month,
+Get the split wrong and your `CLAUDE.md` is four hundred lines within a month,
 every conversation is slower, and nobody reads it.
 
 ## The four homes
@@ -28,5 +28,5 @@ every conversation is slower, and nobody reads it.
 occasional → a document it points at. A decision → a decision record. A one-off
 → nowhere.
 
-Your `CLAUDE.md` should be short enough to read in a minute. If it is not, the
-depth has leaked into it, and everything you do afterwards is slower for it.
+Your `CLAUDE.md` should be readable in a minute. If it is not, depth has leaked
+into it.

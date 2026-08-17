@@ -2,8 +2,6 @@
 
 ## The shape that is usually enough
 
-Most working prompts are some combination of three things:
-
 | | | |
 |---|---|---|
 | **Situation** | What is going on, and what it should look at | *"I have a supporter export in `data/supporters.csv`"* |
@@ -14,25 +12,21 @@ Three parts, plain sentences, no notation.
 
 ## You do not need all three
 
-This is the part worth internalising, because the instinct is to fill in every
-box every time.
-
-- **Situation is free when it can already see it.** If the file is in the
-  project and the name is obvious, do not describe it. *"How many rows in
+- **Situation is free when it can already see it.** *"How many rows in
   `supporters.csv`?"* is a complete prompt.
-- **Question and task are often the same sentence.** *"Show me every distinct
-  status with its row count"* is both at once. Splitting them would be padding.
-- **A short prompt is not a lazy prompt.** *"What does this pipeline do?"* is a
-  genuinely good prompt when the pipeline is the only thing in the folder.
+- **Question and task are often one sentence.** *"Show me every distinct status
+  with its row count"* is both.
+- **A short prompt is not a lazy prompt.** *"What does this pipeline do?"* is
+  good when the pipeline is the only thing in the folder.
 
 **Add a part when the answer came back wrong in a way that part would have
-prevented.** That is the whole rule, and it is worth more than any template.
+prevented.** That is the whole rule.
 
 ## The fuller anatomy, for when a prompt is not working
 
-In July we took a prompt apart into four named pieces — **request · target ·
-location · actions**. That is the complete anatomy, and it is what to reach for
-when a prompt keeps producing the wrong *shape* of answer:
+In July we took a prompt apart into four pieces — **request · target · location ·
+actions**. Reach for it when a prompt keeps producing the wrong *shape* of
+answer:
 
 | Part | The question it answers | You are missing it when… |
 |---|---|---|
@@ -42,8 +36,7 @@ when a prompt keeps producing the wrong *shape* of answer:
 | **Actions** | What should come back? | you got prose instead of a query |
 
 **It is a diagnostic, not a template.** Filling in all four for a question you
-could have asked in eight words makes the prompt longer and the answer no
-better. Reach for it when something is going wrong, not by default.
+could have asked in eight words makes the prompt longer and the answer no better.
 
 ## Four moves that carry these two days
 
@@ -62,7 +55,7 @@ into one you can check, and it costs six words.
 > *"List every decision you made that I did not ask for."*
 
 Changes the answer materially. Worth running a question once with and once
-without, just to see the size of the difference.
+without.
 
 ### 3. Make it separate fact from inference
 
@@ -71,7 +64,7 @@ without, just to see the size of the difference.
 
 For anything undocumented — a pipeline, someone else's report, an inherited
 query. A confident explanation of undocumented work is **partly guesswork,
-always.** This makes the guesswork visible rather than pretending to remove it.
+always.**
 
 ### 4. Name the boundary
 
@@ -81,15 +74,11 @@ always.** This makes the guesswork visible rather than pretending to remove it.
 >
 > *"If a term is ambiguous, ask rather than choosing a definition for me."*
 
-The third is worth having permanently. It converts a silent wrong assumption
-into a question.
+The third is worth having permanently. It converts a silent wrong assumption into
+a question.
 
 ## When a rule belongs somewhere other than the prompt
 
-If you find yourself typing the same constraint every time, it does not belong
-in the prompt — it belongs in `CLAUDE.md`, where it applies to every
-conversation your whole team has.
-
-Session 3 does exactly that with your measure definitions. What belongs there
-and what does not:
-[`where-knowledge-lives.md`](where-knowledge-lives.md).
+If you type the same constraint every time, it belongs in `CLAUDE.md`, where it
+applies to every conversation your whole team has. What belongs there and what
+does not: [`where-knowledge-lives.md`](where-knowledge-lives.md).

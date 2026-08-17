@@ -4,12 +4,9 @@
 
 ## Why this comes first
 
-Once you know Claude reads `CLAUDE.md`, the instinct is to put everything in it.
-
-Do that and within a month it is four hundred lines, every conversation is
-slower, and nobody reads it — because **it is read on every single message.**
-So it holds signposts and hard rules, and the depth lives elsewhere, read only
-when a task needs it.
+Everything-in-`CLAUDE.md` is the instinct. Do that and in a month it is four
+hundred lines that nobody reads — because **it is read on every single
+message.** So it holds signposts and hard rules; the depth lives elsewhere.
 
 Getting this wrong is the most common way a team's first `CLAUDE.md` becomes
 useless within a quarter. It costs five minutes to avoid.
@@ -41,9 +38,8 @@ carries a pointer and the two or three measures that come up constantly.
 and we rejected the status version because it counts people who last gave in
 2019."*
 
-→ **A decision record.** It has a rejected alternative and a reason. Without it,
-the argument restarts every six months and Claude re-proposes the version you
-threw out.
+→ **A decision record.** A rejected alternative and a reason. Without it, the
+argument restarts every six months and Claude re-proposes what you threw out.
 
 **4.** *"How many active supporters were there in July?"*
 
@@ -53,7 +49,7 @@ threw out.
 Active until the source is fixed."*
 
 → **`CLAUDE.md`.** Tiny, always true, and it prevents a whole class of wrong
-answers. This is the highest-value line you will write all day.
+answers. The highest-value line you will write all day.
 
 **6.** *"Every column in the supporter table, what it means, and what makes a
 value valid."*
@@ -64,9 +60,8 @@ value valid."*
 report does not do this."*
 
 → **`CLAUDE.md` for the rule** ("refunds are excluded from income"), **a
-decision record for why**, and a line in the documentation of that report saying
-it disagrees. Three homes, because it is three different pieces of knowledge
-wearing one sentence.
+decision record for why**, and a line in that report's documentation saying it
+disagrees. Three homes — three pieces of knowledge in one sentence.
 
 **8.** *"The supporter export landed two hours late this morning."*
 
@@ -81,8 +76,7 @@ occasional → a document it points at. A decision → a decision record. A one-
 → nowhere.
 
 Your `CLAUDE.md` should be short enough to read in a minute. If it is not, the
-depth has leaked into it, and everything you do afterwards is slower for it.
-
+depth has leaked into it, and everything afterwards is slower for it.
 
 Full page, if you want it again later:
 [`reference/where-knowledge-lives.md`](../../reference/where-knowledge-lives.md).

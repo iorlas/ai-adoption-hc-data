@@ -7,15 +7,13 @@
 > The one **▸ Together** moment is the game at the end. Questions out loud
 > whenever you like.
 
-**Nobody needs Databricks access for this.** We run it on our own workspace
-while you watch. Nothing is required from Lucie's team, and there is no token to
-set up.
+**Nobody needs Databricks access.** We run it on our own workspace. Nothing is
+required from Lucie's team, and there is no token to set up.
 
 ## Why it is here
 
-Lucie raised Genie herself on the August call. Rather than leave it as a
-mention, we put **the same data-quality question into both tools** and look at
-the two answers together — on the first day, not the second.
+Lucie raised Genie on the August call. So: **the same data-quality question into
+both tools**, on the first day, not the second.
 
 ## The point is not which one wins
 
@@ -31,14 +29,13 @@ the actual skill.
 | Curated definitions | You configure them in the Genie space | You write them in `CLAUDE.md` |
 | Who can use it | Anyone with warehouse access | Anyone with the folder on their laptop |
 
-The honest summary: **Genie is better when the question is entirely inside a
-warehouse you have already curated. Claude Code is better when the answer needs
-context that is not in the warehouse** — the pipeline that produced the column,
-the definition another team uses, the report that disagrees.
+**Genie is better when the question is entirely inside a warehouse you have
+already curated. Claude Code is better when the answer needs context that is not
+in the warehouse** — the pipeline behind the column, another team's definition,
+the report that disagrees.
 
-Today's data-quality question is a good example of the second kind, because half
-of what makes a defect a defect lives in *how the data is used*, not in the
-data.
+Today's question is the second kind: half of what makes a defect a defect lives
+in *how the data is used*.
 
 ## What we run
 
@@ -49,42 +46,37 @@ The same question, in both:
 
 Watch two things:
 
-1. **Do they get the same number?** Not always — and where they differ, ask
-   which one made an assumption.
-2. **What did each need to be told first?** Genie needs a curated space.
-   Claude Code needed us to say "use SQL, not Python" and to point it at the
-   files.
+1. **Do they get the same number?** Where they differ, ask which one made an
+   assumption.
+2. **What did each need to be told first?** Genie needs a curated space. Claude
+   Code needed "use SQL, not Python" and a pointer at the files.
 
 ## The transferable idea
 
-> **Notice that both of them answered by writing a query.** Neither read your
-> rows into a model. The difference is what each one already knows about your
-> world — and both let you fix that the same way: by writing the definitions
-> down where the tool will find them.
+> **Both answered by writing a query.** Neither read your rows into a model. The
+> difference is what each already knows about your world — and both let you fix
+> that the same way: write the definitions down where the tool will find them.
 
-Which is exactly what the next part of the session does.
+Which is exactly what the next part does.
 
 ## The question to hold onto
 
-**Which of the two would you reach for on the thing you just did in data
-quality, and why?** Your reason matters more than your pick.
+**Which would you reach for on the thing you just did in data quality, and
+why?** Your reason matters more than your pick.
 
 **▸ Together, out loud.** [`game.md`](game.md) — five questions, and which tool
 you would point each one at.
 
 ## Note for the room
 
-There is nothing for you to run in this part. Watch, ask questions, and tell us
-if it changes where you would use which. If you want Genie properly — as a
-hands-on session on your own workspace — say so in the close, and we will scope
-it.
+Nothing to run here. If you want Genie hands-on on your own workspace, say so in
+the close and we will scope it.
 
 ---
 
 ## Before the break — load Power BI
 
-This part ends the morning, so this is the moment to get Power BI ready. The
-full version is in [`setup.md`](../01-prompt-refresher/setup.md); the short one:
+Full version in [`setup.md`](../01-prompt-refresher/setup.md); the short one:
 
 > Open Power BI Desktop — dismiss the sign-in form if you get one, you do not
 > need to sign in. Then **Get data → Text/CSV** and **Load** the five files from
@@ -94,20 +86,19 @@ full version is in [`setup.md`](../01-prompt-refresher/setup.md); the short one:
 Three questions come up almost every time:
 
 - **"Do I need a new workspace?"** No. Workspaces are Power BI *Service*, for
-  publishing. Everything today is a file on your own laptop, and you do not need
-  to sign in to Power BI at all.
+  publishing. Everything today is a file on your own laptop.
 - **"Where do I create the file?"** In the Power BI window. If it opens on the
-  Home screen, **New → Report**; otherwise the blank canvas is already the new
-  report. Not in VS Code — a `.pbix` is a binary file, nothing else makes one.
-- **"Which folder do I save it in?"** Anywhere you will find it again. If your
+  Home screen, **New → Report**; otherwise the blank canvas already is one. Not
+  in VS Code — a `.pbix` is binary.
+- **"Which folder do I save it in?"** Anywhere you will find it again. If the
   save dialog offers **Power BI Project (.pbip)** you have the preview feature
   on — pick **.pbix**.
 
 ## If it goes wrong
 
-Every rough edge we know about in the Power BI load — the sign-in prompt, a
-dialog you cannot close, columns that all arrive as Text, a date column full of
-errors, and why **Get data → Folder** gives you nonsense — is in
+Every rough edge in the Power BI load — the sign-in prompt, a dialog you cannot
+close, columns that all arrive as Text, a date column full of errors, and why
+**Get data → Folder** gives you nonsense — is in
 [`quirks.md`](../../quirks.md), with the fix.
 
 **If a fix does not work in thirty seconds, say so and pair with a neighbour.**

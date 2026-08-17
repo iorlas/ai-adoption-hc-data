@@ -9,8 +9,7 @@ before it — this segment is too long to front-load.*
 > **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
 > out loud. Nothing here is a test.
 
-One continuous piece of work, not two. Build first, then interrogate what you
-built.
+One continuous piece of work. Build first, then interrogate what you built.
 
 ## Why both halves
 
@@ -28,53 +27,33 @@ Lucie, on the same call:
 > front of my stakeholder and explain how it works and how the numbers are
 > derived."
 
-Those are not in conflict. They are one segment: **if it builds, teach me how to
-know it is right.** A first pass you cannot defend is worth nothing.
+Not in conflict — one segment: **if it builds, teach me how to know it is
+right.** A first pass you cannot defend is worth nothing.
 
 ## Two things we will not do
 
-Both are things you told us, and both are worth saying back so you know we
-heard them:
+- **Not pitched on speed.** No clients, no short deadlines, and you want to work
+  thoughtfully. "It's faster" means nothing to you.
+- **No recolouring charts.** Your branding is locked, so the time goes on
+  something that touches your actual work.
 
-- **We will not pitch this on speed.** You do not have clients, you do not have
-  short deadlines, and you want to do things thoughtfully and correctly. "It's
-  faster" is not an argument that means anything to you.
-- **We will not demonstrate anything by recolouring charts.** You have locked
-  custom branding, so we will spend the time on something that touches your
-  actual work instead.
+Where it does earn its keep: when a dataset is wide enough that nobody holds it
+all in their head, and the boring part is writing the twelfth measure correctly.
 
-Where this does earn its keep: when a dataset is wide enough that nobody can
-hold it all in their head, and the boring part is not deciding what to show, it
-is writing the twelfth measure correctly.
+## PBIX and PBIP, in one place
 
-## First — squaring this with July
+**PBIP is a real format and genuinely text.** Everything demonstrated on it in
+July stands.
 
-In July the hinge of the whole first day was **PBIX versus PBIP**: the idea that
-a dashboard can be *text* you can read, edit and diff. It landed, it went
-unchallenged, and everything else that day hung off it.
+**You are on `.pbix` today, and we are not asking you to migrate.** PBIP costs
+source control, process and habits — a door, not a requirement.
 
-Then in Session 4 we say plainly that Claude cannot open your `.pbix`. Those two
-things sound like a contradiction, so here is the honest version, in one place:
-
-**July was right.** PBIP is a real format, it is genuinely text, and everything
-demonstrated on it was real. Nothing about that has been withdrawn.
-
-**You are on `.pbix` today, and we are not asking you to migrate.** Moving a
-team's reporting to PBIP is a decision with real costs — source control,
-process, everybody's habits — and it is not this workshop's decision to make.
-It is a door, not a requirement, and it is still open whenever you want it.
-
-**So the loop that works on Monday morning is copy out, ask, paste back.** Less
-elegant than "point it at the project folder", and it is what actually works
-with the files you have today. Everything in this segment is built for the
-format you are actually on.
+**So the loop that works on Monday morning is copy out, ask, paste back.**
 
 ## The boundary, precisely
 
 **Claude cannot open a `.pbix`.** It is a binary — a zip of compressed model
-data. Pointing Claude at one gets you nothing.
-
-What it *can* do is everything in the layer underneath:
+data. The layer underneath is all available:
 
 | Claude does this | You do this |
 |---|---|
@@ -84,9 +63,7 @@ What it *can* do is everything in the layer underneath:
 | Says which visual answers the question, and why | Places the chart |
 | Reads a measure you paste back and tells you what it actually computes | Decides whether that is what you wanted |
 
-Knowing what to hand it is part of the skill, and it is part of this exercise.
-The working loop is: **copy out, ask, paste back.** Unglamorous, and it is the
-whole of what makes this useful on Power BI work.
+Knowing what to hand it is part of the skill.
 
 ---
 
@@ -94,12 +71,11 @@ whole of what makes this useful on Power BI work.
 
 **Build a campaign performance report, then prove it.**
 
-You are building a **campaign performance** report: which campaigns brought in
-money, from how many supporters, and how the email campaigns performed. It does
-not exist yet, and neither of the two reports in `reports/` covers it.
+Which campaigns brought in money, from how many supporters, and how the email
+campaigns performed. Neither report in `reports/` covers it.
 
-Keep Power BI Desktop and Claude side by side. You will be moving text
-between them constantly — that is the working pattern, not a workaround.
+Keep Power BI Desktop and Claude side by side — moving text between them is the
+working pattern, not a workaround.
 
 ---
 
@@ -115,18 +91,17 @@ between them constantly — that is the working pattern, not a workaround.
 > table. Use the definitions in `CLAUDE.md`. Explain the reasoning, do not just
 > give me a diagram.
 
-Read the answer properly before you build any of it. Three things to check:
+Read the answer before you build any of it. Three checks:
 
-- Has it made `campaigns` the dimension and `donations` the fact? If it has the
-  relationship pointing the other way, ask why.
-- Has it noticed that `campaign_activity` joins to campaigns *and* to
-  supporters, and said what that does to your filters?
+- Is `campaigns` the dimension and `donations` the fact? If the relationship
+  points the other way, ask why.
+- Has it noticed `campaign_activity` joins to campaigns *and* to supporters, and
+  said what that does to your filters?
 - Has it silently dropped a table you will need?
 
-Build the model in Desktop. Ask about anything you do not agree with — arguing
-with it is allowed and is usually where the learning is. If it proposes
-bidirectional filtering to "make it work", ask what that does to the supporter
-count before you accept it.
+Build the model in Desktop. Arguing with it is usually where the learning is. If
+it proposes bidirectional filtering to "make it work", ask what that does to the
+supporter count first.
 
 ## A2. The measures (~10 min)
 
@@ -138,12 +113,11 @@ count before you accept it.
 > me each measure with a one-line comment saying exactly what it counts and what
 > it excludes.
 
-Paste them in one at a time. **Read each one before you paste it.** Two specific
-things to catch, both of which Claude may get wrong and both of which matter:
+Paste them one at a time. **Read each one first.** Two things to catch:
 
 - Does the income measure exclude refunds? Which did you agree it should?
-- Is click-through rate clicks over *opens*, or clicks over *sends*? Those are
-  different numbers with the same name — which is the whole theme of today.
+- Is click-through rate clicks over *opens*, or over *sends*? Different numbers
+  with the same name — the whole theme of today.
 
 ## A3. The visuals (~9 min)
 
@@ -152,17 +126,16 @@ things to catch, both of which Claude may get wrong and both of which matter:
 > For each of these measures, tell me which visual answers the question best and
 > why. If a table is the right answer, say so rather than proposing a chart.
 
-Then place them yourself. This is the part Claude does not do, and it takes
-about four minutes, which is worth noticing.
+Then place them yourself — Claude does not do this part, and it takes about four
+minutes.
 
-Ask it one more thing:
+One more:
 
 > What question does this report not answer that someone will ask in the first
 > meeting?
 
-**We call time at the 25-minute mark whatever state the report is in.** A
-half-finished report you can interrogate teaches more than a finished one you
-cannot.
+**We call time at 25 minutes whatever state the report is in.** A half-finished
+report you can interrogate teaches more than a finished one you cannot.
 
 ---
 
@@ -180,15 +153,13 @@ Copy your measures out of Desktop and paste them back:
 > the definitions in `CLAUDE.md`. Where does it not match? Where did you make an
 > assumption I did not ask for?
 
-This is the copy-out-ask-paste-back loop, and it is the single most useful habit
-from today.
+The copy-out-ask-paste-back loop — the single most useful habit from today.
 
 ## B2. Cross-check against the reports that already exist (~12 min)
 
 **▸ Your turn.**
 
-This is the check Lucie described as the last thing she does before anything
-goes live:
+The check Lucie described as the last thing before anything goes live:
 
 > "Go and hunt around in the service for every other dashboard that might have a
 > similar measure and make sure that your number is reporting the same one… if
@@ -205,9 +176,8 @@ So do exactly that:
 
 **What you should find.** Your income measure and Fundraising Summary's will
 disagree by about **£17,000** if you excluded refunds and it did not. Your
-supporter count and Supporter Engagement's may agree or may not, depending on
-what you did with duplicates. Both differences are explainable. Explaining them
-is the deliverable.
+supporter count and Supporter Engagement's may or may not agree, depending on
+what you did with duplicates. **Explaining the differences is the deliverable.**
 
 Then the harder question:
 
@@ -225,9 +195,8 @@ Write the answer down. That sentence is the actual output of this exercise.
 > type, a definition. For each one, say what you assumed and what the
 > alternative was.
 
-Expect a longer list than you are comfortable with. That is the point: the
-assumptions were always there, and now they are visible and you can accept or
-reject each one on purpose.
+Expect a longer list than you are comfortable with. The assumptions were always
+there; now you can accept or reject each on purpose.
 
 ## B4. Then the game
 
@@ -235,7 +204,7 @@ reject each one on purpose.
 numbers each, and what you say to them.
 
 The wrong answer available every time is *"let me go and check"*. You already
-know — that is what the previous fifty minutes were for.
+know.
 
 Tell us when you can show:
 
@@ -248,31 +217,27 @@ Tell us when you can show:
 
 ## What you leave with
 
-A first-pass report you built, and then verified — against the definition you
+A first-pass report you built and then verified — against the definition you
 agreed before the break, and against the two reports that already exist. Plus a
 pre-launch check you can repeat.
 
-Number 2 above is the real deliverable of the segment. A number without the
-sentence is half the exercise.
+Number 2 is the real deliverable. **A number without the sentence is half the
+exercise.**
 
 ---
 
 ## If it goes wrong
 
-**The DAX errors on paste.** Paste the error message straight back — it is
-usually a column name it guessed. Do not retype it by hand; make it fix its own
-output, because that is the loop you want to be fluent in.
+**The DAX errors on paste.** Paste the error message straight back — usually a
+column name it guessed. Do not retype by hand; make it fix its own output.
 
 **Relationships will not create.** Almost always duplicate values on the
-one-side, which is a data-quality problem from part 2 arriving in a new form.
-Ask: *"why can I not make this a one-to-many relationship?"* and let it find the
-duplicates.
+one-side — part 2's data-quality problem in a new form. Ask: *"why can I not
+make this a one-to-many relationship?"*
 
 **You run out of time in Part A.** Part B is the half that matters. Stop
-building at the 25-minute mark even if the report is unfinished — a
-half-finished report you can interrogate teaches more than a finished one you
-cannot.
+building at the 25-minute mark even if the report is unfinished.
 
 **Someone has no Power BI Desktop.** Pair up. The person without Desktop writes
-every prompt; the person with it only types and pastes. Prompt-writing is the
-skill being taught, so this is genuinely the better seat, not a consolation.
+every prompt; the other types and pastes. Prompt-writing is the skill being
+taught, so this is genuinely the better seat.

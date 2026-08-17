@@ -14,11 +14,10 @@ Lauren:
 > "We'd prefer to use Claude more for the coding side of things, and the
 > analysis should be primarily done by analysts themselves."
 
-So this is **not** AI doing your analysis. It is you having a hypothesis and
-getting to a trustworthy answer with less typing. The judgement stays yours. The
-typing does not.
+Not AI doing your analysis. You having a hypothesis and reaching a trustworthy
+answer with less typing.
 
-## What the division of labour actually is
+## The division of labour
 
 | You | Claude |
 |---|---|
@@ -28,33 +27,24 @@ typing does not.
 | Decide whether the answer is real or an artefact | Enumerates the alternatives you have not tried |
 | Say what it means | — |
 
-The row that matters is the fourth. **"Is this real, or is it an artefact of how
-I asked?"** is the question that separates an analyst from a query.
+Row four is the one that matters. **"Is this real, or an artefact of how I
+asked?"** separates an analyst from a query.
 
 ## The failure mode to watch
-
-You ask a question, get a number, and it confirms what you expected. You move
-on.
 
 > Nobody checks a comfortable answer. That is the whole failure mode. So say out
 > loud what would make you disbelieve it, before you look.
 
 Then check that thing first.
 
-This session's data gives you plenty of material — after Monday you know the
-duplicates, the orphans, the impossible dates and the typo are all in there, and
-every one of them can produce a comfortable-looking wrong answer.
-
 ## The specific trap in this dataset
 
-Anything you compute per-supporter is affected by the duplicate people. Anything
-you compute per-campaign is affected by the donations pointing at campaigns that
-do not exist. Anything time-based is affected by the impossible dates.
+- Per-supporter → the **duplicate people**
+- Per-campaign → **donations pointing at campaigns that do not exist**
+- Time-based → the **impossible dates**
 
-None of those will make an answer look obviously wrong. They will make it look
-slightly different from the truth, which is much harder to catch — and is why
-the first move on any real question is *"what in this data could make this
-answer wrong?"*
+None makes an answer look obviously wrong — only slightly different from the
+truth, which is much harder to catch.
 
 ---
 
@@ -62,9 +52,8 @@ answer wrong?"*
 
 Hypothesis, query, answer you trust.
 
-Two hypotheses to test. **The first is fundraising-shaped, the second is
-operational-shaped** — pick whichever is closer to your team's work and do that
-one properly rather than both badly. If you have time, do the other.
+Two hypotheses: A is fundraising-shaped, B operational-shaped. **Pick the one
+closer to your team's work and do it properly rather than both badly.**
 
 ---
 
@@ -77,11 +66,11 @@ one properly rather than both badly. If you have time, do the other.
 
 **▸ We run it first, then you.**
 
-Write it down first — one line. Something like: *"if the difference is under
-10%, or if it disappears once I account for how long each group has been on the
-database, I do not believe it."*
+One line, written down first. *"If the difference is under 10%, or disappears
+once I account for how long each group has been on the database, I do not believe
+it."*
 
-Then hand Claude the whole thing:
+Then:
 
 > Test this hypothesis against `data/`: supporters acquired through Events have
 > a higher lifetime donation total than those acquired through Direct Mail.
@@ -90,16 +79,14 @@ Then hand Claude the whole thing:
 > Before you give me the answer, tell me what in this data could make the result
 > misleading.
 
-That last line changes the answer materially. Try it once without it if you want
-to see the difference.
+That last line changes the answer materially. Try it once without, to see the
+difference.
 
 ## A2. Read the query, not the number (~5 min)
 
 **▸ Your turn.**
 
-Three things to check in the SQL it wrote:
-
-- Did it exclude refunded donations? Does that match what you agreed on Monday?
+- Did it exclude refunded donations? Does that match Monday's agreement?
 - What did it do about supporters who appear twice?
 - Did it compare lifetime totals without accounting for **how long** each group
   has been on the database? Someone who joined in 2016 has had longer to give.
@@ -119,10 +106,8 @@ that was always yours.
 
 > Do the duplicate supporter records affect this result? Quantify it.
 
-At least one of these should change your picture. If none of them does, you have
-a robust finding — which is worth knowing with confidence rather than assuming.
-Not every check overturns something, and knowing a finding is robust is also a
-result.
+At least one should change your picture. If none does, the finding is robust —
+which is also a result.
 
 ## A4. The sentence (~3 min)
 
@@ -131,8 +116,7 @@ result.
 > Write two sentences I could say in a meeting: what we found, and what it does
 > not tell us.
 
-The second sentence is the one that makes it defensible. A finding without its
-limits is not defensible, and defensibility is the through-line of both days.
+The second sentence is what makes it defensible.
 
 ---
 
@@ -159,7 +143,7 @@ Then:
 
 **▸ Your turn.**
 
-Ask each of these directly:
+Ask each directly:
 
 > How are you treating tasks with `status` = 'Complete' versus 'Completed'?
 
@@ -168,10 +152,9 @@ Ask each of these directly:
 
 > Are there tasks completed before they were created? What did you do with them?
 
-The second one is the interesting one and it is genuinely subtle. If unfinished
-work is more likely to have a missing completion date, dropping those rows makes
-your average resolution time look **better** than it is — the slowest cases
-quietly leave the sample.
+The second is subtle. If unfinished work is likelier to have a missing completion
+date, dropping those rows makes average resolution time look **better** than it
+is — the slowest cases quietly leave the sample.
 
 ## B3. Push on the trend (~5 min)
 
@@ -180,8 +163,8 @@ quietly leave the sample.
 > Is the trend real, or is it an artefact of recent tasks not having been
 > completed yet? Show me how you would tell the difference.
 
-That is survivorship bias, and it is the single most common way an operational
-"it's getting worse / better" finding turns out to be nothing.
+Survivorship bias — the most common way an operational "it's getting worse"
+finding turns out to be nothing.
 
 ## B4. The sentence (~3 min)
 
@@ -203,19 +186,19 @@ Tell us when you can show:
 
 ## What you leave with
 
-Working queries against the shared dataset, a clearer sense of where that line
-between your judgement and the tool sits, and the habit of asking the one
-question a wrong answer cannot survive.
+Working queries against the shared dataset, a clearer sense of where your
+judgement ends and the tool begins, and the habit of asking the one question a
+wrong answer cannot survive.
 
 ---
 
 ## If it goes wrong
 
 **It answers before you finish asking.** Long prompts get partial answers. Break
-it into steps; the exercise is written as steps for that reason.
+it into steps.
 
-**The answer is confident and you cannot see the query.** Ask for it. Every
-time. An answer without a query is not checkable, and unchecked is unusable.
+**The answer is confident and you cannot see the query.** Ask for it. Every time.
+Unchecked is unusable.
 
-**It refuses to give a number and hedges instead.** Usually means the question
-was ambiguous. Say what you meant more precisely — which is itself the lesson.
+**It refuses to give a number and hedges.** Usually the question was ambiguous.
+Say what you meant more precisely — which is itself the lesson.

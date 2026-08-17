@@ -2,19 +2,14 @@
 
 Monday 17 August 2026 · 3 hours · both teams together throughout.
 
-The whole day answers one question:
-
 > **When AI produces a number for you, how do you know it is right, and how do
 > you defend it to the person who asked?**
 
-Two of us are running it, and we take turns in long stretches rather than
-swapping every few minutes. Whoever is not presenting is free to come and
-unblock you — that is the point of there being two of us.
+Two of us run it, in long stretches. Whoever is not presenting comes to unblock
+you.
 
-Every hands-on part works the same way: **we do it, then you do it, then you
-tell us you are ready, and only then do we move on.** If something is going too
-fast, stop us — you asked for more doing and less watching, and the readiness
-check is how we hold ourselves to that.
+**Every hands-on part: we do it, you do it, you tell us you are ready, then we
+move on.** If it is going too fast, stop us.
 
 ## The day
 
@@ -29,38 +24,34 @@ check is how we hold ourselves to that.
 | 5 | `05-build-and-verify/` | 55 | Build a report with Claude, then prove it is right |
 | 6 | `06-close/` | 15 | Retro, and one thing to try before Tuesday |
 
-Every part is one folder, and the files are always the same:
+Each part is one folder, always the same files:
 
 | | |
 |---|---|
 | **`README.md`** | **The part.** Why it matters, then every step. We read it with you |
 | **`game.md`** | **Capture it** — a few cards, called out loud. Only some parts have one |
 
-`README.md` is the single description of what happens, so there is never a
-question of whether you or we are driving a given step:
+`README.md` says who is driving each step:
 
 > **▸ We run it first, then you** — watch, then repeat the same thing
 > **▸ Your turn** — you drive, we are on the floor
 > **▸ Together** — whole room, out loud
 
-Nothing is a test and nothing is graded. The openings and closes have neither
-exercise nor game.
+Nothing is a test and nothing is graded.
 
 ## The thread running through it
 
-Each part hands something to the next:
-
-1. You warm up on the shared data and settle which window you are working in —
-   and the profile you produce is where part 2 starts.
+1. You warm up on the shared data and settle which window you are in — the
+   profile you produce is where part 2 starts.
 2. You find out the data is messier than the reports admit.
-3. You see that two tools answer the same question differently, and why.
-4. You discover two live reports disagree about "active supporters" — and the
-   messiness from part 2 is one of the reasons.
+3. You see two tools answer the same question differently, and why.
+4. You discover two live reports disagree about "active supporters" — part 2's
+   messiness is one of the reasons.
 5. You agree a definition, write it down where your team and Claude both read
-   it, then build a new report that uses it — and check it against the old ones.
+   it, build a report that uses it, and check it against the old ones.
 
-By the close you have a written definition your team shares, a set of
-data-quality rules, and a report you built *and* verified.
+By the close: a written definition your team shares, a set of data-quality
+rules, and a report you built *and* verified.
 
 ## What you need in front of you
 
@@ -72,15 +63,14 @@ data-quality rules, and a report you built *and* verified.
 
 ## Two pages worth having open
 
-And one more for when something misbehaves: **[`quirks.md`](../quirks.md)** —
-Windows rough edges with the fix. Look there before asking.
-
 - **[`reference/desktop-or-terminal.md`](../reference/desktop-or-terminal.md)** —
-  the two windows and how they differ. Part 1 covers it live; keep this for
-  afterwards. They are the same Claude Code and either is fine.
+  the two windows and how they differ. Same Claude Code, either is fine.
 - **[`reference/checking-the-answer.md`](../reference/checking-the-answer.md)** —
   keep it open all day. Five tells for a wrong answer and the cheap question
-  that catches each. You will use three of them before the break.
+  that catches each. You will use three before the break.
+
+When something misbehaves: **[`quirks.md`](../quirks.md)** — Windows rough edges
+with the fix. Look there before asking.
 
 ## What you will have written by the end
 

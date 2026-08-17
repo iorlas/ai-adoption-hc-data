@@ -5,8 +5,8 @@
 Five situations. Someone has two numbers in front of them and wants to know
 which is right. **What do you say?**
 
-There is a wrong answer available every time, and it is *"let me go and check"* —
-because you already know. That is what the last fifty-five minutes were for.
+The wrong answer available every time is *"let me go and check"* — because you
+already know. That is what the last fifty-five minutes were for.
 
 ---
 
@@ -14,8 +14,8 @@ because you already know. That is what the last fifty-five minutes were for.
 
 > *"Fundraising says £947,000. Your new report says £930,000. Which is right?"*
 
-**Both.** Yours excludes refunded gifts; theirs does not. about £17,000 of gifts were
-given and later returned.
+**Both.** Yours excludes refunded gifts; theirs does not. About £17,000 of gifts
+were given and later returned.
 
 Then the useful sentence: *"which of those two is the number you want depends on
 whether you are reporting what people gave us or what we kept."*
@@ -28,8 +28,8 @@ whether you are reporting what people gave us or what we kept."*
 people who actually gave in the last twelve months. Different questions, same
 word.
 
-Never say *"it's a data issue"* here — it is a definition issue, and calling it
-data sends someone off to fix something that is not broken.
+Never say *"it's a data issue"* — it is a definition issue, and calling it data
+sends someone off to fix something that is not broken.
 
 ### 3
 
@@ -37,11 +37,11 @@ data sends someone off to fix something that is not broken.
 
 **They are right to flag it, and the number is real.** 77 rows record a click
 with no open — a tracking artefact. Across the whole dataset that only lifts
-click-through to about 19%, but the measure divides clicks by opens, so for an
-individual supporter or a single campaign it can exceed 100%.
+click-through to about 19%, but the measure divides clicks by opens, so for one
+supporter or one campaign it can exceed 100%.
 
-The answer is to say which denominator you used and why, not to quietly change
-it to make the number look sensible.
+Say which denominator you used and why. Do not quietly change it to make the
+number look sensible.
 
 ### 4
 
@@ -56,9 +56,9 @@ count of supporters are never going to match.
 
 > *"So which number do I put in the trustee report?"*
 
-**This is not a data question, and it is not yours to answer alone.** Say what
-each number means and what it excludes; the choice of which one is reported is
-theirs to make with the information you just gave them.
+**Not a data question, and not yours to answer alone.** Say what each number
+means and what it excludes; which one gets reported is theirs to choose with the
+information you just gave them.
 
 Handing them a single number without that is how the disagreement you spent
 today untangling got created in the first place.

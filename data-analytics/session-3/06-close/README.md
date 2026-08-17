@@ -8,38 +8,35 @@
 
 ## The retro (~10 min)
 
-Three questions, and short answers are fine. Write the answers down — they steer
-Tuesday, and Tuesday is a day away, so there is still time to change it.
+Three questions, short answers fine. We write them down — they steer Tuesday,
+and there is still time to change it.
 
 1. **What landed?** Which part will you actually use.
 2. **What did not?** Including anything that went too fast, or that you nodded
-   along to without following. Say it — the reason Tuesday exists is to be
-   different from July, and it can only be different if you tell us.
+   along to without following. Tuesday can only change if you tell us.
 3. **What should change for tomorrow?** Tuesday is 75 minutes of ADF, 35 of
    query work, and a 30-minute look at machine learning. If that weighting is
    wrong, now is when we can move it.
 
 ## What you did today
 
-Worth stating, because it goes past quickly:
-
-- You found what is actually wrong with the data, and — harder — decided which
-  of it matters.
-- You saw two tools answer the same question and understood why they differ.
-- You found two live reports disagreeing about a headline number, worked out
-  why, and agreed a definition.
-- You wrote that definition somewhere your whole team and every future Claude
+- Found what is actually wrong with the data, and — harder — decided which of it
+  matters.
+- Saw two tools answer the same question, and understood why they differ.
+- Found two live reports disagreeing about a headline number, worked out why,
+  and agreed a definition.
+- Wrote that definition where your whole team and every future Claude
   conversation will read it.
-- You built a report and then proved it, against your own definition and against
+- Built a report and then proved it, against your own definition and against
   what already exists.
 
 The through-line: **none of that was AI doing your analysis.** It was you
-deciding what is true and using a tool to get there with less typing.
+deciding what is true, with less typing.
 
 ## The ask before Tuesday (~5 min)
 
-Written up in full in **[`take-home.md`](take-home.md)** — the two options, the
-exact prompts, and what to bring back.
+In full in **[`take-home.md`](take-home.md)** — the two options, the exact
+prompts, and what to bring back.
 
 Not homework, not graded, nothing to hand in — but a real ask:
 
@@ -61,5 +58,4 @@ and the Google Worksheet export.
 
 If something came up today that is larger than a session — Genie hands-on on
 your own workspace, or anything else — say it now and we write it down. The
-follow-up sessions get named at tomorrow's close, and this is where the list
-starts.
+follow-up sessions get named at tomorrow's close.

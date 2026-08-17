@@ -7,17 +7,13 @@
 > **▸ Your turn** — you drive, we are on the floor · **▸ Together** — whole room,
 > out loud. Nothing here is a test.
 
-This is the *"finding places where they might not be robust"* part of your ask,
-and it is the one that pays off at 3am.
+This is the *"finding places where they might not be robust"* part of your ask.
 
 ## The question
 
-Not "is this good code". The question is narrower and much more useful:
+Not "is this good code". Narrower:
 
 > **What happens when something upstream changes, and how would we find out?**
-
-Sources change. A column gets renamed, a file arrives empty, a type changes, a
-supplier adds a field.
 
 > The pipelines that hurt are not the ones that fail — a failure sends an alert.
 > The ones that hurt are the ones that **succeed while producing the wrong
@@ -26,30 +22,25 @@ supplier adds a field.
 ## Three grades of failure, worst last
 
 1. **It fails loudly.** Someone gets paged, someone fixes it. Annoying, fine.
-2. **It fails and nobody is told.** Worse: the dashboard shows last week's
-   numbers and everyone believes them.
-3. **It succeeds with the wrong data.** Worst by a long way. Nothing alerts,
-   the numbers look plausible, and it may be months before anyone notices — if
-   anyone ever does.
+2. **It fails and nobody is told.** The dashboard shows last week's numbers and
+   everyone believes them.
+3. **It succeeds with the wrong data.** Worst by a long way. Nothing alerts, the
+   numbers look plausible, and it may be months before anyone notices.
 
-Category 3 is where you should spend the twenty minutes, and this pipeline has
-several. Something that silently replaces a missing value with a default. A
-schema setting that means an upstream column change reshapes the output without
-complaint. A step that empties a table before it knows the replacement data is
-good.
+Spend the twenty minutes on category 3. This pipeline has several:
+
+- A missing value silently replaced with a default
+- A schema setting that lets an upstream column change reshape the output
+- A step that empties a table before it knows the replacement data is good
 
 Ask of every step: **if this went wrong, would anybody know?**
 
 ## Why Claude is genuinely useful here
 
-Not because it knows more about ADF than you do. Because this analysis is
-tedious, mechanical and easy to lose your place in — eleven activities, eight
-datasets, a data flow, and you have to hold "what if this input were wrong" in
-your head at each one.
+Not because it knows more about ADF than you do — because this is tedious,
+mechanical, and easy to lose your place in.
 
 > It enumerates. You judge.
-
-Same division of labour as everything else this week.
 
 ---
 
@@ -69,15 +60,13 @@ Where will this break, and would anyone notice?
 > For each risk say: does the pipeline fail loudly, fail silently, or succeed
 > with wrong data? Rank them, worst first.
 
-**Rank by "succeeds with wrong data" first.** If Claude ranks by likelihood
-instead, tell it to re-rank by consequence — a rare silent corruption beats a
-frequent loud failure every time.
+**Rank by "succeeds with wrong data" first.** If Claude ranks by likelihood, tell
+it to re-rank by consequence — a rare silent corruption beats a frequent loud
+failure every time.
 
 ## Step 2 — Chase the silent ones (~3 min)
 
 **▸ Your turn.**
-
-Take the ones it graded "succeeds with wrong data" and make it be specific:
 
 > For each silent failure: describe the exact sequence of events, what the
 > output table would contain afterwards, and what a person looking at the
@@ -88,16 +77,14 @@ Then the question that turns this into work you can hand over:
 > What is the smallest change that would turn each silent failure into a loud
 > one?
 
-Usually it is a validation step, a schema assertion, or a row-count check
-against the previous run. Cheap, and it converts the worst category of failure
-into the least bad one.
+Usually a validation step, a schema assertion, or a row-count check. Cheap — and
+it converts the worst category into the least bad one.
 
 ## Step 3 — The two specific ones worth finding yourself (~4 min)
 
 **▸ Together, out loud.**
 
-Two questions to ask directly, because they are the most instructive and it is
-easy to skim past them:
+Easy to skim past, so ask directly:
 
 > The `Truncate Staging` step runs before the copy. If the copy then fails, what
 > is in the staging table? What does the next step do with that?
@@ -105,9 +92,7 @@ easy to skim past them:
 > The data flow replaces missing values with defaults. Which columns, what
 > defaults, and what does that do to a data-quality report run downstream?
 
-The second one connects straight back to Monday morning, and it is worth doing
-properly rather than reading about. Open the rules you wrote yesterday and hand
-them over:
+The second connects back to Monday. Open the rules you wrote yesterday:
 
 > Here are the data-quality rules we wrote yesterday, in
 > `docs/data-quality-rules.md`. For each one, tell me whether this pipeline
@@ -115,10 +100,10 @@ them over:
 > repairs the problem before the rule ever sees it.
 
 **Expect several of your rules to be defeated.** A pipeline that helpfully fills
-in blanks makes the data look clean while making it less true. The quality
-report downstream shows a perfect score, produced by a pipeline that is lying.
+in blanks makes the data look clean while making it less true. The quality report
+shows a perfect score, produced by a pipeline that is lying.
 
-That is the single strongest argument either session makes:
+The strongest argument either session makes:
 
 > **You can do yesterday's work perfectly and still be wrong, because the thing
 > that broke the data also hid the break. Data quality and pipelines are not two
@@ -143,9 +128,8 @@ Tell us when you can name:
 
 ## What you leave with
 
-A ranked list of weak spots in a pipeline nobody had ever documented, in the
-documentation you wrote twenty minutes ago — and a set of questions you can ask
-of the next inherited pipeline.
+A ranked list of weak spots inside the documentation you wrote twenty minutes
+ago — and a set of questions to ask of the next inherited pipeline.
 
 ---
 
@@ -155,9 +139,9 @@ of the next inherited pipeline.
 Vault". True but useless. Push: *"be specific to this pipeline — name the
 activity and describe what actually happens."*
 
-**It finds fifty problems.** Ask it to rank by consequence and give you the top
-five. A list of fifty is the same as a list of none.
+**It finds fifty problems.** Ask it to rank by consequence and give the top five.
+A list of fifty is the same as a list of none.
 
-**It misses the truncate-then-copy problem.** Ask about it directly, as in Step
-3. Worth a close look — it is the clearest example
-of a step that is individually sensible and collectively dangerous.
+**It misses the truncate-then-copy problem.** Ask directly, as in Step 3 — the
+clearest example of a step that is individually sensible and collectively
+dangerous.

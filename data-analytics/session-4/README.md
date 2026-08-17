@@ -5,15 +5,14 @@ Tuesday 18 August 2026 · 3 hours · both teams together throughout.
 Same rhythm as Monday: **we do it, then you do it, then you tell us you are
 ready, and only then do we move on.**
 
-Most of today goes to ADF, because you told us plainly where the pain is:
+Most of today goes to ADF, because you told us where the pain is:
 
 > "ADF is our biggest pain. Everyone hates it. It's a nightmare. Everything's
 > really old and we don't understand it… some of them are enormous and none of
 > us made them and the documentation is very weak."
 
-We are not going to try to change how you build pipelines. You already know how
-to do that. The goal is narrower and more useful: **make the ones you inherited
-understandable.**
+We are not changing how you build pipelines. The goal is narrower: **make the
+ones you inherited understandable.**
 
 ## The day
 
@@ -28,35 +27,23 @@ understandable.**
 | 5 | `05-ml-taster/` | 30 | One machine-learning example, watch only |
 | 6 | `06-close/` | 15 | Retro across all four sessions, and what we propose next |
 
-Every part is one folder, and the files are always the same:
-
-| | |
-|---|---|
-| **`README.md`** | **The part.** Why it matters, then every step. We read it with you |
-| **`game.md`** | **Capture it** — a few cards, called out loud. Only some parts have one |
-
-`README.md` is the single description of what happens, so there is never a
-question of whether you or we are driving a given step:
+Each part is one folder. Its `README.md` is the part — why it matters, then every
+step. We read it with you. Who drives is always marked:
 
 > **▸ We run it first, then you** — watch, then repeat the same thing
 > **▸ Your turn** — you drive, we are on the floor
 > **▸ Together** — whole room, out loud
 
-Nothing is a test and nothing is graded. The openings and closes have neither
-exercise nor game.
+Nothing is a test and nothing is graded.
 
-Tuesday has no card games — the ADF parts produce a document you can look at,
-which is a better check than any set of cards. The one place we play it out
-loud is inside part 3, using the data-quality rules **you** wrote on Monday
-rather than cards we wrote.
+**No card games today.** The ADF parts produce a document, which is a better
+check than cards. The one out-loud round is in part 3, using the data-quality
+rules **you** wrote on Monday.
 
-Parts 1–3 are three passes over the **same** pipeline, in `adf/`. You do not
-need an ADF instance for any of it — the pipeline is JSON, and Claude reads JSON
-as text.
+Parts 1–3 are three passes over the **same** pipeline, in `adf/`. No ADF instance
+needed — the pipeline is JSON, and Claude reads JSON as text.
 
 ## What you need in front of you
-
-If anything misbehaves, **[`quirks.md`](../quirks.md)** has the fix.
 
 - Claude open and signed in — desktop app or Git Bash terminal, whichever you
   chose
@@ -64,8 +51,9 @@ If anything misbehaves, **[`quirks.md`](../quirks.md)** has the fix.
   definitions in it, and `docs/data-quality-rules.md`
 - Power BI Desktop is **not** needed today
 
+If anything misbehaves, **[`quirks.md`](../quirks.md)** has the fix.
+
 ## If you missed Monday
 
-Two of today's parts use files Session 3 produced. **Tell us at the start and we
-will send you both** — two minutes to drop in, and nothing today is blocked. No
-need to announce it to the room; a quiet message is fine.
+Two parts use files Session 3 produced. **Tell us at the start and we will send
+you both** — two minutes to drop in, nothing today is blocked.
