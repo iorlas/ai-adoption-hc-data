@@ -7,8 +7,9 @@ The whole day answers one question:
 > **When AI produces a number for you, how do you know it is right, and how do
 > you defend it to the person who asked?**
 
-Two of us are running it. Denis leads and explains; Mykola drives the practical
-work on screen — so there is always one of us free to come and unblock you.
+Two of us are running it, and we take turns in long stretches rather than
+swapping every few minutes. Whoever is not presenting is free to come and
+unblock you — that is the point of there being two of us.
 
 Every hands-on part works the same way: **we do it, then you do it, then you
 tell us you are ready, and only then do we move on.** If something is going too
@@ -84,11 +85,11 @@ Not slides. Files, in this folder, that keep working after Monday:
 
 | File | From |
 |---|---|
-| `docs/data-quality-rules.md` | part 1 |
-| `docs/measure-definitions.md` | part 3 |
-| `docs/decisions/0001-active-supporter.md` | part 3 |
-| A Definitions section in `CLAUDE.md` | part 3 |
-| Your own report, built and then verified | part 4 |
+| `docs/data-quality-rules.md` | part 2 |
+| `docs/measure-definitions.md` | part 4 |
+| `docs/decisions/0001-active-supporter.md` | part 4 |
+| A Definitions section in `CLAUDE.md` | part 4 |
+| Your own report, built and then verified | part 5 |
 
 The first four already exist as skeletons with the headings in place. You are
 filling them in, not starting from a blank page.
