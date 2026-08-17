@@ -1,6 +1,13 @@
 # 1 — Prompt refresher (and two windows)
 
-**14 minutes · Claude Code, in the terminal and in the desktop app**
+**20 minutes · Claude Code, in the terminal and in the desktop app**
+
+**First six minutes: setup.** The workshop folder did not reach you before
+today, so we do it together — one `git clone`, one check, and you are running.
+Everything is in [`setup.md`](setup.md).
+
+**You do not need Power BI until after the break.** Everything this morning runs
+on the files.
 
 ## Why this is here
 
