@@ -49,9 +49,9 @@ Every argument about a number turns out to be an argument about a word.
 
 ### 5. Too clean to be true
 
-> *"The status column has four values: Active, Lapsed, Inactive, Deceased."*
+> *"All 6,000 fulfilment tasks have a valid status."*
 
-Real data is rarely tidy. There is a fifth, and it is a typo.
+Real data is rarely tidy. Ask for the counts and look at them yourself.
 
 **Ask:** *"give me every distinct value with its row count — no summarising."*
 

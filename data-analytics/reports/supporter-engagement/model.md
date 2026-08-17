@@ -38,8 +38,7 @@ in
     NoRefunds
 ```
 
-This one line is the reason this report's income figure is £16,995 lower than
-Fundraising Summary's, and nobody outside this team knows it is there.
+Nobody outside this team knows that line is there.
 
 ## What the person who built it was trying to show
 

@@ -4,7 +4,11 @@
 Active Supporters =
 CALCULATE (
     DISTINCTCOUNT ( donations[supporter_id] ),
-    DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -12, MONTH )
+    FILTER (
+        donations,
+        donations[donation_date] >= DATE ( 2025, 8, 17 )
+            && NOT ISBLANK ( RELATED ( supporters[supporter_id] ) )
+    )
 )
 // "Active" = gave money in the last 12 months. Refunds are already excluded
 // upstream in Power Query. 1,832.
@@ -25,7 +29,7 @@ DIVIDE (
     CALCULATE ( COUNTROWS ( campaign_activity ), campaign_activity[clicked] = 1 ),
     CALCULATE ( COUNTROWS ( campaign_activity ), campaign_activity[opened] = 1 )
 )
-// Can exceed 100%. Nobody has asked why.
+// Clicks over opens.
 
 Lapsing Soon =
 CALCULATE (

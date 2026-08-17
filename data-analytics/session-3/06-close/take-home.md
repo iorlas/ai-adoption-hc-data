@@ -41,9 +41,6 @@ Paste both measures in:
 Use the shared dataset. It still teaches the loop, and the two reports in
 `reports/` are built to disagree.
 
-If you would like this to land on campaign tagging instead, this is the moment
-for the DotDigital tags and the Google Worksheet export.
-
 ## What to bring back
 
 Three sentences is plenty:

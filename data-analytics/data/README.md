@@ -60,7 +60,7 @@ looks less like income and more like process.
 | `start_date`, `end_date` | date | |
 | `owner_team` | text | |
 
-`category_raw` is the shape of the real problem Lauren described: the same eight
+`category_raw` is the shape of the real problem you described: the same eight
 or so campaign types, typed differently by different people over several years,
 with no agreed list. There is no lookup table. That is the point.
 

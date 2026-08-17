@@ -51,9 +51,6 @@ teaches the loop.
 We open Session 4 by asking what happened. **"I did not get to it" is a
 completely acceptable answer** and we would rather have that than silence.
 
-If your own work is campaign tagging, this is the moment for the DotDigital tags
-and the Google Worksheet export.
-
 ## Anything bigger
 
 If something came up today that is larger than a session — Genie hands-on on

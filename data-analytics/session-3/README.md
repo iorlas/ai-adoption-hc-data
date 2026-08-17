@@ -30,6 +30,8 @@ Each part is one folder, always the same files:
 |---|---|
 | **`README.md`** | **The part.** Why it matters, then every step. We read it with you |
 | **`game.md`** | **Capture it** — a few cards, called out loud. Only some parts have one |
+| **`setup.md`** | Part 1 only — the three commands that get you running |
+| **`take-home.md`** | Part 6 only — the practice ask for before Tuesday |
 
 `README.md` says who is driving each step:
 
@@ -58,7 +60,7 @@ rules, and a report you built *and* verified.
 - Claude open and signed in — desktop app or Git Bash terminal, whichever you
   chose
 - This folder, on your machine
-- Power BI Desktop with the five CSVs from `data/` loaded
+- Power BI Desktop installed — we load the data together in the break
 - `uv run verify.py` showing green
 
 ## Two pages worth having open

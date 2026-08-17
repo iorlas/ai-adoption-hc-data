@@ -9,10 +9,9 @@ not agree, and neither of them is lying.
 | `fundraising-summary/` | Fundraising | 2,447 | £947,087.50 |
 | `supporter-engagement/` | Supporter Care | 1,832 | £930,092.50 |
 
-This is the situation Lucie described: the last thing she does before a
-dashboard goes live is hunt the service for other dashboards carrying the same
-measure, to check the numbers match. And the situation Lauren described with
-"active members" across bespoke dashboards.
+This is the situation you described: the last thing before a dashboard goes live
+is hunting the service for other dashboards carrying the same measure, to check
+the numbers match. And the "active members" problem across bespoke dashboards.
 
 Session 3 works this to the bottom: find where they differ, decide which
 definition you actually want, write it down where both Claude and your

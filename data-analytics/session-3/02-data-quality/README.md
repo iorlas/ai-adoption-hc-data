@@ -57,8 +57,7 @@ values, not Claude's summary of them.
 > Give me the full `value_counts` for `supporters.status` — every distinct
 > value with its row count, no summarising.
 
-A summary might say four statuses. There are five. One is a typo — quietly
-removing people from every report that filters on Active.
+Read the distinct values, not Claude's summary of them.
 
 **That is two of the five tells** from
 [`reference/checking-the-answer.md`](../../reference/checking-the-answer.md):

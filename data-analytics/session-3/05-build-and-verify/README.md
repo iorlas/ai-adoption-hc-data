@@ -159,7 +159,7 @@ The copy-out-ask-paste-back loop — the single most useful habit from today.
 
 **▸ Your turn.**
 
-The check Lucie described as the last thing before anything goes live:
+The check you described as the last thing before anything goes live:
 
 > "Go and hunt around in the service for every other dashboard that might have a
 > similar measure and make sure that your number is reporting the same one… if

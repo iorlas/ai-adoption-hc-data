@@ -31,8 +31,6 @@ Supporters With A Gift =
 CALCULATE (
     DISTINCTCOUNT ( donations[supporter_id] )
 )
-// Note: counts supporter_ids present in donations, whether or not they exist
-// in the supporters table.
 
 Income Per Active Supporter =
 DIVIDE ( [Total Income], [Active Supporters] )

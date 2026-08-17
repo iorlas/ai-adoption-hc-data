@@ -8,11 +8,13 @@
 > whenever you like.
 
 **Nobody needs Databricks access.** We run it on our own workspace. Nothing is
-required from Lucie's team, and there is no token to set up.
+required from your team, and there is no token to set up. Our workspace is not
+yours — different catalogs, names and permissions — so there is nothing to
+follow along in.
 
 ## Why it is here
 
-Lucie raised Genie on the August call. So: **the same data-quality question into
+You asked about Genie on the August call. So: **the same data-quality question into
 both tools**, on the first day, not the second.
 
 ## The point is not which one wins

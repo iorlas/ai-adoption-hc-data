@@ -1,6 +1,6 @@
 # Supporter Analytics — workshop sample repository
 
-> **Sessions 3 & 4, start here.** Open the **Git Bash** terminal, then two
+> **Sessions 3 & 4, start here.** Open the **Git Bash** terminal, then three
 > commands and you are running:
 >
 > ```bash

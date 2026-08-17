@@ -63,10 +63,7 @@ to reach for when a prompt keeps giving the wrong *shape* of answer: prose
 instead of a query, the wrong file, Python when you wanted SQL.
 
 **A diagnostic, not a template.** Full version:
-[`reference/prompt-patterns.md`](../../reference/prompt-patterns.md).
-
-Same for tags around each part: they earn their place on pages of pasted-in
-background. Everything here is two or three sentences.
+[`reference/prompt-patterns.md`](../../reference/prompt-patterns.md). Everything here is two or three sentences.
 
 ## How this part runs
 
@@ -110,6 +107,13 @@ everyone else — cheap to fix at twenty past, expensive at half eleven.
 Part 2 starts from this profile. Do not close it.
 
 ---
+
+## Confirm ready
+
+Tell us when you can show:
+
+1. The row count on your screen reading **4,022** — say it out loud
+2. Which window you are working in for the rest of the day
 
 ## What you leave with
 
