@@ -36,13 +36,6 @@ we move on.
 
 **Everything from here is Claude Code.** It is what you have licences for.
 
-## One change from the plan you saw
-
-**The Genie comparison is eight minutes today, not fifteen.** It is watch-only
-either way, and the time has gone into the parts where you are at your own
-keyboard. If you want longer on Genie, say so and we will put it in the
-follow-up list rather than borrow it from the hands-on work.
-
 ## Two things worth being clear about
 
 1. **All the data is synthetic.** Nothing today puts real data near an AI tool.
