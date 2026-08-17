@@ -13,8 +13,8 @@
 > Say that number out loud
 > — it is how we know the whole room is on the same data.
 >
-> **Power BI is not needed until after the break.** Everything this morning runs
-> on these files.
+> **Session 3 only:** Power BI is not needed until after the break. Everything
+> that morning runs on these files. Session 4 does not need it at all.
 
 A small, synthetic supporter-analytics dataset and codebase for the Claude Code
 workshop. It is shaped like a charity's supporter and fundraising data
@@ -76,7 +76,7 @@ prints one row count per file. **If anything is not green, say so straight away*
 Anything that misbehaves — here or later — is in
 **[`quirks.md`](quirks.md)**, with the fix.
 
-## Power BI — during the break, not now
+## Power BI — Session 3, during the break
 
 Nothing before the break needs it. **In the break**: open Power BI Desktop
 (dismiss the sign-in form if it appears — you do not need to sign in; if it

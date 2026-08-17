@@ -67,7 +67,9 @@ Understand an inherited pipeline.
 > dependency is on success or on something else. Write it as prose a colleague
 > could read, not a bullet list of activity names.
 
-Then check **one** thing yourself against the JSON, before believing the rest:
+**▸ Together — we ask, you answer from the JSON.**
+
+Then check **one** thing against the JSON, before believing the rest:
 
 > `Update Watermark` — what is its dependency condition, and what does that mean
 > if the data flow fails?

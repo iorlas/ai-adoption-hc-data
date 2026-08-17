@@ -36,8 +36,8 @@ step. We read it with you. Who drives is always marked:
 
 Nothing is a test and nothing is graded.
 
-**No card games today.** The ADF parts produce a document, which is a better
-check than cards. The one out-loud round is in part 3, using the data-quality
+**No card games today.** The ADF parts produce a document instead. The one
+out-loud round is in part 3, using the data-quality
 rules **you** wrote on Monday.
 
 Parts 1–3 are three passes over the **same** pipeline, in `adf/`. No ADF instance

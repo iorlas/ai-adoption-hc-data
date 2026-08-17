@@ -55,6 +55,12 @@ than no documentation — the next person will believe it.
 Write the documentation that does not exist: `adf/PL_Supporter_Weekly_Load.md`,
 good enough to hand a colleague in their first week.
 
+`adf/PL_Supporter_Weekly_Load.md` already exists with the headings in place —
+you are filling it in, not starting from a blank page.
+
+A finished example, for a different organisation, is in
+`templates/example-library/pipelines/`. **After you write yours, not before.**
+
 ## Step 1 — The first draft (~6 min)
 
 **▸ We run it first, then you.**

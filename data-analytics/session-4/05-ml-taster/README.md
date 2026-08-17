@@ -3,6 +3,8 @@
 **30 minutes, watch only · Databricks AutoML**
 
 **Nobody needs access.** We run this on our own Databricks while you watch.
+Our workspace is not yours — different catalogs, names and permissions — so
+there is nothing to follow along in. Nothing is required from your team for this.
 
 Deliberately **one** example rather than five — Lauren asked for *"a view of the
 art of the possible"*, not a tour. Lucie asked for *"some very high level intro
@@ -10,7 +12,7 @@ for how we could use it to do a similar very simple ML."*
 
 ## The example
 
-The one Lucie suggested: **which supporters are most likely to give again in the
+The example: **which supporters are most likely to give again in the
 next six months.** Built on the same shared dataset you have used all week, so
 you can see exactly which columns went in.
 

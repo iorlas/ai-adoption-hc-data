@@ -42,7 +42,8 @@ learning that you watch rather than run.
 
 Three things to check you have:
 
-1. Claude desktop app open, workshop folder as the project
+1. Claude open with the workshop folder as the project — desktop app, or the
+   terminal in **Git Bash** (not PowerShell)
 2. `CLAUDE.md` has a Definitions section
 3. `docs/data-quality-rules.md` exists and has content
 

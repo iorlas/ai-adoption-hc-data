@@ -31,7 +31,7 @@ Spend the twenty minutes on category 3. This pipeline has several:
 
 - A missing value silently replaced with a default
 - A schema setting that lets an upstream column change reshape the output
-- A step that empties a table before it knows the replacement data is good
+- A step that empties a table before it knows there is any replacement data at all
 
 Ask of every step: **if this went wrong, would anybody know?**
 
@@ -86,8 +86,10 @@ it converts the worst category into the least bad one.
 
 Easy to skim past, so ask directly:
 
-> The `Truncate Staging` step runs before the copy. If the copy then fails, what
-> is in the staging table? What does the next step do with that?
+> `Truncate Staging` empties the table, and then `Copy1` reads from a folder
+> named after today's date. Two cases: the copy *fails*, and the copy *succeeds
+> finding no files*. Which one does the pipeline notice, and what is in
+> `dw.dim_supporter_enriched` at the end of each?
 
 > The data flow replaces missing values with defaults. Which columns, what
 > defaults, and what does that do to a data-quality report run downstream?
@@ -95,13 +97,15 @@ Easy to skim past, so ask directly:
 The second connects back to Monday. Open the rules you wrote yesterday:
 
 > Here are the data-quality rules we wrote yesterday, in
-> `docs/data-quality-rules.md`. For each one, tell me whether this pipeline
-> would still let it fire — or whether one of the data flow's default values
-> repairs the problem before the rule ever sees it.
+> `docs/data-quality-rules.md`. For each one, tell me whether a report built on
+> `dw.dim_supporter_enriched` could still detect it — or whether this pipeline
+> hides it first. Four ways it can hide one: a default value fills the blank,
+> the aggregate sums the rows away, the column is not carried through to the
+> sink, or the row is filtered out entirely.
 
-**Expect several of your rules to be defeated.** A pipeline that helpfully fills
-in blanks makes the data look clean while making it less true. The quality report
-shows a perfect score, produced by a pipeline that is lying.
+**Expect most of your rules to be defeated.** Not by anything dramatic — by a
+left join, a `sum()`, and a column that simply is not in the output. The quality
+report shows a perfect score because the evidence never reached it.
 
 The strongest argument either session makes:
 
@@ -119,7 +123,8 @@ The strongest argument either session makes:
 
 ## Step 5 — Confirm ready
 
-Tell us when you can name:
+Show us the **Weak spots** section in `adf/PL_Supporter_Weekly_Load.md` on
+screen, and name:
 
 1. The weak spot you would fix first, and why that one
 2. One failure this pipeline would not tell anybody about

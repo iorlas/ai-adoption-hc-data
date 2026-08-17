@@ -14,7 +14,7 @@ On paper, or in the chat:
 Specific. "Explore AI" is not a sentence. "Ask it to document the
 supporter-import pipeline" is.
 
-Read a few out. This is the sentence we ask about in four weeks.
+We will read a few out. This is the sentence we ask about in four weeks.
 
 ## Retro across all four sessions (~6 min)
 
@@ -36,8 +36,8 @@ Named, not quietly dropped:
 
 - **Databricks and machine learning, properly** — hands-on, on a real workspace.
   Today was a thirty-minute taster.
-- **Git** — including the Power BI collaboration and merge-conflict pain Lucie
-  described. Its own session, roughly an hour and a half.
+- **Git** — including the Power BI collaboration and merge-conflict pain you
+  raised on the August call. Its own session, roughly an hour and a half.
 - **Genie hands-on**, if Monday's comparison made it look worth having.
 - **MCP** — connecting Claude directly to a data source rather than to files. It
   needs an IT conversation that has not happened yet, and we would rather say
@@ -49,8 +49,7 @@ have one in September, which?
 ## The one ask (~2 min)
 
 In full, with the working style it is testing and the `CLAUDE.md` practices to
-compare against afterwards: **[`take-home.md`](take-home.md)**. Point at it;
-do not read it out.
+compare against afterwards: **[`take-home.md`](take-home.md)**.
 
 > **Use this for real over the next two to four weeks, then tell us what did and
 > did not work.**

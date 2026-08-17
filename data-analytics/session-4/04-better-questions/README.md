@@ -32,6 +32,9 @@ asked?"** separates an analyst from a query.
 
 ## The failure mode to watch
 
+The five tells, and the cheap question that catches each:
+[`reference/checking-the-answer.md`](../../reference/checking-the-answer.md).
+
 > Nobody checks a comfortable answer. That is the whole failure mode. So say out
 > loud what would make you disbelieve it, before you look.
 
@@ -82,7 +85,7 @@ Then:
 That last line changes the answer materially. Try it once without, to see the
 difference.
 
-## A2. Read the query, not the number (~5 min)
+## A2. Read the query, not the number (~6 min)
 
 **▸ Your turn.**
 
@@ -94,7 +97,7 @@ difference.
 If it did not handle those, that is not a failure of the tool. It is the part
 that was always yours.
 
-## A3. Attack your own result (~8 min)
+## A3. Attack your own result (~11 min)
 
 **▸ Your turn.**
 
@@ -109,7 +112,7 @@ that was always yours.
 At least one should change your picture. If none does, the finding is robust —
 which is also a result.
 
-## A4. The sentence (~3 min)
+## A4. The sentence (~4 min)
 
 **▸ Your turn.**
 
@@ -127,7 +130,7 @@ The second sentence is what makes it defensible.
 
 Same shape, using `data/fulfilment_tasks.csv`.
 
-## B1. Say what would change your mind (~3 min)
+## B1. Say what would change your mind (~4 min)
 
 **▸ We run it first, then you.**
 
@@ -139,7 +142,7 @@ Then:
 >
 > Before the answer: what in this data could make this result misleading?
 
-## B2. The specific traps in this table (~5 min)
+## B2. The specific traps in this table (~7 min)
 
 **▸ Your turn.**
 
@@ -156,7 +159,7 @@ The second is subtle. If unfinished work is likelier to have a missing completio
 date, dropping those rows makes average resolution time look **better** than it
 is — the slowest cases quietly leave the sample.
 
-## B3. Push on the trend (~5 min)
+## B3. Push on the trend (~9 min)
 
 **▸ Your turn.**
 
@@ -166,7 +169,7 @@ is — the slowest cases quietly leave the sample.
 Survivorship bias — the most common way an operational "it's getting worse"
 finding turns out to be nothing.
 
-## B4. The sentence (~3 min)
+## B4. The sentence (~4 min)
 
 **▸ Your turn.**
 

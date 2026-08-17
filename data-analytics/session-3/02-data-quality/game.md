@@ -1,6 +1,6 @@
 # Game — keep it or bin it?
 
-**5 minutes, out loud, as a room.** Replaces the compare-answers slot.
+**5 minutes, out loud, as a room.**
 
 Six rules Claude proposed for this dataset. For each: **keep it, or is it
 noise?**
@@ -14,6 +14,34 @@ A rule that fires on healthy data is worse than no rule. In a month nobody reads
 the alerts, and the real failure walks past.
 
 ---
+
+## The cards
+
+### 1. `status` must be one of Active, Lapsed, Inactive, Deceased
+
+### 2. Postcodes must be consistently formatted
+
+### 3. Every supporter must have an email address
+
+### 4. A donation must reference a supporter who exists
+
+### 5. `marketing_consent` must be 1
+
+### 6. No two rows should be the same person
+
+---
+---
+---
+
+# STOP
+
+**Call all six first.** Everything below is the answers.
+
+---
+---
+---
+
+## Verdicts
 
 ### 1. `status` must be one of Active, Lapsed, Inactive, Deceased
 
