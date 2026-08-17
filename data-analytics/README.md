@@ -70,9 +70,11 @@ prints one row count per file. **If anything is not green, say so straight away*
 
 ## Power BI — during the break, not now
 
-Nothing before the break needs it. **In the break**: Power BI Desktop → **File →
-New** → **Get Data → Text/CSV** → load all five files from `data/`, one at a
-time. Save the `.pbix` anywhere on your own machine.
+Nothing before the break needs it. **In the break**: open Power BI Desktop
+(dismiss the sign-in form if it appears — you do not need to sign in; if it
+opens on the Home screen, pick **New → Report**), then **Home → Get data →
+Text/CSV** and **Load** each of the five files from `data/` in turn. Save the
+`.pbix` anywhere on your own machine.
 
 **No new workspace, and nothing to ask IT for.** Workspaces belong to Power BI
 *Service* — for publishing a report to other people. Nothing here is published;

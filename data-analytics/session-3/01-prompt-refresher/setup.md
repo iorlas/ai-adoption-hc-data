@@ -12,11 +12,23 @@ you were not already asked for.
 git clone https://github.com/iorlas/ai-adoption-hc-data.git
 ```
 
-If you already have it from earlier, get the latest instead — it has moved on:
+If you already have it from earlier, `cd` into wherever you put it and get the
+latest instead — it has moved on:
 
 ```bash
-cd ai-adoption-hc-data && git pull
+git pull
 ```
+
+If that stops with *"your local changes would be overwritten"*, you have edited
+something. Park the edits, pull, put them back:
+
+```bash
+git stash && git pull && git stash pop
+```
+
+**On Windows, use the Git Bash terminal** — in VS Code it is in the terminal
+dropdown. Everything today is written for it, and a couple of commands behave
+differently in PowerShell.
 
 ## 2. Check it works
 
@@ -48,11 +60,18 @@ tool and either is fine.
 **You do not need Power BI until after the break.** Everything this morning runs
 on the files. In the break:
 
-1. **Power BI Desktop → File → New.** That is where the report gets made — in
-   the Power BI window, not in a text editor. A `.pbix` is not a text file.
-2. **Get Data → Text/CSV**, pick one file from `data/`, **Load**. Repeat for all
-   five. Three minutes, and the files are small.
-3. **Save it somewhere you will find again.** Any folder on your own machine.
+1. **Open Power BI Desktop.** If it offers you a sign-in form, dismiss it — you
+   do not need to sign in for anything today. If it opens on the Home screen
+   rather than a blank canvas, choose **New → Report**.
+2. **Home ribbon → Get data → Text/CSV**, pick one file from `data/`, then
+   **Load** (not Transform Data). Repeat for all five. Three minutes, and the
+   files are small.
+3. **Save it somewhere you will find again** — File → Save, any folder on your
+   own machine. If the save dialog offers **Power BI Project (.pbip)**, choose
+   **Power BI report (.pbix)**.
+
+The report itself is made in the Power BI window, not in a text editor — a
+`.pbix` is a binary file and nothing else can create one.
 
 **No new workspace, and nothing to ask IT for.** Workspaces are a Power BI
 *Service* thing — for publishing a report so other people can see it. We never
@@ -81,5 +100,9 @@ not `python verify.py` — `uv` fetches DuckDB for you, plain Python will not.
 **A proxy or IT block stops the clone.** Tell us immediately. We have the folder
 on a memory stick and can hand it over — this is not a reason to spend the
 morning watching.
+
+**`SSL certificate problem: unable to get local issuer certificate`.** Your
+network inspects encrypted traffic and the tools do not know its certificate.
+Tell us — the same thing will stop `uv`, and there is a one-line fix for both.
 
 **Everything works but the row count is not 4,022.** Stale copy. `git pull`.

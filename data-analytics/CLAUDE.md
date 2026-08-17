@@ -18,6 +18,10 @@ The CSVs are queried in place with DuckDB — there is no database server.
 uv run python -c "import duckdb; print(duckdb.sql(\"SELECT count(*) FROM 'data/supporters.csv'\"))"
 ```
 
+Run it from the `data-analytics` folder — the paths are relative to where you
+are. On Windows use the **Git Bash** terminal rather than PowerShell; PowerShell
+does not accept `\"` as an escaped quote and the command will fail there.
+
 Prefer SQL over Python for anything to do with the data. If you need to run a
 query, write the SQL, run it through DuckDB, and show me both the query and the
 result.
