@@ -1,7 +1,12 @@
 # Facilitator materials
 
-**Never ships to attendees.** If this repository is handed over as-is, delete
-this folder and both `session-*/facilitator/` folders first.
+**Not for attendees.** This repo is one repo, and it holds everything —
+material, run sheets, answer keys. **It is public until it is made private
+(planned: Friday 21 August 2026).** Until then, assume anyone who has the URL
+can read the answers.
+
+If it is ever handed over as-is, delete this folder, both
+`session-*/facilitator/` folders, every `answers.md`, and `session-4/fallback/`.
 
 | File | What it is |
 |---|---|
@@ -12,7 +17,7 @@ this folder and both `session-*/facilitator/` folders first.
 | `build-the-two-pbix.md` | How to build the two disagreeing reports in Desktop, and the numbers to check |
 | `prep-checklist.md` | Everything that must be true before Monday |
 | **`run-order.md`** | **Generated.** Who owns which block, beat by beat, plus a per-person view |
-| `build-run-order.py` | Writes `run-order.md` *and* every stage's clock table from one source |
+| `build-run-order.py` | Writes `run-order.md` from `BEATS`, the single source for the running order |
 | `../session-3/facilitator/run-sheet.md` | Monday's spine — clock, standing rules, cut order, pre-flight |
 | `../session-4/facilitator/run-sheet.md` | Tuesday's spine, same shape |
 | `../session-4/facilitator/adf-issue-catalogue.md` | All nineteen planted pipeline issues, for when someone finds an unexpected one |

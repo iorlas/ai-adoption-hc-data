@@ -119,8 +119,8 @@ Plus two specific to today:
       when passing over, so it does not sound improvised
 - [ ] **Cut order agreed out loud**, so mid-session neither of you is deciding
       alone what to drop
-- [ ] **Clone the published repo into an empty folder and check it there** — the
-      master copy being right proves nothing about what the room gets
+- [ ] **Clone this repo into an empty folder and run `uv run verify.py` there** —
+      your working copy being right proves nothing about what the room gets
 
 ## Reference
 
