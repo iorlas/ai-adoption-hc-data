@@ -5,8 +5,8 @@
 """
 Generates the two inputs Stage 04 converts:
 
-    day-3/04-adf-to-sql/data/donor_import.csv   the "weekly export" the Mapping Data Flow reads
-    day-3/04-adf-to-sql/data/ethnicity_ref.csv  the cached lookup it joins to
+    day-3/05-adf-to-sql/data/donor_import.csv   the "weekly export" the Mapping Data Flow reads
+    day-3/05-adf-to-sql/data/ethnicity_ref.csv  the cached lookup it joins to
 
 Source of truth is day-1/data/donor.csv. The messiness added here is deliberate
 and is what the flow's CleanNames / BuildPostcode / KeepActive / LookupEthnicity
@@ -14,7 +14,7 @@ steps exist to handle. Deterministic: no randomness, everything is row-index
 arithmetic, so the gate numbers in answers.md never move.
 
 Re-running this overwrites both files. Changing it invalidates every number in
-04-adf-to-sql/answers.md and in parity.py.
+05-adf-to-sql/answers.md and in parity.py.
 """
 import csv
 import re
@@ -23,7 +23,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 DAY3 = HERE.parent
 SRC = DAY3.parent / "day-1" / "data" / "donor.csv"
-OUT = DAY3 / "04-adf-to-sql" / "data"
+OUT = DAY3 / "05-adf-to-sql" / "data"
 
 UNKNOWN_CODE = "Z99"  # in the export, absent from the lookup
 

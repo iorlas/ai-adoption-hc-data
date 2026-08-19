@@ -47,7 +47,7 @@ What I will be looking at, and what you should look at in each other's:
 
 ## Carry it into today
 
-Whatever gaps this turns up, today's parts 2 and 4 both end by writing something
+Whatever gaps this turns up, today's parts 2, 4 and 5 all end by writing something
 into `docs/`. That is not a ritual. It is the same move you just described,
 applied to two artifacts none of you documented either.
 

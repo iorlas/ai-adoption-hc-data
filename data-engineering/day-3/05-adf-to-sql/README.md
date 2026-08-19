@@ -1,4 +1,4 @@
-# 4 — A Mapping Data Flow, converted, and the wall behind it
+# 5 — A Mapping Data Flow, converted, and the wall behind it
 
 **45 minutes, hands-on**
 *5 min read the pipeline · 8 min what it does · 7 min what converts · 18 min write it and prove it · 7 min re-target and write it down.*
@@ -27,11 +27,11 @@ Four files, and you will touch two of them:
 ```
 later-days/adf/donor_import/pipeline_donor_import.json     the pipeline — 20 lines, does almost nothing
 later-days/adf/donor_import/dataflow_donor_import.json     the Mapping Data Flow — the real logic
-day-3/04-adf-to-sql/data/donor_import.csv     the weekly export it reads   (5,005 rows)
-day-3/04-adf-to-sql/data/ethnicity_ref.csv    the lookup it joins to       (16 codes)
+day-3/05-adf-to-sql/data/donor_import.csv     the weekly export it reads   (5,005 rows)
+day-3/05-adf-to-sql/data/ethnicity_ref.csv    the lookup it joins to       (16 codes)
 ```
 
-You write **`day-3/04-adf-to-sql/view.sql`** and check it with
+You write **`day-3/05-adf-to-sql/view.sql`** and check it with
 **`uv run parity.py`**.
 
 > **About the check.** `parity.py` runs your SQL over those two CSVs with DuckDB,
@@ -79,7 +79,7 @@ misses.
 **▸ Your turn.**
 
 > Write the bucket-(a) and bucket-(b) parts as a single SELECT into
-> `day-3/04-adf-to-sql/view.sql`. Two tables are registered: `imp` (the weekly
+> `day-3/05-adf-to-sql/view.sql`. Two tables are registered: `imp` (the weekly
 > export) and `ref` (the ethnicity lookup). Return exactly these columns:
 > registry_id, first_name, last_name, date_of_birth, sex, email, phone,
 > postcode, nhs_number, ethnicity, registered_date, status. Match the flow's
@@ -87,7 +87,7 @@ misses.
 
 That last sentence is load-bearing. Come back to it in step 4.
 
-Then, from `day-3/04-adf-to-sql/`:
+Then, from `day-3/05-adf-to-sql/`:
 
 ```bash
 uv run parity.py

@@ -1,7 +1,7 @@
 # 3 — Explain it: what does this thing actually do?
 
-**25 minutes, hands-on**
-*5 min we run it · 15 min you drive · 5 min what you found.*
+**20 minutes, hands-on**
+*4 min we run it · 12 min you drive · 4 min what you found.*
 
 > **Who does what:** **▸ We run it first, then you** on step 1, **▸ Your turn**
 > from step 2. Nothing here is a test.
@@ -152,12 +152,14 @@ Say when you can answer these three without looking:
 
 ---
 
-## Why this is immediately before the conversion
+## Where this goes next
 
-After the break you convert a different flow to SQL. Everything you just did —
-read the script lines, find the filter, separate fact from inference — is step
-zero of that job. **A conversion of a pipeline you have not read is a rewrite
-with extra confidence.**
+Part 4 asks one narrower question of the same pipeline: where does it succeed
+while producing the wrong answer? Then part 5 converts a different flow to SQL.
+
+Everything you just did — read the script lines, find the filter, separate fact
+from inference — is step zero of both. **A conversion of a pipeline you have not
+read is a rewrite with extra confidence.**
 
 ## If it goes wrong
 

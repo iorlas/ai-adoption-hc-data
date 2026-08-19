@@ -20,12 +20,13 @@ CSV (Day 1)  →  MSSQL over MCP (Day 2)  →  Databricks + ADF (today)
 | # | Folder | Min | What you do |
 |---|---|---|---|
 | 0 | `00-opening/` | 5 | Where Days 1–2 got to, and the shape of today |
-| 1 | `01-take-home-debrief/` | 15 | What AI got wrong on your own work, and what caught it |
+| 1 | `01-take-home-debrief/` | 10 | What AI got wrong on your own work, and what caught it |
 | 2 | `02-notebook-patterns/` | 40 | Cluster the repeated blocks in an inherited notebook into a module you would adopt |
-| 3 | `03-adf-explain/` | 25 | Read a pipeline nobody documented, and work out which half of the explanation you believe |
+| 3 | `03-adf-explain/` | 20 | Read a pipeline nobody documented, and work out which half of the explanation you believe |
+| 4 | `04-adf-weak-spots/` | 20 | Where does it succeed while producing the wrong answer — and would anyone know? |
 | — | *break* | 15 | |
-| 4 | `04-adf-to-sql/` | 55 | Convert a Mapping Data Flow to SQL, check parity, and find the wall |
-| 5 | `05-close/` | 15 | Take-home 3, and what Day 4 adds |
+| 5 | `05-adf-to-sql/` | 55 | Convert a Mapping Data Flow to SQL, check parity, and find the wall |
+| 6 | `06-close/` | 15 | Take-home 3, and what Day 4 adds |
 
 Each part is one folder, always the same files:
 
@@ -33,7 +34,7 @@ Each part is one folder, always the same files:
 |---|---|
 | **`README.md`** | **The part.** Why it matters, then every step. We read it together |
 | **`answers.md`** | The answer key, for the parts that have one. It is right there in the folder; nothing is hidden from you — **read it after the part, not before** |
-| **`game.md`** | A few cards, called out loud. Part 4 has one |
+| **`game.md`** | A few cards, called out loud. Part 5 has one |
 
 `README.md` says who is driving each step:
 
@@ -57,10 +58,11 @@ there is nobody circulating behind me.
 | File | From |
 |---|---|
 | `day-3/02-notebook-patterns/profiling.py` | part 2 |
-| `day-3/04-adf-to-sql/view.sql`, passing `parity.py` | part 4 |
-| `docs/` entries for the notebook and the pipeline | parts 2 and 4 |
+| `day-3/05-adf-to-sql/view.sql`, passing `parity.py` | part 5 |
+| `docs/` entries for the notebook and both pipelines | parts 2, 4 and 5 |
 | A behaviour-equivalence argument you can show a reviewer | part 2 |
 | A list of everywhere a record can vanish in an inherited pipeline | part 3 |
+| A ranked **Known weaknesses** section, with the cheapest fix for each | part 4 |
 
 ## The deliberate defects, again
 

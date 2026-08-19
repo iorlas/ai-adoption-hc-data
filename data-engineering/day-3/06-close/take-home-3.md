@@ -9,7 +9,7 @@ actually maintain.
    order, and verify the walk against `scriptLines` yourself. As on Day 1: do
    not take the description on trust.
 
-2. **Sort it into the three buckets** from part 4:
+2. **Sort it into the three buckets** from part 5:
    - **(a)** converts to a view cleanly
    - **(b)** converts, but something is lost — say what
    - **(c)** no equivalent in a view — say what you would build instead, and
@@ -19,7 +19,7 @@ actually maintain.
    the surrogate key need a MERGE and a sequence on the target."* That sentence,
    for one flow, is the unit a migration plan is built from.
 
-4. **Note anything the conversion would inherit.** Part 4 had twenty rows
+4. **Note anything the conversion would inherit.** Part 5 had twenty rows
    silently dropped by a filter written years ago. Yours will have something
    too. Log it as its own item — do not fix it inside the conversion.
 

@@ -15,8 +15,8 @@ two artifacts that are not in it.
   fundraising side, eleven activities, no documentation. Part 3 reads this one.
   Reading it well means reading **all five**, including the data flow's script
   lines and the datasets.
-- `day-3/04-adf-to-sql/data/donor_import.csv` — 5,005 rows, the weekly export.
-- `day-3/04-adf-to-sql/data/ethnicity_ref.csv` — 16 codes, the cached lookup.
+- `day-3/05-adf-to-sql/data/donor_import.csv` — 5,005 rows, the weekly export.
+- `day-3/05-adf-to-sql/data/ethnicity_ref.csv` — 16 codes, the cached lookup.
 
 ## Rules
 

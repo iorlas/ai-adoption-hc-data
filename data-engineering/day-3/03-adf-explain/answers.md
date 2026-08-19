@@ -47,7 +47,7 @@ Two things worth drawing out:
 - Because `iifNull` defaults a blank status to `'Active'`, the "drop Deceased"
   filter never removes a record whose status was missing. **Two rules
   interacting, neither written down** — and this is the same class of thing as
-  part 4's `Activ` typo, which is worth naming when you get there.
+  part 5's `Activ` typo, which is worth naming when you get there.
 
 ### "A supporter is missing" — the full list
 
@@ -101,6 +101,9 @@ Say that plainly rather than pretending it is theirs.
 
 ## Time
 
-25 minutes, and it sits between the two hands-on parts. If part 2 overran, this
-is the part to compress: **steps 1 and 3 are the segment**; step 2 can be cut to
-the second prompt alone, and step 4 stated rather than run.
+20 minutes, and it feeds part 4 directly — part 4 opens in the **same
+conversation**, so this one cannot simply be dropped. If part 2 overran,
+compress rather than cut: **steps 1 and 3 are the segment**; step 2 goes down to
+the second prompt alone, and step 4 can be stated rather than run.
+
+If the day is badly behind, the part to lose is **4**, not this one.

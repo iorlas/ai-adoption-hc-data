@@ -41,20 +41,23 @@ The right-hand column is real too, and it is Day 4.
 
 ## The shape of today
 
-Three working parts, one break, and all three are yours.
+Four working parts, one break, and all four are yours.
 
 - **Part 2** — an inherited profiling notebook, grown by copy-paste. You cluster
   the repetition into a module you would actually adopt.
 - **Part 3** — a pipeline none of us wrote: eleven activities, no documentation,
   published in 2024 by somebody who has left. You read it, then work out which
   half of the explanation you believe.
-- **Part 4** — the big one. A legacy Mapping Data Flow, converted to SQL, with a
+- **Part 4** — the same pipeline, one question narrower: where does it succeed
+  while producing the wrong answer, and would anyone ever know?
+- **Part 5** — the big one. A legacy Mapping Data Flow, converted to SQL, with a
   parity check that either goes green or does not. This part contains the honest
   bit: three things in that flow have no clean SQL equivalent, and I want you to
   find them rather than be told.
 
-Parts 3 and 4 are one arc: **read a pipeline, then convert one.** Converting
-something you have not read is a rewrite with extra confidence.
+Parts 3, 4 and 5 are one arc: **read a pipeline, find where it lies to you, then
+convert a different one.** Converting something you have not read is a rewrite
+with extra confidence.
 
 **Nothing today needs a Databricks workspace.** Everything with a live
 connection in it — the workspace, the CLI, Genie — is Day 4, together, so that
@@ -65,4 +68,4 @@ with the most time on the clock either has had.
 
 > **Today's two headline goals are the two you asked for in June:** notebooks
 > into reusable functions, and Mapping Data Flows into SQL. They are parts 2 and
-> 4, and everything else today is in service of them.
+> 5, and everything else today is in service of them.

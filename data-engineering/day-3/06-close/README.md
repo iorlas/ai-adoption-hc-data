@@ -1,4 +1,4 @@
-# 5 — Close
+# 6 — Close
 
 **10 minutes** · *5 min retro, out loud · 5 min the take-home and what Day 4 adds.*
 
@@ -20,8 +20,9 @@ to spend the time on what you actually want.
 | | |
 |---|---|
 | `02-notebook-patterns/profiling.py` | a module, with an equivalence argument you would show a reviewer |
-| `04-adf-to-sql/view.sql` | a conversion that passes a parity check, and a list of what did not convert |
-| `docs/notebooks.md`, `docs/pipelines/donor-import.md` | the knowledge layer, reaching two surfaces it did not reach yesterday |
+| `05-adf-to-sql/view.sql` | a conversion that passes a parity check, and a list of what did not convert |
+| `docs/pipelines/supporter-weekly.md` | a pipeline nobody had documented, with its weaknesses ranked by consequence |
+| `docs/notebooks.md`, `docs/pipelines/donor-import.md` | the knowledge layer, reaching three surfaces it did not reach yesterday |
 
 Everything on that list keeps working if you never see us again. That is
 deliberate.

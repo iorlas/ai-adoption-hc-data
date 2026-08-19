@@ -64,7 +64,7 @@ columns, and the final `display` just dumps everything it is handed. Somebody
 meant to come back.
 
 **5. The distinct-count cells will show `Activ` next to `Active`** if run against
-the real table — 20 rows. **Do not resolve it here.** Part 4 turns on somebody
+the real table — 20 rows. **Do not resolve it here.** Part 5 turns on somebody
 noticing that a filter written as `status == 'Active'` silently drops them; if
 it surfaces now, credit whoever spotted it and say it comes back after the
 break.
