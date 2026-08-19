@@ -1,0 +1,7 @@
+-- Your conversion of dataflow_donor_import goes here, as one SELECT.
+--
+-- Two tables are registered for you:
+--     imp   the weekly export      (see data/donor_import.csv)
+--     ref   the ethnicity lookup   (see data/ethnicity_ref.csv)
+--
+-- Check it with:   uv run parity.py

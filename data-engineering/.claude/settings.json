@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./**/answers.md)",
+      "Read(./**/facilitator/**)"
+    ]
+  }
+}

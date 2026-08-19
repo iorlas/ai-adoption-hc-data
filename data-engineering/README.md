@@ -27,11 +27,12 @@ habit is the point.
 |-----|--------|-------|
 | 1 | [`day-1/`](day-1/) | Hands-on basics, the boundary, directing Claude Code |
 | 2 | [`day-2/`](day-2/) | Engineer the context: tame an inherited stored procedure, and build the knowledge layer that makes the next person's version easier |
-| 3–4 | [`later-days/`](later-days/) | The ADF pipeline and Databricks notebook the last two days work against |
+| 3 | [`day-3/`](day-3/) | The remote pipeline: a Databricks workspace, an inherited notebook, and a Mapping Data Flow converted to SQL with a parity check |
+| — | [`later-days/`](later-days/) | The ADF pipeline and Databricks notebook Days 3–4 work against |
 
 `later-days/` is not a day of its own — it holds the artifacts Days 3 and 4 read
 (a legacy ADF pipeline with its Mapping Data Flow, and a profiling notebook).
-Day 2's final stage points at them as a bridge.
+Day 2's final stage points at them as a bridge; Day 3 works on them.
 
 ## The through-line
 
@@ -40,8 +41,11 @@ Day 1: *the model can be confidently wrong, so you verify.*
 Day 2: *the cure for wrongness is context you engineer — and because it lives in
 Git, it compounds.*
 
-Everything after is that second idea applied to bigger surfaces: a pipeline, a
-warehouse, a notebook nobody documented.
+Day 3: *the same two habits reach the things you cannot open in an editor — a
+warehouse, a notebook nobody documented, a pipeline that runs somewhere else.*
+
+Day 4 takes the last step: the AI moves inside the pipeline, and you decide what
+it must never touch.
 
 ## A note on the deliberate defects
 
