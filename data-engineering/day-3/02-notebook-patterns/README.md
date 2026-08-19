@@ -1,4 +1,4 @@
-# 3 — An inherited notebook, and the module hiding inside it
+# 2 — An inherited notebook, and the module hiding inside it
 
 **35 minutes, hands-on**
 *5 min read it · 10 min find the clusters · 15 min build the module · 5 min the equivalence argument.*
@@ -64,7 +64,7 @@ never the same is how a "reusable" module becomes the thing nobody reuses.**
 
 **▸ Your turn.**
 
-> Write `day-3/03-notebook-patterns/profiling.py`: one function per cluster,
+> Write `day-3/02-notebook-patterns/profiling.py`: one function per cluster,
 > each taking the DataFrame and the column name(s) as arguments, each with a
 > docstring saying what it returns. Pure functions — no `display`, no printing
 > inside them, nothing that assumes a notebook. Then show me the notebook
@@ -101,13 +101,13 @@ Then have it reviewed:
 
 **▸ Your turn.**
 
-> Add a section to `docs/notebooks.md` — what `donor_profiling` is for, what
+> Add a section to `data-engineering/docs/notebooks.md` — what `donor_profiling` is for, what
 > `profiling.py` now provides, and the one thing you would still not trust it
 > with.
 
 ## What you should have
 
-- `day-3/03-notebook-patterns/profiling.py` — three or four functions, docstrings, no printing
+- `day-3/02-notebook-patterns/profiling.py` — four to six functions, docstrings, no printing
 - A rewritten notebook that reads as a list of questions instead of a wall of blocks
 - The equivalence table
 - A `docs/` entry the next person finds before they copy-paste the block again

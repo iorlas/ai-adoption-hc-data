@@ -25,8 +25,8 @@ optimistic.
 Four files, and you will touch two of them:
 
 ```
-later-days/adf/pipeline_donor_import.json     the pipeline — 20 lines, does almost nothing
-later-days/adf/dataflow_donor_import.json     the Mapping Data Flow — the real logic
+later-days/adf/donor_import/pipeline_donor_import.json     the pipeline — 20 lines, does almost nothing
+later-days/adf/donor_import/dataflow_donor_import.json     the Mapping Data Flow — the real logic
 day-3/04-adf-to-sql/data/donor_import.csv     the weekly export it reads   (5,005 rows)
 day-3/04-adf-to-sql/data/ethnicity_ref.csv    the lookup it joins to       (16 codes)
 ```
@@ -36,20 +36,20 @@ You write **`day-3/04-adf-to-sql/view.sql`** and check it with
 
 > **About the check.** `parity.py` runs your SQL over those two CSVs with DuckDB,
 > because nobody in this room has an Azure SQL to hand at 2pm. The SQL dialect
-> is nearly identical for what you are about to write, and **step 5 is where you
-> re-target it to T-SQL and find the three functions that differ.** The check is
-> real; the engine is a stand-in, and I would rather say so than pretend.
+> is close but not identical: **you will hit one gap in step 3, and two more in
+> step 5** where you re-target to T-SQL. The check is real; the engine is a
+> stand-in, and I would rather say so than pretend.
 
 ## Step 1 — the pipeline, then the flow
 
 **▸ We run it first, then you.**
 
-> @later-days/adf/pipeline_donor_import.json what does this pipeline do?
+> @later-days/adf/donor_import/pipeline_donor_import.json what does this pipeline do?
 
 Twenty lines, one activity. **The pipeline is not where the logic is** — and
 that is true of most of yours. Then:
 
-> @later-days/adf/dataflow_donor_import.json walk me through this data flow one
+> @later-days/adf/donor_import/dataflow_donor_import.json walk me through this data flow one
 > transformation at a time, in order. For each one: what it does to the data,
 > and which script line does it. Do not suggest a SQL conversion yet.
 
@@ -71,7 +71,8 @@ Then challenge it, because a model asked to convert will convert:
 
 **Write the three lists down.** They are the deliverable of this step and they
 are what a migration plan is actually made of. There are three items in bucket
-(c). If you only found two, you are missing the expensive one.
+(c): two are obvious once you look, and the third is the one nearly everybody
+misses.
 
 ## Step 3 — write the view
 
@@ -98,7 +99,7 @@ Three gates, and the check tells you which one you missed:
 |---|---|
 | **2,885 rows** | the filter |
 | **23 rows with no ethnicity label** | the lookup |
-| **every value matches** | the four cleaning rules |
+| **every value matches** | the cleaning rules — and every column you left alone |
 
 **If you get 0 rows with no ethnicity label, you wrote an inner join.** ADF's
 `lookup` is a left join — it keeps the row and leaves the label empty. Twenty-
@@ -147,7 +148,7 @@ function-mapping table before it needs a schedule.
 
 Finally:
 
-> Write `docs/pipelines/donor-import.md`: what the pipeline does, the converted
+> Write `data-engineering/docs/pipelines/donor-import.md`: what the pipeline does, the converted
 > view, the three things that did not convert and what would replace them, and
 > the `Activ` defect with its row count.
 

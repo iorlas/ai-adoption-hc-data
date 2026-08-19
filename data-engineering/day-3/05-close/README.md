@@ -1,4 +1,4 @@
-# 6 — Close
+# 5 — Close
 
 **10 minutes** · *5 min retro, out loud · 5 min the take-home and what Day 4 adds.*
 
@@ -19,7 +19,7 @@ to spend the time on what you actually want.
 
 | | |
 |---|---|
-| `03-notebook-patterns/profiling.py` | a module, with an equivalence argument you would show a reviewer |
+| `02-notebook-patterns/profiling.py` | a module, with an equivalence argument you would show a reviewer |
 | `04-adf-to-sql/view.sql` | a conversion that passes a parity check, and a list of what did not convert |
 | `docs/notebooks.md`, `docs/pipelines/donor-import.md` | the knowledge layer, reaching two surfaces it did not reach yesterday |
 
@@ -31,8 +31,8 @@ deliberate.
 ```
   Day 1   the model can be confidently wrong, so you verify
   Day 2   the cure for wrongness is context you engineer, and it compounds
-  Day 3   the same habits reach things you cannot open in an editor
-  Day 4   the AI moves inside the pipeline — and you decide what it must never touch
+  Day 3   the same habits reach the artifacts you never documented
+  Day 4   the connection, and the AI moving inside the pipeline itself
 ```
 
 ## Take-home 3
@@ -43,12 +43,20 @@ that produces something you can put in front of your team lead.
 
 ## What Day 4 adds
 
-- **AI inside the pipeline.** Not a person prompting a model — `ai_mask`,
-  `ai_classify` and `ai_extract` running as a step in SQL, over the whole table,
-  on the platform's own in-region model. The obvious case for a registry is
-  free-text consent and clinical notes.
+Everything with a live connection in it, in one day, so that one setup serves
+all of it:
+
+- **Claude Code against a real workspace** — the catalog, SQL through the CLI,
+  a service principal, and the one place in these four days where real rows can
+  reach the model by accident.
+- **Genie, from the builder side.** Not "look, natural language" — the point is
+  that Genie is only as good as the metadata *you* maintain, and that is a new
+  kind of ticket for your team.
+- **AI inside the pipeline.** `ai_mask`, `ai_classify` and `ai_extract` running
+  as a step in SQL, over the whole table, on the platform's own in-region model.
+  The obvious case for a registry is free-text consent and clinical notes.
 - **Keeping PII away from AI**, properly: the boundary, the deny-list, and what
-  you do about the `display(donor)` line from part 3.
+  you do about the `display(donor)` line from part 2.
 - **Team skills** — packaging today's two jobs (profile a notebook, convert a
   flow) so nobody re-derives them.
 - **Rollout**: a shared `CLAUDE.md`, who owns it, and how this survives contact

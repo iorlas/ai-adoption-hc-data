@@ -1,0 +1,244 @@
+{
+  "name": "PL_Supporter_Weekly_Load",
+  "properties": {
+    "description": "",
+    "activities": [
+      {
+        "name": "Lookup Watermark",
+        "type": "Lookup",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "7.00:00:00",
+          "retry": 3,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "AzureSqlSource",
+            "sqlReaderQuery": "SELECT TOP 1 last_run_utc FROM etl.watermark WHERE pipeline_name = 'PL_Supporter_Weekly_Load' ORDER BY last_run_utc DESC"
+          },
+          "dataset": { "referenceName": "DS_AzureSql_Etl_Watermark", "type": "DatasetReference" },
+          "firstRowOnly": true
+        }
+      },
+      {
+        "name": "Truncate Staging",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Lookup Watermark", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": {
+          "timeout": "0.02:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30
+        },
+        "typeProperties": {
+          "storedProcedureName": "[stg].[usp_TruncateSupporterStaging]"
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Copy1",
+        "description": "",
+        "type": "Copy",
+        "dependsOn": [
+          { "activity": "Truncate Staging", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": {
+          "timeout": "7.00:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource",
+            "storeSettings": {
+              "type": "AzureBlobStorageReadSettings",
+              "recursive": true,
+              "wildcardFolderPath": "supporters/@{formatDateTime(utcnow(), 'yyyy/MM/dd')}",
+              "wildcardFileName": "*.csv"
+            },
+            "formatSettings": { "type": "DelimitedTextReadSettings" }
+          },
+          "sink": {
+            "type": "AzureSqlSink",
+            "writeBehavior": "insert",
+            "sqlWriterUseTableLock": false,
+            "tableOption": "autoCreate"
+          },
+          "enableStaging": false,
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          }
+        },
+        "inputs": [{ "referenceName": "DS_Blob_SupporterExport_Csv", "type": "DatasetReference" }],
+        "outputs": [{ "referenceName": "DS_AzureSql_Stg_Supporter", "type": "DatasetReference" }]
+      },
+      {
+        "name": "Wait1",
+        "type": "Wait",
+        "dependsOn": [
+          { "activity": "Copy1", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": { "waitTimeInSeconds": 300 },
+        "description": "leave this in - fixes the timing issue with the CRM pipeline (RB 2022)"
+      },
+      {
+        "name": "Get Campaign Files",
+        "type": "GetMetadata",
+        "dependsOn": [
+          { "activity": "Wait1", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.12:00:00", "retry": 1, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "dataset": { "referenceName": "DS_Blob_CampaignExport_Folder", "type": "DatasetReference" },
+          "fieldList": ["childItems"],
+          "storeSettings": { "type": "AzureBlobStorageReadSettings", "recursive": false },
+          "formatSettings": { "type": "DelimitedTextReadSettings" }
+        }
+      },
+      {
+        "name": "ForEach Campaign File",
+        "type": "ForEach",
+        "dependsOn": [
+          { "activity": "Get Campaign Files", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "items": { "value": "@activity('Get Campaign Files').output.childItems", "type": "Expression" },
+          "isSequential": false,
+          "batchCount": 50,
+          "activities": [
+            {
+              "name": "Copy Campaign File",
+              "type": "Copy",
+              "dependsOn": [],
+              "policy": { "timeout": "7.00:00:00", "retry": 0, "retryIntervalInSeconds": 30 },
+              "typeProperties": {
+                "source": {
+                  "type": "DelimitedTextSource",
+                  "storeSettings": { "type": "AzureBlobStorageReadSettings", "recursive": false }
+                },
+                "sink": {
+                  "type": "AzureSqlSink",
+                  "writeBehavior": "insert",
+                  "preCopyScript": "TRUNCATE TABLE stg.campaign",
+                  "sqlWriterUseTableLock": false
+                }
+              },
+              "inputs": [{
+                "referenceName": "DS_Blob_CampaignExport_File",
+                "type": "DatasetReference",
+                "parameters": { "fileName": { "value": "@item().name", "type": "Expression" } }
+              }],
+              "outputs": [{ "referenceName": "DS_AzureSql_Stg_Campaign", "type": "DatasetReference" }]
+            }
+          ]
+        }
+      },
+      {
+        "name": "DF_Enrich_Supporters",
+        "type": "ExecuteDataFlow",
+        "dependsOn": [
+          { "activity": "ForEach Campaign File", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "7.00:00:00", "retry": 0, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "dataFlow": { "referenceName": "DF_Supporter_Enrich", "type": "DataFlowReference" },
+          "compute": { "coreCount": 8, "computeType": "General" },
+          "traceLevel": "Fine"
+        }
+      },
+      {
+        "name": "Stored procedure1",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "DF_Enrich_Supporters", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.12:00:00", "retry": 0, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "storedProcedureName": "[dw].[usp_MergeSupporterDim]",
+          "storedProcedureParameters": {
+            "RunDate": {
+              "value": { "value": "@formatDateTime(utcnow(), 'yyyy-MM-dd')", "type": "Expression" },
+              "type": "String"
+            },
+            "ExcludeRegion": { "value": "Northern Ireland", "type": "String" }
+          }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Refresh Power BI Dataset",
+        "type": "WebActivity",
+        "dependsOn": [
+          { "activity": "Stored procedure1", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.00:30:00", "retry": 0, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "url": "https://api.powerbi.com/v1.0/myorg/groups/8f21c0e2-0000-0000-0000-2b7a9d41c355/datasets/1c9f4b77-0000-0000-0000-9d0e6a55f210/refreshes",
+          "method": "POST",
+          "headers": { "Content-Type": "application/json" },
+          "body": { "notifyOption": "MailOnFailure" },
+          "authentication": { "type": "MSI", "resource": "https://analysis.windows.net/powerbi/api" }
+        }
+      },
+      {
+        "name": "Update Watermark",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "DF_Enrich_Supporters", "dependencyConditions": ["Completed"] }
+        ],
+        "policy": { "timeout": "0.01:00:00", "retry": 0, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "storedProcedureName": "[etl].[usp_UpdateWatermark]",
+          "storedProcedureParameters": {
+            "PipelineName": { "value": "PL_Supporter_Weekly_Load", "type": "String" },
+            "LastRunUtc": {
+              "value": { "value": "@utcnow()", "type": "Expression" },
+              "type": "String"
+            }
+          }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Notify Failure",
+        "type": "WebActivity",
+        "dependsOn": [
+          { "activity": "Copy1", "dependencyConditions": ["Failed"] }
+        ],
+        "policy": { "timeout": "0.00:10:00", "retry": 0, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "url": "https://prod-17.uksouth.logic.azure.com/workflows/etl-alerts/triggers/manual/paths/invoke",
+          "method": "POST",
+          "headers": { "Content-Type": "application/json" },
+          "body": {
+            "to": "r.byrne@example-charity.org",
+            "subject": "Supporter load failed",
+            "body": "The weekly supporter load failed. Please check ADF."
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "RunMode": { "type": "string", "defaultValue": "full" }
+    },
+    "variables": {
+      "RowsCopied": { "type": "String" },
+      "vDebug": { "type": "String", "defaultValue": "0" }
+    },
+    "folder": { "name": "Legacy/Supporter" },
+    "annotations": ["weekly", "supporter", "do-not-touch"],
+    "lastPublishTime": "2024-11-19T22:41:07Z"
+  },
+  "type": "Microsoft.DataFactory/factories/pipelines"
+}

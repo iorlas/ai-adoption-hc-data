@@ -10,7 +10,7 @@ what comes back, and the two ways this segment fails.
 **Nobody did it.** Likely, and it is not a discipline problem — this cohort had
 a four-day run and real jobs in between. Do not spend the fifteen minutes on
 "why not." Pivot immediately: put **your own** before/after on screen (the Day-2
-payoff prompt), spend five minutes, and give the other ten to part 3, which is
+payoff prompt), spend five minutes, and give the other ten to part 2, which is
 the part most likely to overrun.
 
 **One person did it thoroughly and takes twelve minutes.** Just as likely. Cap
@@ -20,7 +20,7 @@ each person at two minutes out loud. The material you want in the room is
 ## What to write on the board
 
 Two columns: **stumbled on** / **wrote down**. By the end you want four or five
-rows. That board is the argument for parts 3 and 4 — both end in a `docs/`
+rows. That board is the argument for parts 2 and 3 — both end in a `docs/`
 entry, and you can point back at it rather than re-justify.
 
 ## What to listen for, and follow up
@@ -31,7 +31,7 @@ entry, and you can point back at it rather than re-justify.
   exactly as Day 2 framed it. Ask whether the ADR got written.
 - **"It was fine, no problems."** Usually means the task was small enough that
   context did not matter. Ask what they would have to add for it to work on the
-  *whole* repo — that is the real answer, and it is the same answer as parts 3
+  *whole* repo — that is the real answer, and it is the same answer as parts 2
   and 4.
 - **"We can't use it on our real repo because of the data."** Do not brush past
   this. Restate the boundary: Claude read the code and the schema, not the rows.
@@ -50,5 +50,5 @@ know to be useful here?"*
 
 ## Time
 
-If it is running long at minute 12, stop it there. Part 3 needs its 35 minutes
-and part 4 needs its 45 — those two are what the client asked for in June.
+If it is running long at minute 12, stop it there. Part 2 needs its 40 minutes
+and part 4 needs its 55 — those two are what the client asked for in June.

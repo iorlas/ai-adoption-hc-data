@@ -39,12 +39,15 @@ COLUMNS = [
 # Gates. Every one of these comes from the flow's own script lines.
 EXPECT_ROWS = 2885          # status == 'Active' survives KeepActive
 EXPECT_NULL_ETHNICITY = 23  # codes the lookup has no row for; a left join keeps them
-EXPECT_CHECKSUM = "3bacf8f760271029ae2b039a1ade444d"
+EXPECT_CHECKSUM = "e3708f512cf67c6947c45c433bbee824"
 
 CHECKSUM_SQL = """
 select md5(string_agg(
-    concat_ws('|', registry_id, first_name, last_name,
-              coalesce(sex, ''), coalesce(postcode, ''), coalesce(ethnicity, '')),
+    concat_ws('|',
+        coalesce(registry_id, ''), coalesce(first_name, ''), coalesce(last_name, ''),
+        coalesce(date_of_birth, ''), coalesce(sex, ''), coalesce(email, ''),
+        coalesce(phone, ''), coalesce(postcode, ''), coalesce(nhs_number, ''),
+        coalesce(ethnicity, ''), coalesce(registered_date, ''), coalesce(status, '')),
     chr(10) order by registry_id))
 from result
 """
@@ -106,7 +109,7 @@ def main() -> int:
         if digest == EXPECT_CHECKSUM:
             print(f"[{OK}] every value matches the reference conversion")
         else:
-            print(f"[{FAIL}] counts match but values differ — check the four cleaning rules")
+            print(f"[{FAIL}] counts match but values differ — every column is checked, including\n       the ones the flow passes through untouched")
             problems.append("values")
 
     print()

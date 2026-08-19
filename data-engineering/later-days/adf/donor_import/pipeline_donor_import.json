@@ -1,7 +1,7 @@
 {
   "name": "pipeline_donor_import",
   "properties": {
-    "description": "Legacy weekly donor import pipeline. Runs the donor-import Mapping Data Flow. TEACHING ARTIFACT — the interesting logic is in dataflow_donor_import.json.",
+    "description": "Legacy weekly donor import pipeline. Runs the donor-import Mapping Data Flow.",
     "activities": [
       {
         "name": "RunDonorImportDataFlow",

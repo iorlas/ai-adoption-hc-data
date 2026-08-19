@@ -1,0 +1,34 @@
+[
+  {
+    "name": "LS_AzureSql_Warehouse",
+    "properties": {
+      "type": "AzureSqlDatabase",
+      "typeProperties": {
+        "connectionString": "Server=tcp:example-charity-sql.database.windows.net,1433;Database=SupporterDW;User ID=etl_service;Password=Wint3r2022!;Encrypt=true;Connection Timeout=30;"
+      },
+      "annotations": []
+    }
+  },
+  {
+    "name": "LS_Blob_Landing",
+    "properties": {
+      "type": "AzureBlobStorage",
+      "typeProperties": {
+        "connectionString": "DefaultEndpointsProtocol=https;AccountName=examplecharitylanding;EndpointSuffix=core.windows.net;",
+        "accountKey": {
+          "type": "AzureKeyVaultSecret",
+          "store": { "referenceName": "LS_KeyVault", "type": "LinkedServiceReference" },
+          "secretName": "landing-storage-key"
+        }
+      },
+      "annotations": []
+    }
+  },
+  {
+    "name": "LS_KeyVault",
+    "properties": {
+      "type": "AzureKeyVault",
+      "typeProperties": { "baseUrl": "https://example-charity-kv.vault.azure.net/" }
+    }
+  }
+]

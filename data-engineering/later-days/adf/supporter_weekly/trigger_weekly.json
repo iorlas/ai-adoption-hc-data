@@ -1,0 +1,23 @@
+{
+  "name": "TR_Supporter_Weekly",
+  "properties": {
+    "type": "ScheduleTrigger",
+    "typeProperties": {
+      "recurrence": {
+        "frequency": "Week",
+        "interval": 1,
+        "startTime": "2022-03-07T02:00:00Z",
+        "timeZone": "UTC",
+        "schedule": { "hours": [2], "minutes": [0], "weekDays": ["Monday"] }
+      }
+    },
+    "pipelines": [
+      {
+        "pipelineReference": { "referenceName": "PL_Supporter_Weekly_Load", "type": "PipelineReference" },
+        "parameters": { "RunMode": "full" }
+      }
+    ],
+    "runtimeState": "Started",
+    "annotations": []
+  }
+}

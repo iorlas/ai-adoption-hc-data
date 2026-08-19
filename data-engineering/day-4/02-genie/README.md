@@ -1,4 +1,4 @@
-# 5 — Genie, from the builder side
+# 2 — Genie, from the builder side
 
 **25 minutes, watch only**
 *5 min why it is your job · 8 min the space, badly and then well · 7 min the same question to both tools · 5 min the game.*
@@ -37,7 +37,7 @@ arrives.
 **Scene.** Two windows on my screen. **Left:** a browser on my Databricks
 workspace, in a Genie space whose only tables are the donor registry ones you
 have seen all week. **Right:** Claude Code in the `data-engineering/` folder,
-fresh conversation, connected to the same workspace as in part 2.
+fresh conversation, connected to the same workspace as in part 1.
 
 Same data both sides. Only the tool differs.
 
@@ -100,8 +100,9 @@ already curated. Claude Code is better when the answer needs something that is
 not in the warehouse** — the pipeline behind the column, the flow that dropped
 twenty rows, last week's decision record.
 
-Today's question was the second kind. Part 4's twenty `Activ` rows are invisible
-from inside the warehouse; the reason for them is in a JSON file.
+Today's question was the second kind. Yesterday's twenty `Activ` rows are
+invisible from inside the warehouse; the reason for them is a filter in a JSON
+file, and no amount of curating the warehouse would ever surface it.
 
 ## The transferable idea
 

@@ -2,110 +2,84 @@
 
 **FACILITATOR ONLY.** One facilitator this day. Everything below is yours.
 
-## What has to exist before the room opens
+## The shape of it
+
+**Nothing on Day 3 needs Databricks.** The workspace, the CLI and Genie moved to
+Day 4 so that one setup serves one day. What is left is the two things the
+client asked for by name in June, with room to actually do them.
 
 | Part | Minutes | Needs building first |
 |---|---|---|
 | `00-opening` | 5 | No |
 | `01-take-home-debrief` | 15 | No — but see the "nobody did it" pivot in its `answers.md` |
-| `02-connect-databricks` | 20 | **Yes — workspace, warehouse, service principal, seeded table** |
-| `03-notebook-patterns` | 35 | No. Dry-run it |
-| `04-adf-to-sql` | 45 | No — the data is generated and committed. Dry-run it |
-| `05-genie` | 25 | **Yes — two Genie spaces, and a recording of both** |
-| `06-close` | 10 | No |
-
-**Two things to build. Both are Databricks. Both have a recorded fallback, and
-you should make the recording even if you are confident.**
-
-## 1 · The workspace (parts 2 and 5)
-
-- A workspace in **West or North Europe** — this is the region constraint the
-  Day-4 AI Functions segment inherits, so get it right now rather than twice.
-- A **serverless SQL warehouse**. Note the warehouse id; you need it in the
-  statement-execution call.
-- A catalog `training` and a schema in it. Load `day-1/data/donor.csv` as
-  `donor` — **all 5,005 rows, defects intact.** The status counts on the day
-  must be 2,885 / 728 / 702 / 670 / **20 `Activ`**, because part 4 turns on
-  those twenty.
-- A **service principal** with read on that schema and use on the warehouse.
-  Not a personal token — the part argues for service principals out loud, and
-  demoing with a PAT undercuts it.
-- `databricks auth login --profile an-workshop` working on the laptop you will
-  present from, verified the morning of.
-
-**Rehearse the three prompts in part 2's `answers.md` end to end** and keep the
-working statement-execution JSON in a scratch file. That file is the difference
-between a two-minute recovery and losing part 3.
-
-## 2 · The two Genie spaces (part 5)
-
-Build **two**, do not edit one live:
-
-- **`AN Donor (raw)`** — the donor table, no table comment, no column comments,
-  no curated definitions.
-- **`AN Donor`** — same table, plus: a table comment with the grain, a comment
-  on `status` naming the four valid values and the `Activ` defect, and one
-  curated definition for "active donor" with its SQL.
-
-Ask *"how many active donors do we have?"* in each. **Screen-record both.** If
-the second answer is not visibly better, read the note in part 5's `answers.md`
-before the day — there is a line that saves the segment, and it is better
-delivered as a planned point than as a recovery.
-
-Also rehearse the side-by-side question in both tools, and have Claude Code
-already connected in the right window.
-
-## 3 · Your machine
-
-- Windows or Mac, whichever you present from — but present from the one you
-  rehearsed on.
-- `git pull` in the repo, then from `day-3/04-adf-to-sql/`: `uv run parity.py`
-  should say *"has no query in it yet"*. That is the correct starting state; if
-  it goes green, you have left the reference SQL in `view.sql`.
-- Day-1 environment intact (`day-1/.venv`). Today needs no `uv sync`.
-- **`day-3/04-adf-to-sql/data/` must be committed.** Regenerate with
-  `uv run day-3/facilitator/generate_day3_data.py` only if you have to;
-  it rewrites both CSVs deterministically and does not move any number.
-
-## 4 · Dry-run parts 3 and 4 as a participant
-
-The two hands-on parts, from a clean clone, doing exactly what the README says
-and nothing a facilitator would know. That is what catches the defects worth
-catching — instructions pointing at files that do not exist, and promises about
-what the room will see.
-
-## 5 · The room, one facilitator
-
-There is nobody circulating. Consequences to plan for:
-
-- **Say at the top that people must call out when stuck** — with two
-  facilitators the floor gets swept, and with one it does not.
-- **Pair the blocked with the unblocked** early rather than at the point of
-  failure. Three of Shankar's team had no access in July; if that is still true,
-  seat them next to someone who does *before* part 3.
-- **Parts 2 and 5 are your recovery slack.** Both are watch-only and both can
-  lose five minutes without damage. Parts 3 and 4 cannot.
+| `02-notebook-patterns` | 40 | No. **Dry-run it** |
+| `03-adf-explain` | 25 | No. Reused from the analytics stream, same five JSON files |
+| `04-adf-to-sql` | 55 | No — the data is generated and committed. **Dry-run it** |
+| `05-close` | 15 | No |
 
 ## The clock
 
 ```
-0:00  5   Opening                         watch
-0:05 15   Take-home debrief               together
-0:20 20   Claude Code on the workspace    watch          ← recoverable
-0:40 35   Notebook patterns               HANDS-ON       ← protected
-1:15 15   Break
-1:30 45   ADF to SQL                      HANDS-ON       ← protected, the headline ask
-2:15 25   Genie                           watch          ← recoverable
-2:40 10   Close                           together
-2:50      end, 10 minutes of slack
+0:00   5   Opening                    watch
+0:05  15   Take-home debrief          together
+0:20  40   Notebook patterns          HANDS-ON    ← protected
+1:00  25   ADF: explain it            hands-on    ← compressible
+1:25  15   Break
+1:40  55   ADF to SQL                 HANDS-ON    ← protected, the headline ask
+2:35  15   Close
+2:50       end
 ```
+
+**2:50 in a 3:00 slot, and part 3 is the give.** With one facilitator and no
+watch-only segment, `03-adf-explain` is the only place to absorb an overrun: its
+`answers.md` says exactly what to cut and in what order. Everything either side
+of it is the client's June ask.
+
+**Parts 3 and 4 are deliberately an arc** — read a pipeline, then convert one.
+Say that out loud at the start of part 3, or it reads as two unrelated ADF
+segments.
+
+## What to prepare
+
+**1 · Your machine**
+
+- `git pull`, then from `day-3/04-adf-to-sql/`: `uv run parity.py` should say
+  *"has no query in it yet"*. If it goes green you left the reference SQL in
+  `view.sql`.
+- Day-1 environment intact (`day-1/.venv`). Today needs no `uv sync`.
+- `day-3/04-adf-to-sql/data/` committed. Regenerate only if you must:
+  `uv run day-3/facilitator/generate_day3_data.py` rewrites both CSVs
+  deterministically and moves no number.
+
+**2 · Dry-run both hands-on parts as a participant**
+
+From a clean clone, doing exactly what the README says and nothing a facilitator
+would know. That is what catches instructions pointing at files that do not
+exist, and promises about what the room will see.
+
+**3 · The reference SQL, in a scratch buffer, not on screen**
+
+It is in `04-adf-to-sql/answers.md`. See the second rule below.
+
+## The room, one facilitator
+
+There is nobody circulating. Plan for it:
+
+- **Say at the top that people must call out when stuck.** With two facilitators
+  the floor gets swept; with one it does not.
+- **Pair the blocked with the unblocked before part 2**, not at the point of
+  failure. Three of Shankar's team had no Claude Code access in July — if that
+  is still true, the pairing is the whole of their day.
+- **Your recoverable time is part 3 and the ten minutes of slack.** Parts 2 and
+  4 are protected. This is the trade for moving Databricks to Day 4: no
+  watch-only segment to shorten mid-flight.
 
 ## The two things not to get wrong
 
-1. **Do not resolve the `Activ` typo before part 4.** It shows up on screen in
-   part 2 and again in part 3. Both times: credit whoever spots it, and say it
-   comes back after the break. It is the hinge of the biggest part of the day.
+1. **Do not resolve the `Activ` typo before part 4.** It surfaces in part 2's
+   distinct-count cells. Credit whoever spots it and say it comes back after the
+   break. It is the hinge of the biggest part of the day.
 
-2. **Do not put the reference SQL up before minute 30 of part 4.** The parity
+2. **Do not put the reference SQL up before minute 35 of part 4.** The parity
    check failing on an inner join is the most useful thing that happens all day,
    and it only happens if people write the join themselves.

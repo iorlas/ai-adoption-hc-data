@@ -27,12 +27,13 @@ habit is the point.
 |-----|--------|-------|
 | 1 | [`day-1/`](day-1/) | Hands-on basics, the boundary, directing Claude Code |
 | 2 | [`day-2/`](day-2/) | Engineer the context: tame an inherited stored procedure, and build the knowledge layer that makes the next person's version easier |
-| 3 | [`day-3/`](day-3/) | The remote pipeline: a Databricks workspace, an inherited notebook, and a Mapping Data Flow converted to SQL with a parity check |
-| — | [`later-days/`](later-days/) | The ADF pipeline and Databricks notebook Days 3–4 work against |
+| 3 | [`day-3/`](day-3/) | The artifacts nobody documented: an inherited notebook, an inherited pipeline, and a Mapping Data Flow converted to SQL with a parity check |
+| 4 | [`day-4/`](day-4/) | The connection: a real Databricks workspace, Genie, and the AI moving inside the pipeline. **Partly built** |
+| — | [`later-days/`](later-days/) | The two ADF pipelines and the Databricks notebook Days 3–4 work against |
 
 `later-days/` is not a day of its own — it holds the artifacts Days 3 and 4 read
-(a legacy ADF pipeline with its Mapping Data Flow, and a profiling notebook).
-Day 2's final stage points at them as a bridge; Day 3 works on them.
+(two ADF pipelines and a profiling notebook). Day 2's final stage points at them
+as a bridge; Day 3 works on them.
 
 ## The through-line
 
@@ -41,11 +42,11 @@ Day 1: *the model can be confidently wrong, so you verify.*
 Day 2: *the cure for wrongness is context you engineer — and because it lives in
 Git, it compounds.*
 
-Day 3: *the same two habits reach the things you cannot open in an editor — a
-warehouse, a notebook nobody documented, a pipeline that runs somewhere else.*
+Day 3: *the same two habits reach the artifacts nobody documented — a notebook
+grown by copy-paste, a pipeline published by someone who has left.*
 
-Day 4 takes the last step: the AI moves inside the pipeline, and you decide what
-it must never touch.
+Day 4: *the connection, and then the AI moving inside the pipeline itself — at
+which point you are the one deciding what it must never touch.*
 
 ## A note on the deliberate defects
 

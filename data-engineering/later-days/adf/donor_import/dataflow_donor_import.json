@@ -1,7 +1,7 @@
 {
   "name": "dataflow_donor_import",
   "properties": {
-    "description": "Legacy Mapping Data Flow: loads a weekly donor CSV export into the donor table. Standardises names and postcode, filters to active records, maps an ethnicity code via a cached lookup, assigns a surrogate key, and upserts on registry_id. TEACHING ARTIFACT for the ADF-to-SQL conversion exercise. The simple source->derive->filter->sink core converts to a SQL view cleanly; the AlterRow upsert, the surrogate-key generation, and the cached lookup do NOT have a clean single-view SQL equivalent — that is the point.",
+    "description": "Legacy Mapping Data Flow: loads a weekly donor CSV export into the donor table. Last substantially edited 2019. The real logic is in scriptLines, not in the transformation names.",
     "type": "MappingDataFlow",
     "typeProperties": {
       "sources": [

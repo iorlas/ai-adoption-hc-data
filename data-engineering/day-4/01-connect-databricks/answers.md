@@ -1,4 +1,4 @@
-# Answers — 2 · Claude Code against a real workspace
+# Answers — 1 · Claude Code against a real workspace
 
 **FACILITATOR ONLY. Never on screen.**
 
@@ -40,7 +40,7 @@ databricks api post /api/2.0/sql/statements --profile an-workshop --json '{
 
 Have that in a scratch file. If it has not produced a result by minute 6 of the
 live block, paste it yourself, narrate it as *"this is the one I had ready"*,
-and move on. **Do not debug the CLI in front of the room** — you lose part 3.
+and move on. **Do not debug the CLI in front of the room.**
 
 **Prompt three is the one that must happen.** If the clock is tight, cut prompt
 two and keep prompt three: it is the only one that connects this part to Day 2.
@@ -58,16 +58,18 @@ status counts are:
 | Deferred | 670 |
 | **Activ** | **20** |
 
-The `Activ` typo will show up on screen. **Do not explain it here** — part 4
-turns on someone noticing that a filter written as `status == 'Active'`
-silently drops those twenty rows. If somebody spots it now, credit them and say
-"hold that thought, it comes back after the break."
+The `Activ` typo will show up on screen again. Yesterday it was the hinge of the
+conversion exercise, so it was left unexplained; today there is nothing to
+protect. If somebody names it, use it: **the pipeline that produced those rows,
+the notebook that displayed them, and this warehouse all disagree about what
+`status` means, and none of them wrote it down.** That is the argument for the
+metadata segment that comes next.
 
 ## What goes wrong
 
 **Somebody with access tries to follow along and gets stuck.** Expect it. The
-line is: *"leave it, nothing later today needs it."* Meant literally — parts 3,
-4 and 6 are all local.
+line is: *"leave it, nothing you have to do today is blocked by this."* Meant
+literally — every hands-on thing in these four days ran on their own laptop.
 
 **"Can we get a workspace like yours?"** Adrian's team administers ADB
 themselves; Shankar's does not. The honest answer is that a training schema plus

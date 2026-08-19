@@ -1,4 +1,4 @@
-# Answers — 5 · Genie, from the builder side
+# Answers — 2 · Genie, from the builder side
 
 **FACILITATOR ONLY. Never on screen.**
 
@@ -50,8 +50,8 @@ room contains people who will use both.
 | **1** "donors registered in Manchester last quarter" | **Genie** | Entirely inside the warehouse, aggregate, repeatable. This is exactly what a curated space is for — and it is a question you want off your team's desk |
 | **2** "why did the count drop by twenty" | **Claude Code** | The answer is not in the warehouse. It is in a filter in a JSON file. Genie can tell you *that* it dropped, never *why* |
 | **3** "what does `consent_research` mean" | **Neither — argue about it** | See below |
-| **4** "rewrite this notebook" | **Claude Code** | Genie does not write files. This is part 3 |
-| **5** "which flows can be converted" | **Claude Code** | It reads fourteen JSON files and sorts them. This is part 4, in bulk, and it is the single most valuable thing in the day for Adrian's team |
+| **4** "rewrite this notebook" | **Claude Code** | Genie does not write files. This is yesterday's part 2 |
+| **5** "which flows can be converted" | **Claude Code** | It reads fourteen JSON files and sorts them. This is yesterday's part 4, in bulk, and it is the single most valuable thing in the four days for Adrian's team |
 
 **Number 3, the one to hold.** Genie will answer, fluently, from the column name.
 Claude Code will answer, fluently, from the column name. **Both are guessing,
@@ -62,7 +62,6 @@ push: *"where would Genie have learned that?"*
 
 ## Time
 
-25 minutes with a 45-minute part in front of it. If part 4 ate into this, cut in
-this order: **the game first** (they get the idea without it), **then the
+25 minutes. If the part in front of it overran, cut in this order: **the game first** (they get the idea without it), **then the
 bad-metadata half** (open on the documented space and describe the contrast).
 Never cut the side-by-side — it is a question the client asked for by name.

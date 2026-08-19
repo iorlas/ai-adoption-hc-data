@@ -1,12 +1,11 @@
-# 2 — Claude Code against a real workspace
+# 1 — Claude Code against a real workspace
 
 **20 minutes, watch only**
 *5 min the myth · 8 min live on the workspace · 7 min the boundary.*
 
-> **Who does what:** I run it, you watch. **Nobody needs Databricks access for
-> this part, or for any hands-on part today.** If you do have access and want to
-> follow along, the commands are all here — but do not let a login problem cost
-> you part 3.
+> **Who does what:** I run it, you watch. **Nobody needs Databricks access to
+> follow this.** If you do have access and want to follow along, the commands are
+> all here — but do not let a login problem cost you the rest of the morning.
 
 ## The myth worth killing first
 
@@ -28,8 +27,8 @@ shell commands**. Databricks sits on both:
 | Ask the warehouse in plain English | Genie, in the browser | Yes |
 
 Two rows out of six. **Everything you asked for in June lives in the "no" rows**
-— which is why parts 3 and 4 are hands-on for a room where half of you have no
-workspace.
+— which is why the whole of Day 3 was hands-on for a room where half of you have
+no workspace, and why today is the only day any of this matters.
 
 ## What we run
 
@@ -126,5 +125,5 @@ front of your team lead.
 ## If you have access and want to try it
 
 Everything above, on your own workspace, in your own schema. If a login fails,
-**stop and move on** — part 3 starts in a moment and it needs nothing but the
-folder on your laptop.
+**stop and move on.** Nothing later today is blocked by it — the AI-functions
+segment runs on my workspace too.

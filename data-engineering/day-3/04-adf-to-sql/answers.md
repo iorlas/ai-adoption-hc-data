@@ -35,7 +35,9 @@ where i.status = 'Active'
 | **23** rows with no ethnicity label | code `Z99` appears in the export and not in the lookup; ADF's `lookup` is a **left** join | **0 means they wrote an inner join** — the most common error, and the most dangerous |
 | checksum match | the four cleaning rules | Usually `initCap` applied to the whole string, or `upper` not applied to `sex` |
 
-Other true numbers, if asked:
+Other true numbers, if asked — **all of these are over the full 5,005-row
+export, before `KeepActive`**, so they will not match a count run against a
+green view (which holds 1,181 changed postcodes, not 2,036):
 - 51 rows carry the unknown `Z99` code in total; 23 of them survive the filter
 - 2,036 rows have a postcode the cleaning rules change
 - 1,663 rows have a lower-case `sex`; 15 rows have no `sex` at all
@@ -77,8 +79,10 @@ Other true numbers, if asked:
    stored procedure and an ADF Copy activity, or a job. Anyone who says "we'll
    convert the flows to views" without this has not costed the work.
 
-**If the room only finds two, it is almost always number 2 they miss.** Ask:
-*"what happens on Monday when the source system adds a column?"*
+**If the room only finds two, it is almost always number 2 they miss** — schema
+drift is invisible until it bites. Ask: *"what happens on Monday when the source
+system adds a column?"* (Number 3 is the expensive one, but it is rarely the
+missed one: a sink that upserts is hard to overlook.)
 
 ## Step 4 — the `Activ` defect
 
@@ -89,9 +93,9 @@ the one on the participant page: a conversion that changes behaviour destroys
 your only means of telling a migration bug from an intentional change, and it
 makes parity unachievable by construction. Faithful first, ticket second.
 
-This is also where the twenty rows from part 2 come back. If someone spotted
-them before the break, name them now — it is a good moment and it costs
-nothing.
+The distinct-count cells in part 2's notebook show the same twenty rows. If
+someone spotted them before the break, name them now — it is a good moment and
+it costs nothing.
 
 ## Step 5 — the T-SQL re-target
 
@@ -116,7 +120,23 @@ row in four in this export has ragged spacing.
 This is the same shape as the `Activ` defect: a cleaning step that was written
 against the data as it looked in 2019.
 
+**The numbers:** 2,024 rows of 5,005 have no space at all — those are the ones
+the rule cannot save — and another 994 have a doubled space, which it does fix.
+Three rows in five arrive with ragged spacing.
+
+**One thing this data does not test:** no postcode here has *two* separate runs
+of whitespace, so a non-global `regexp_replace` passes parity even though it
+only fixes the first run. The `'g'` is right and this dataset does not earn it.
+Worth a sentence if someone asks why it is there.
+
 ## What goes wrong
+
+**`Catalog Error: initcap does not exist`.** The expected first failure, and it
+will be most of the room. The flow's first rule is `initCap`, everybody writes
+`initcap(...)`, and DuckDB has no such function. **Do not hand over the fix
+until they have named the problem** — it is a free preview of step 5, where the
+same function turns out to be missing from T-SQL too. The shape that works:
+`upper(substr(trim(x), 1, 1)) || lower(substr(trim(x), 2))`.
 
 **They ask Claude to convert before reading the flow.** It will produce
 plausible SQL with an inner join and no filter, and it will look right. If it

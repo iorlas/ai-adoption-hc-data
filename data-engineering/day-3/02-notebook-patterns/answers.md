@@ -1,4 +1,4 @@
-# Answers — 3 · An inherited notebook
+# Answers — 2 · An inherited notebook
 
 **FACILITATOR ONLY. Never on screen.**
 
@@ -53,18 +53,21 @@ the risk here; the notebook was.*
 where one would do. On 5,000 synthetic rows it is invisible; on the real table
 it is the reason the notebook takes forty minutes.
 
-**3. `donor` is rebound cell by cell.** Cells 12–14 each do
-`donor = donor.withColumn(...)`. Run them out of order, or twice, and you get a
+**3. `donor` is rebound cell by cell.** Cells 13–15, and again in cell 17, each
+do `donor = donor.withColumn(...)`. Run them out of order, or twice, and you get a
 different DataFrame — the classic notebook hazard. Moving to functions that
 return a new frame fixes it as a side effect, which is worth naming out loud.
 
-**4. The `_clean` columns are never used.** `postcode_clean`, `status_clean` and
-`ethnicity_clean` are computed and then ignored: the age check and the final
-`display` both use the raw columns. Somebody meant to come back.
+**4. The `_clean` columns are never consumed.** `postcode_clean`, `status_clean`
+and `ethnicity_clean` are computed and then ignored — the age check uses the raw
+columns, and the final `display` just dumps everything it is handed. Somebody
+meant to come back.
 
 **5. The distinct-count cells will show `Activ` next to `Active`** if run against
-the real table — 20 rows. Same defect as part 2, same instruction: **do not
-resolve it here.** Part 4 needs it.
+the real table — 20 rows. **Do not resolve it here.** Part 4 turns on somebody
+noticing that a filter written as `status == 'Active'` silently drops them; if
+it surfaces now, credit whoever spotted it and say it comes back after the
+break.
 
 **6. Age at registration: `floor(datediff(...) / 365.25)`.** Close enough to be
 defensible, wrong for a handful of rows near a birthday, and *different* from

@@ -8,9 +8,13 @@ two artifacts that are not in it.
 - `later-days/notebooks/donor_profiling.py` — a Databricks notebook in source
   form. `# COMMAND ----------` separates cells. It cannot run here; there is no
   Spark and no workspace.
-- `later-days/adf/pipeline_donor_import.json` — the pipeline. Almost no logic.
-- `later-days/adf/dataflow_donor_import.json` — the Mapping Data Flow. The real
-  logic is in `scriptLines`; read those, not the transformation names.
+- `later-days/adf/donor_import/` — two files: the pipeline (almost no logic) and
+  the Mapping Data Flow. The real logic is in `scriptLines`; read those, not the
+  transformation names. Part 4 converts this one.
+- `later-days/adf/supporter_weekly/` — five files: an inherited pipeline from the
+  fundraising side, eleven activities, no documentation. Part 3 reads this one.
+  Reading it well means reading **all five**, including the data flow's script
+  lines and the datasets.
 - `day-3/04-adf-to-sql/data/donor_import.csv` — 5,005 rows, the weekly export.
 - `day-3/04-adf-to-sql/data/ethnicity_ref.csv` — 16 codes, the cached lookup.
 

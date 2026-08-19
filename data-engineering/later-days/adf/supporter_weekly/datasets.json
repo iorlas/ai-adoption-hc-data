@@ -1,0 +1,89 @@
+[
+  {
+    "name": "DS_Blob_SupporterExport_Csv",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_Blob_Landing", "type": "LinkedServiceReference" },
+      "type": "DelimitedText",
+      "typeProperties": {
+        "location": { "type": "AzureBlobStorageLocation", "container": "landing", "folderPath": "supporters" },
+        "columnDelimiter": ",",
+        "escapeChar": "\\",
+        "firstRowAsHeader": true,
+        "quoteChar": "\""
+      },
+      "schema": []
+    }
+  },
+  {
+    "name": "DS_Blob_CampaignExport_Folder",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_Blob_Landing", "type": "LinkedServiceReference" },
+      "type": "DelimitedText",
+      "typeProperties": {
+        "location": { "type": "AzureBlobStorageLocation", "container": "landing", "folderPath": "campaigns" },
+        "firstRowAsHeader": true
+      },
+      "schema": []
+    }
+  },
+  {
+    "name": "DS_Blob_CampaignExport_File",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_Blob_Landing", "type": "LinkedServiceReference" },
+      "parameters": { "fileName": { "type": "string" } },
+      "type": "DelimitedText",
+      "typeProperties": {
+        "location": {
+          "type": "AzureBlobStorageLocation",
+          "container": "landing",
+          "folderPath": "campaigns",
+          "fileName": { "value": "@dataset().fileName", "type": "Expression" }
+        },
+        "firstRowAsHeader": true
+      },
+      "schema": []
+    }
+  },
+  {
+    "name": "DS_AzureSql_Stg_Supporter",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" },
+      "type": "AzureSqlTable",
+      "typeProperties": { "schema": "stg", "table": "supporter" },
+      "schema": []
+    }
+  },
+  {
+    "name": "DS_AzureSql_Stg_Campaign",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" },
+      "type": "AzureSqlTable",
+      "typeProperties": { "schema": "stg", "table": "campaign" },
+      "schema": []
+    }
+  },
+  {
+    "name": "DS_AzureSql_Dw_Donation",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" },
+      "type": "AzureSqlTable",
+      "typeProperties": { "schema": "dw", "table": "fact_donation" }
+    }
+  },
+  {
+    "name": "DS_AzureSql_Dw_SupporterEnriched",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" },
+      "type": "AzureSqlTable",
+      "typeProperties": { "schema": "dw", "table": "dim_supporter_enriched" }
+    }
+  },
+  {
+    "name": "DS_AzureSql_Etl_Watermark",
+    "properties": {
+      "linkedServiceName": { "referenceName": "LS_AzureSql_Warehouse", "type": "LinkedServiceReference" },
+      "type": "AzureSqlTable",
+      "typeProperties": { "schema": "etl", "table": "watermark" }
+    }
+  }
+]

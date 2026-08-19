@@ -27,33 +27,42 @@ Nothing about the habits. Everything about **where the work lives**.
                   ---------------        --------------------
   Day 1           donor.csv
   Day 2           the stored proc        (the database, via MCP)
-  Day 3                                  a Databricks workspace
-                  the notebook file      the cluster it runs on
+  Day 3           the notebook file      the cluster it runs on
                   the pipeline JSON      the ADF runtime that executes it
+  Day 4                                  the workspace itself
 ```
 
-The middle column is the useful surprise: **a Databricks notebook is a file, and
-an ADF Mapping Data Flow is a JSON file.** Most of what you want AI to do with
-them needs no connection at all. The connection matters for exactly two things
-today, and I will be the one holding it.
+The left-hand column is the useful surprise: **a Databricks notebook is a file,
+and an ADF Mapping Data Flow is a JSON file.** Almost everything you want AI to
+do with them needs no connection at all — which is why today is hands-on for
+every one of you, whatever your access looks like.
+
+The right-hand column is real too, and it is Day 4.
 
 ## The shape of today
 
-Four working parts, one break.
+Three working parts, one break, and all three are yours.
 
-- **Part 2** — I connect Claude Code to a real workspace, so you see what the
-  live path looks like and what it costs to set up. Watch only.
-- **Part 3** — an inherited profiling notebook, grown by copy-paste. You cluster
-  the repetition into a module. **Hands-on, no workspace needed.**
+- **Part 2** — an inherited profiling notebook, grown by copy-paste. You cluster
+  the repetition into a module you would actually adopt.
+- **Part 3** — a pipeline none of us wrote: eleven activities, no documentation,
+  published in 2024 by somebody who has left. You read it, then work out which
+  half of the explanation you believe.
 - **Part 4** — the big one. A legacy Mapping Data Flow, converted to SQL, with a
-  parity check that either goes green or does not. **Hands-on, no workspace
-  needed.** This part contains the honest bit: three things in that flow have no
-  clean SQL equivalent, and I want you to find them rather than be told.
-- **Part 5** — Genie, from the builder side. Not "look, natural language" — the
-  point is that Genie is only as good as the metadata *you* maintain.
+  parity check that either goes green or does not. This part contains the honest
+  bit: three things in that flow have no clean SQL equivalent, and I want you to
+  find them rather than be told.
+
+Parts 3 and 4 are one arc: **read a pipeline, then convert one.** Converting
+something you have not read is a rewrite with extra confidence.
+
+**Nothing today needs a Databricks workspace.** Everything with a live
+connection in it — the workspace, the CLI, Genie — is Day 4, together, so that
+one setup serves the whole of it. Today is the two things you asked for in June,
+with the most time on the clock either has had.
 
 ## One thing to hold onto
 
 > **Today's two headline goals are the two you asked for in June:** notebooks
-> into reusable functions, and Mapping Data Flows into SQL. They are parts 3 and
-> 4, they are back to back, and they have the most time on the clock.
+> into reusable functions, and Mapping Data Flows into SQL. They are parts 2 and
+> 4, and everything else today is in service of them.
